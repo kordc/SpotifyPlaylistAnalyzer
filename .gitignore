@@ -1,3 +1,9 @@
+#file with keys
+credentials.yaml
+
+#Don't want data here
+*.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
