@@ -1,8 +1,7 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from urllib.parse import quote
-import string
-import sys
+import pandas as pd
 
 def searchPlaylist(possibleName):
     possibleName = quote(possibleName)
@@ -24,6 +23,35 @@ class Track:
         self.features = {}
         self.analysis = {}
 
+    def __str__(self) -> str:
+        return self.name
+    
+    def getInfo(self):
+        info = {
+            'id' : self.id,
+            'name': self.name,
+            'album': self.albumName,
+            'artist': self.artistName,
+            'spotify': self.spotifyPlay,
+            'preview': self.preview
+        }
+        return info
+
+    def getFeatures(self):
+        data = {
+            'name': self.name,
+            'isExplicit': self.isExplicit,
+            'popularity': self.popularity,
+        }
+        data.update(self.features)
+        data.pop('type')
+        data.pop('id')
+        data.pop('uri')
+        data.pop('track_href')
+        data.pop('analysis_url')
+        return data
+
+
 
 class Playlist:
     def __init__(self, output: dict) -> None:
@@ -32,6 +60,10 @@ class Playlist:
         self.imgUrl = output['images'][0]['url']
         self.name = output['name']
         self.tracks = []
+    
+    def getFeatures(self):
+        features = [track.getFeatures() for track in self.tracks]
+        return pd.DataFrame(features)
 
 
 class DatasetCreator:
@@ -43,13 +75,17 @@ class DatasetCreator:
 
     def getTopPlaylist(self, country: str) -> list:
         assert country in self.country_codes, f"{country} is not a country code"
+
         countryTop = Playlist(self.sp.category_playlists(
             category_id='toplists', country=country, limit=1)['playlists']['items'][0])
+
         tracks = self.sp.playlist_tracks(countryTop.id)
-        for line in tracks['items'][:1]:
+
+        for line in tracks['items'][:5]:
             track = Track(line['track'])
-            track.features = self.sp.audio_features(tracks=[track.id])
+            track.features = self.sp.audio_features(tracks=[track.id])[0]
             track.analysis = self.sp.audio_analysis(track.id)
             countryTop.tracks.append(track)
+
         return countryTop
         
