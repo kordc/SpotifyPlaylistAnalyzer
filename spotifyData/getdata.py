@@ -1,12 +1,8 @@
+from cv2 import randShuffle
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from urllib.parse import quote
 import pandas as pd
-
-def searchPlaylist(possibleName):
-    possibleName = quote(possibleName)
-    sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
-    results = sp.search(q='playlist:' + possibleName, type='playlist')
 
 class Track:
     def __init__(self, output: dict) -> None:
@@ -21,7 +17,6 @@ class Track:
         self.preview = output['preview_url']
         self.popularity = float(output['popularity'])
         self.features = {}
-        self.analysis = {}
 
     def __str__(self) -> str:
         return self.name
@@ -54,13 +49,19 @@ class Track:
 
 
 class Playlist:
-    def __init__(self, output: dict) -> None:
+    def __init__(self, id='', link='', imgUrl='', name='') -> None:
+        self.id = id
+        self.link = link
+        self.imgUrl = imgUrl
+        self.name = name
+        self.tracks = []
+
+    def updateInfoFromOutput(self, output: dict) -> None:
         self.id = output['id']
-        self.link =  output['external_urls']['spotify']
+        self.link = output['external_urls']['spotify']
         self.imgUrl = output['images'][0]['url']
         self.name = output['name']
-        self.tracks = []
-    
+
     def getFeatures(self):
         features = [track.getFeatures() for track in self.tracks]
         return pd.DataFrame(features)
@@ -73,19 +74,34 @@ class DatasetCreator:
                          'IE', 'IT', 'JP', 'LV', 'LI', 'LT', 'LU', 'MY', 'MT', 'MX', 'MC', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'ES', 'SK', 'SE', 'CH', 'TW', 'TR', 'GB', 'US', 'UY']
         #see it, might be profitable in the futue -> https://datahub.io/core/country-list#resource-data
 
+    def updatePlaylistTracks(self, playlist):
+        tracks = self.sp.playlist_tracks(playlist.id)
+
+        for line in tracks['items']:
+            track = Track(line['track'])
+            track.features = self.sp.audio_features(tracks=[track.id])[0]
+            playlist.tracks.append(track)
+    
     def getTopPlaylist(self, country: str) -> list:
         assert country in self.country_codes, f"{country} is not a country code"
 
-        countryTop = Playlist(self.sp.category_playlists(
-            category_id='toplists', country=country, limit=1)['playlists']['items'][0])
+        result = self.sp.category_playlists(
+            category_id='toplists', country=country, limit=1)['playlists']['items'][0]
+        countryTop = Playlist()
+        countryTop.updateInfoFromOutput(result)
 
-        tracks = self.sp.playlist_tracks(countryTop.id)
-
-        for line in tracks['items'][:5]:
-            track = Track(line['track'])
-            track.features = self.sp.audio_features(tracks=[track.id])[0]
-            track.analysis = self.sp.audio_analysis(track.id)
-            countryTop.tracks.append(track)
+        self.updatePlaylistTracks(countryTop)
 
         return countryTop
-        
+    
+    def search(self, name, type='track', filters={}):
+        assert type in ['track', 'playlist'], f'{type} is unsupported'
+        q = name + ' ' + ' '.join([x+':'+filters[x] for x in filters.keys()])
+        result = self.sp.search(q=q, type=type, limit=1)
+        if type == 'track':
+            return Track(result['tracks']['items'][0])
+        else:
+            playlist = Playlist()
+            playlist.updateInfoFromOutput(result['playlists']['items'][0])
+            self.updatePlaylistTracks(playlist)
+            return playlist
