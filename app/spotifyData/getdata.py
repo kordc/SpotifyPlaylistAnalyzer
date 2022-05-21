@@ -33,9 +33,12 @@ class Track:
         }
         return info
 
-    def getFeatures(self):
+    def getFeatures(self, wanted_features = []):
+        #Here also this would be ideal If I could just select wanted features
         data = {
             'name': self.name,
+            'album': self.albumName,
+            'artist': self.artistName,
             'isExplicit': self.isExplicit,
             'popularity': self.popularity,
         }
@@ -45,7 +48,7 @@ class Track:
         data.pop('uri')
         data.pop('track_href')
         data.pop('analysis_url')
-        return data
+        return {f: data[f] for f in wanted_features} if wanted_features else data
 
 
 
@@ -63,9 +66,12 @@ class Playlist:
         self.imgUrl = output['images'][0]['url']
         self.name = output['name']
 
-    def getFeatures(self):
+    def getFeatures(self, wanted_features = []):
+        #I'd like to get just needed features this way this is probably much easier
         features = [track.getFeatures() for track in self.tracks]
-        return pd.DataFrame(features)
+        features = pd.DataFrame(features)
+
+        return features[wanted_features] if wanted_features else features
 
     def getInfo(self):
         info = [track.getInfo() for track in self.tracks]
@@ -110,7 +116,9 @@ class DatasetCreator:
         q = name + ' ' + ' '.join([x+':'+filters[x] for x in filters.keys()])
         result = self.sp.search(q=q, type=type, limit=1)
         if type == 'track':
-            return Track(result['tracks']['items'][0])
+            track = Track(result['tracks']['items'][0])
+            track.features = self.sp.audio_features(tracks=[track.id])[0]
+            return track
         else:
             playlist = Playlist()
             playlist.updateInfoFromOutput(result['playlists']['items'][0])

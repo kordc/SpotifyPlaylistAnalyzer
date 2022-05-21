@@ -1,22 +1,17 @@
 from spotifyData.getdata import *
 import plotly.express as px
-
+import pandas as pd
 
 class Plots:
     def __init__(self) -> None:
         pass
 
-    def radarPlot(self, data):
-        radarData = data.getFeatures().drop(
-            ['name', 'key', 'mode', 'duration_ms', 'time_signature', 'isExplicit', 'instrumentalness', 'popularity', 'tempo', 'loudness'], 1)
-
-        if isinstance(data, Playlist):
-            toPlot = radarData.mean().to_frame()
-        elif isinstance(data, Track):
-            toPlot = radarData
-        else:
-            raise Exception('Wrong data type for the radar plot')
-
+    def radarPlot(self, data : pd.DataFrame):
+        radarData = data[['danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence']]
+    
+        toPlot = radarData.mean().to_frame()
+        
+        #print(toPlot)
         toPlot.columns = ['r']
         toPlot['theta'] = toPlot.index
 

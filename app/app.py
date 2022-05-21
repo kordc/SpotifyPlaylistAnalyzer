@@ -9,6 +9,7 @@ import yaml
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 from spotifyData import getdata
+from plots import plots
 #from dash.dependencies import Input, Output, State
 
 import dash_bootstrap_components as dbc
@@ -19,14 +20,17 @@ with open(credentials_path) as file:
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=cred['client_id'], client_secret= cred['client_secret']))
 creator = getdata.DatasetCreator(sp=sp)
+plots_generator = plots.Plots()
 
 #! for the layout use dash bootstrap!!!
-columns = ['name','album','artist']
+columns = ['name','album','artist', 'danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence']
+
 #Simple extension allowing for multiple callbacks for one Output
 app = DashProxy(prevent_initial_callbacks=True, transforms=[MultiplexerTransform()], external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 table = dash_table.DataTable(pd.DataFrame(columns=columns).to_dict("records"),
                             [{"name": i, "id": i} for i in columns],
+                            hidden_columns = columns[3:],
                             id = "table_of_songs",
                             page_size = 10,
                             fill_width=False,
@@ -93,6 +97,9 @@ app.layout =  dbc.Card([
                     dbc.Col([
                         dbc.Table(table),
                         dbc.Alert(id='tbl_out'),
+                    ], width=6),
+                    dbc.Col([
+                        dcc.Graph(id="radarPlot")
                     ], width=6)])
              ])
         ])
@@ -103,20 +110,30 @@ app.layout =  dbc.Card([
     Input('predefined_datasets', 'value')
 )
 def update_output(path):
-    print(path)
+    #Callback to load predefined datasets from path
     df = pd.read_csv(path)[columns]
     return df.to_dict("records")
 
 @app.callback(
-    Output('table_of_songs', 'data'),
+    [Output('table_of_songs', 'data'),
+    Output("radarPlot", "figure")],
     Input("search_phrase", "value"),
     State("search_type", "value"),
     State("table_of_songs", "data")
 )
 def update_output(phrase, type_, rows):
-    song = creator.search(phrase, type=type_)
-    rows.insert(0, {"name": song.name, "album": song.albumName ,"artist": song.artistName})
-    return rows
+    #Callback from updating the data table
+    outcome = creator.search(phrase, type=type_)
+    if isinstance(outcome, getdata.Track):
+        #! Here ideally I want to get selected attributes, this would make adding elements very easy
+        rows.insert(0, outcome.getFeatures(wanted_features=columns))
+    elif isinstance(outcome, getdata.Playlist):
+        #! Herre ideally I want only selected attributes
+        for track in outcome.tracks:
+            rows.insert(0, track.getFeatures(wanted_features=columns))
+
+    
+    return rows, plots_generator.radarPlot(pd.DataFrame(rows))
 
 @app.callback(
     Output('table_of_songs', 'data'),
