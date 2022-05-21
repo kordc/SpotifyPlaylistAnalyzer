@@ -66,10 +66,15 @@ class Playlist:
         features = [track.getFeatures() for track in self.tracks]
         return pd.DataFrame(features)
 
+    def getInfo(self):
+        info = [track.getInfo() for track in self.tracks]
+        return pd.DataFrame(info)
+
+
 
 class DatasetCreator:
-    def __init__(self) -> None:
-        self.sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
+    def __init__(self, sp=None) -> None:
+        self.sp = sp if sp is not None else spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
         self.country_codes = ['AD', 'AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'EC', 'SV', 'EE', 'FI', 'FR', 'DE', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'ID',
                          'IE', 'IT', 'JP', 'LV', 'LI', 'LT', 'LU', 'MY', 'MT', 'MX', 'MC', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'ES', 'SK', 'SE', 'CH', 'TW', 'TR', 'GB', 'US', 'UY']
         #see it, might be profitable in the futue -> https://datahub.io/core/country-list#resource-data

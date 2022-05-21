@@ -4,29 +4,39 @@ import plotly.express as px
 from dash import Dash, dash_table
 from dash import dcc
 from dash import html
-from dash.dependencies import Input, Output
+from dash_extensions.enrich import Output, DashProxy, Input, MultiplexerTransform, State
+import yaml
+from spotipy.oauth2 import SpotifyClientCredentials
+import spotipy
+from spotifyData import getdata
+#from dash.dependencies import Input, Output, State
 
 import dash_bootstrap_components as dbc
 
+credentials_path = "credentials.yaml"
+with open(credentials_path) as file:
+    cred = yaml.load(file, Loader=yaml.FullLoader)
+
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=cred['client_id'], client_secret= cred['client_secret']))
+creator = getdata.DatasetCreator(sp=sp)
+
 #! for the layout use dash bootstrap!!!
+columns = ['name','album','artist']
+#Simple extension allowing for multiple callbacks for one Output
+app = DashProxy(prevent_initial_callbacks=True, transforms=[MultiplexerTransform()], external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-df = pd.read_csv("example_data.csv")[["rank", "artist_names", "track_name", "streams"]]
-
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-print(df.columns)
-
-table = dash_table.DataTable(df.to_dict('records'), [{"name": i, "id": i} for i in df.columns],
+table = dash_table.DataTable(pd.DataFrame(columns=columns).to_dict("records"),
+                            [{"name": i, "id": i} for i in columns],
+                            id = "table_of_songs",
                             page_size = 10,
                             fill_width=False,
                             style_table={
                             'maxHeight': '50ex',
                             'overflowY': 'scroll',
-                            #'width': '100%',
-                            #'minWidth': '100%',
+    
                         },
                         #fixed_rows={'headers': True}, ! this breaks width 
-                            page_action='none',  
+                        page_action='none',  
                         style_data={
                         'whiteSpace': 'normal',
                         'height': 'auto',
@@ -38,18 +48,47 @@ table = dash_table.DataTable(df.to_dict('records'), [{"name": i, "id": i} for i 
                          style_cell_conditional=[
                         {'if': {'column_id': 'rank'},
                         'width': '10%'},
-                    
-                    ]    
-                        )
-#df.to_dict(records) creates an array of JSON like objects and each is one row of the df
-#dbc.Container can replace this DIv
-#! IT SEEMS THAT DATABLES IN DASH DOES NOT SUPPORT BOOTSTRAP
-# app.layout= html.Div([
-#     table,
     
-# ],style= {"width": "200px"})
+                    ],
+                    editable=True,
+                    row_deletable=True    
+                        )
+
 app.layout =  dbc.Card([
              dbc.CardBody([
+                dbc.Row([
+                    dbc.Col([
+                        dcc.Dropdown(options=[
+                                    {'label': 'Funky 80\'s', 'value': 'funky.csv'},
+                                    {'label': 'top 50 metal', 'value': 'metal.csv'},
+                                ],
+                                    id='predefined_datasets',
+                                    placeholder="Select one of the predefined datasets"),
+                        html.Div(id='dd-output-container')
+                    ], width = 3),
+                    dbc.Col([
+                        dcc.Input(
+                        id="search_phrase",
+                        type="text",
+                        placeholder="search for artist/track/playlist",
+                        style = {"width": "100%"},
+                        debounce=True),
+                        html.Div(id='search_container')
+                    ], width = 4),
+                    dbc.Col([
+                        dcc.RadioItems(['track', 'playlist','album'], 'track',
+                        id="search_type", 
+                        inline=True,
+                        inputStyle= {"margin": "0 5px 0 5px"})
+                        
+                    ], width=2),
+                    dbc.Col([
+                       html.Button('Reset', id='reset_data', n_clicks=0),
+                    ], width=1),
+                    dbc.Col([
+                        html.Img(src="assets/logo_green.png", height= "50px")
+                    ],width=2)
+                ]),
                 dbc.Row([
                     dbc.Col([
                         dbc.Table(table),
@@ -57,7 +96,35 @@ app.layout =  dbc.Card([
                     ], width=6)])
              ])
         ])
-    
+
+
+@app.callback(
+    Output('table_of_songs', 'data'),
+    Input('predefined_datasets', 'value')
+)
+def update_output(path):
+    print(path)
+    df = pd.read_csv(path)[columns]
+    return df.to_dict("records")
+
+@app.callback(
+    Output('table_of_songs', 'data'),
+    Input("search_phrase", "value"),
+    State("search_type", "value"),
+    State("table_of_songs", "data")
+)
+def update_output(phrase, type_, rows):
+    song = creator.search(phrase, type=type_)
+    rows.insert(0, {"name": song.name, "album": song.albumName ,"artist": song.artistName})
+    return rows
+
+@app.callback(
+    Output('table_of_songs', 'data'),
+    Input('reset_data', 'n_clicks'),
+)
+def update_output(n_clicks):
+    if n_clicks > 0:
+        return pd.DataFrame(columns=columns).to_dict("records")
 
 if __name__ == "__main__":
     app.run_server(debug=True)
