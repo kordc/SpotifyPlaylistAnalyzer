@@ -1,4 +1,5 @@
 from cv2 import randShuffle
+from regex import D
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from urllib.parse import quote
@@ -76,7 +77,7 @@ class DatasetCreator:
     def __init__(self, sp=None) -> None:
         self.sp = sp if sp is not None else spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
         self.country_codes = ['AD', 'AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'EC', 'SV', 'EE', 'FI', 'FR', 'DE', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'ID',
-                         'IE', 'IT', 'JP', 'LV', 'LI', 'LT', 'LU', 'MY', 'MT', 'MX', 'MC', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'ES', 'SK', 'SE', 'CH', 'TW', 'TR', 'GB', 'US', 'UY']
+                         'IE', 'IT', 'JP', 'LV', 'LI', 'LT', 'LU', 'MY', 'MT', 'MX', 'MC', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'ES', 'SK', 'SE', 'CH', 'TW', 'TR', 'GB', 'US', 'UY', 'GLOBAL']
         #see it, might be profitable in the futue -> https://datahub.io/core/country-list#resource-data
 
     def updatePlaylistTracks(self, playlist):
@@ -88,10 +89,15 @@ class DatasetCreator:
             playlist.tracks.append(track)
     
     def getTopPlaylist(self, country: str) -> list:
-        assert country in self.country_codes, f"{country} is not a country code"
+        assert country.upper() in self.country_codes, f"{country} is not a country code"
 
-        result = self.sp.category_playlists(
-            category_id='toplists', country=country, limit=1)['playlists']['items'][0]
+        if country.upper() == 'GLOBAL':
+            result = self.sp.category_playlists(
+                category_id='toplists', country=country, limit=2)['playlists']['items'][1]
+        else:
+            result = self.sp.category_playlists(
+                category_id='toplists', country=country, limit=1)['playlists']['items'][0]
+        
         countryTop = Playlist()
         countryTop.updateInfoFromOutput(result)
 

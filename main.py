@@ -1,7 +1,9 @@
 from spotifyData.getdata import DatasetCreator
+from plots.plots import Plots
 
 if __name__ == "__main__":
     dataset = DatasetCreator()
-    playlist = dataset.getTopPlaylist("PL")
-    a = dataset.search('global-top-50', type='playlist')
-    print(len(a.tracks))
+    plots = Plots()
+    pl = dataset.getTopPlaylist("PL")
+    fig = plots.radarPlot(pl)
+    fig.show()
