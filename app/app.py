@@ -73,31 +73,36 @@ app.layout =  dbc.Card([
                                 ],
                                     id='predefined_datasets',
                                     placeholder="Select one of the predefined datasets"),
-                    ], width = 3),
+                    ], width = 3, style = {"border-right": "2px solid #3333ff"}),
                     dbc.Col([
-                        dcc.Input(
+                        dbc.Input(
                         id="search_phrase",
                         type="text",
                         placeholder="search for artist/track/playlist",
                         style = {"width": "100%"},
                         debounce=True),
-                        html.Div(id='search_container')
-                    ], width = 2),
-                    dbc.Col([
-                        dcc.RadioItems(['track', 'playlist','album'], 'track',
+                        dbc.RadioItems(options=[
+                            {"label": "track", "value": "track"},
+                            {"label": "playlist", "value": "playlist"},
+                            {"label": "album", "value": "album"},
+                        ],
+                        value="track",
                         id="search_type", 
                         inline=True,
-                        inputStyle= {"margin": "0 5px 0 5px"})
-                        
-                    ], width=2),
+                        label_style= {"margin-right": "30px"},
+                        inputStyle={"margin-right": "5px"})
+                    ], width = 3),
+                    dbc.Col([
+                        dbc.Button('Search', id='search_data', n_clicks=0, style={"height": "90%"}, outline=True, color="info", className="me-1")
+                    ], width=1, style = {"border-right": "2px solid #3333ff"}),
                     dbc.Col([
                        dcc.Dropdown(options=[],
                                     id='undo_step',
                                     placeholder="Undo one of the steps"),
                     ], width=2),
                     dbc.Col([
-                       html.Button('Reset', id='reset_data', n_clicks=0),
-                    ], width=1),
+                       dbc.Button('Reset', id='reset_data', n_clicks=0, style={"height": "90%"}, outline=True, color="danger", className="me-1"),
+                    ], width=1, style = {"border-right": "2px solid #3333ff"}),
                     dbc.Col([
                         html.Img(src="assets/logo_green.png", height= "50px")
                     ],width=2)
@@ -109,7 +114,7 @@ app.layout =  dbc.Card([
                     ], width=6),
                     dbc.Col([
                         dcc.Graph(id="radarPlot")
-                    ], width=6)])
+                    ], width=6)]) # style={"display": "none"} We could possibly use this to hide the graph entirely
              ])
         ])
 
@@ -118,44 +123,43 @@ app.layout =  dbc.Card([
     Output('table_of_songs', 'data'),
     Input('predefined_datasets', 'value')
 )
-def update_output(path):
+def load_predefined_data(path):
     df = pd.read_csv(path)[columns]
     return df.to_dict("records")
 
 @app.callback(
-    [Output('table_of_songs', 'data'),
-     Output("undo_step", "options"),
-     Output("radarPlot", "figure"),],
+    [Output('table_of_songs', 'data'), Output("undo_step", "options"), Output("radarPlot", "figure"),],
     Input('undo_step', 'value'),
     State("table_of_songs", "data")
 )
-def update_output(request_id, rows):
-    new_rows = request_manager.remove_request(rows, request_id)
-    return new_rows, request_manager.get_options(), plots_generator.radarPlot(pd.DataFrame(new_rows))
+def undo_step(request_id, rows):
+    new_rows = request_manager.remove_data(rows, request_id)
+    plot = plots_generator.radarPlot(pd.DataFrame(new_rows)) if new_rows else {}
+
+    return new_rows, request_manager.get_options(), plot
 
 @app.callback(
-    [Output('table_of_songs', 'data'),
-    Output("radarPlot", "figure"),
-    Output("undo_step", "options")],
-    Input("search_phrase", "value"),
-    State("search_type", "value"),
-    State("table_of_songs", "data")
+    [Output('table_of_songs', 'data'), Output("radarPlot", "figure"), Output("undo_step", "options")],
+    State("search_phrase", "value"), State("search_type", "value"), State("table_of_songs", "data"),
+    Input("search_data", "n_clicks")
 )
-def update_output(phrase, type_, rows):
-    #Callback from updating the data table
-    outcome = creator.search(phrase, type=type_)
-    request_manager.add_data(rows, outcome)
-    request_manager.add_request(phrase)
-    
-    return rows, plots_generator.radarPlot(pd.DataFrame(rows)), request_manager.get_options()
+def add_search_to_table(phrase, type_, rows, n_clicks):
+    if n_clicks > 0:
+        outcome = creator.search(phrase, type=type_)
+        request_manager.add_data(rows, outcome)
+        request_manager.add_request(phrase)
+        
+        return rows, plots_generator.radarPlot(pd.DataFrame(rows)), request_manager.get_options()
 
 @app.callback(
-    Output('table_of_songs', 'data'),
+    [Output('table_of_songs', 'data'), Output("undo_step", "options"),
+    Output("radarPlot", "figure"),],
     Input('reset_data', 'n_clicks'),
 )
-def update_output(n_clicks):
+def reset_table(n_clicks):
     if n_clicks > 0:
-        return pd.DataFrame(columns=columns).to_dict("records")
+        request_manager.reset_requests()
+        return pd.DataFrame(columns=columns).to_dict("records"), request_manager.get_options(), {}
 
 
 @app.callback(

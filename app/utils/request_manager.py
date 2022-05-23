@@ -28,9 +28,16 @@ class RequestManager():
 
         return features
 
-    def remove_request(self, rows, request_id):
-        if request_id is None: return rows
-        print(request_id)
+    def remove_request(self, request_id):
         self.requests.pop(request_id)
+
+    def remove_data(self, rows, request_id):
+        if request_id is None:
+            return rows
+        self.remove_request(request_id)
         return [row for row in rows if row["id"] != request_id]
+
+    def reset_requests(self,):
+        self.requests = {}
+        self.num_of_requests = 0
         
