@@ -10,6 +10,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 from spotifyData import getdata
 from plots import plots
+from utils import request_manager
 #from dash.dependencies import Input, Output, State
 
 import dash_bootstrap_components as dbc
@@ -25,12 +26,14 @@ plots_generator = plots.Plots()
 #! for the layout use dash bootstrap!!!
 columns = ['name','album','artist', 'danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence']
 
+request_manager = request_manager.RequestManager(columns=columns)
+
 #Simple extension allowing for multiple callbacks for one Output
 app = DashProxy(prevent_initial_callbacks=True, transforms=[MultiplexerTransform()], external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 table = dash_table.DataTable(pd.DataFrame(columns=columns).to_dict("records"),
-                            [{"name": i, "id": i} for i in columns],
-                            hidden_columns = columns[3:],
+                            [{"name": i, "id": i} for i in columns[:3]],
+                            #hidden_columns = columns[3:], This is not needed we can just omit not necesarry columns and data would be unchanged
                             id = "table_of_songs",
                             page_size = 10,
                             fill_width=False,
@@ -47,15 +50,17 @@ table = dash_table.DataTable(pd.DataFrame(columns=columns).to_dict("records"),
                         'lineHeight': '15px'
                     },
                         filter_action="native",
-                        sort_action="native",
+                        #sort_action="native",
                         sort_mode="multi",
+                        row_selectable="multi",
+                        row_deletable=True,
+                        editable=True, 
                          style_cell_conditional=[
                         {'if': {'column_id': 'rank'},
                         'width': '10%'},
     
                     ],
-                    editable=True,
-                    row_deletable=True    
+                      
                         )
 
 app.layout =  dbc.Card([
@@ -68,7 +73,6 @@ app.layout =  dbc.Card([
                                 ],
                                     id='predefined_datasets',
                                     placeholder="Select one of the predefined datasets"),
-                        html.Div(id='dd-output-container')
                     ], width = 3),
                     dbc.Col([
                         dcc.Input(
@@ -78,13 +82,18 @@ app.layout =  dbc.Card([
                         style = {"width": "100%"},
                         debounce=True),
                         html.Div(id='search_container')
-                    ], width = 4),
+                    ], width = 2),
                     dbc.Col([
                         dcc.RadioItems(['track', 'playlist','album'], 'track',
                         id="search_type", 
                         inline=True,
                         inputStyle= {"margin": "0 5px 0 5px"})
                         
+                    ], width=2),
+                    dbc.Col([
+                       dcc.Dropdown(options=[],
+                                    id='undo_step',
+                                    placeholder="Undo one of the steps"),
                     ], width=2),
                     dbc.Col([
                        html.Button('Reset', id='reset_data', n_clicks=0),
@@ -110,13 +119,24 @@ app.layout =  dbc.Card([
     Input('predefined_datasets', 'value')
 )
 def update_output(path):
-    #Callback to load predefined datasets from path
     df = pd.read_csv(path)[columns]
     return df.to_dict("records")
 
 @app.callback(
     [Output('table_of_songs', 'data'),
-    Output("radarPlot", "figure")],
+     Output("undo_step", "options"),
+     Output("radarPlot", "figure"),],
+    Input('undo_step', 'value'),
+    State("table_of_songs", "data")
+)
+def update_output(request_id, rows):
+    new_rows = request_manager.remove_request(rows, request_id)
+    return new_rows, request_manager.get_options(), plots_generator.radarPlot(pd.DataFrame(new_rows))
+
+@app.callback(
+    [Output('table_of_songs', 'data'),
+    Output("radarPlot", "figure"),
+    Output("undo_step", "options")],
     Input("search_phrase", "value"),
     State("search_type", "value"),
     State("table_of_songs", "data")
@@ -124,16 +144,10 @@ def update_output(path):
 def update_output(phrase, type_, rows):
     #Callback from updating the data table
     outcome = creator.search(phrase, type=type_)
-    if isinstance(outcome, getdata.Track):
-        #! Here ideally I want to get selected attributes, this would make adding elements very easy
-        rows.insert(0, outcome.getFeatures(wanted_features=columns))
-    elif isinstance(outcome, getdata.Playlist):
-        #! Herre ideally I want only selected attributes
-        for track in outcome.tracks:
-            rows.insert(0, track.getFeatures(wanted_features=columns))
-
+    request_manager.add_data(rows, outcome)
+    request_manager.add_request(phrase)
     
-    return rows, plots_generator.radarPlot(pd.DataFrame(rows))
+    return rows, plots_generator.radarPlot(pd.DataFrame(rows)), request_manager.get_options()
 
 @app.callback(
     Output('table_of_songs', 'data'),
@@ -142,6 +156,26 @@ def update_output(phrase, type_, rows):
 def update_output(n_clicks):
     if n_clicks > 0:
         return pd.DataFrame(columns=columns).to_dict("records")
+
+
+@app.callback(
+    Output("radarPlot", "figure"),
+    Input("table_of_songs", "data_previous"),
+    State("table_of_songs", "data")
+)
+def update_at_removal(old_data, rows):
+    return plots_generator.radarPlot(pd.DataFrame(rows))
+
+
+@app.callback(
+    Output("radarPlot", "figure"),
+    Input("table_of_songs", "selected_rows"),
+    State("table_of_songs", "data")
+)
+def only_selected_rows(selected_rows,rows):
+    if selected_rows:
+        rows = [rows[index] for index in selected_rows]
+    return plots_generator.radarPlot(pd.DataFrame(rows))
 
 if __name__ == "__main__":
     app.run_server(debug=True)

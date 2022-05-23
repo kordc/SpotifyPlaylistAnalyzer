@@ -1,4 +1,3 @@
-from spotifyData.getdata import *
 import plotly.express as px
 import pandas as pd
 
