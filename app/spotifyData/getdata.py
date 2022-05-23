@@ -67,7 +67,6 @@ class Playlist:
         self.name = output['name']
 
     def getFeatures(self, wanted_features = []):
-        #I'd like to get just needed features this way this is probably much easier
         features = [track.getFeatures() for track in self.tracks]
         features = pd.DataFrame(features)
 
@@ -86,7 +85,7 @@ class DatasetCreator:
                          'IE', 'IT', 'JP', 'LV', 'LI', 'LT', 'LU', 'MY', 'MT', 'MX', 'MC', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'ES', 'SK', 'SE', 'CH', 'TW', 'TR', 'GB', 'US', 'UY', 'GLOBAL']
         #see it, might be profitable in the futue -> https://datahub.io/core/country-list#resource-data
 
-    def updatePlaylistTracks(self, playlist):
+    def updatePlaylistTracks(self, playlist: Playlist):
         tracks = self.sp.playlist_tracks(playlist.id)
 
         for line in tracks['items']:
@@ -111,7 +110,7 @@ class DatasetCreator:
 
         return countryTop
     
-    def search(self, name, type='track', filters={}):
+    def search(self, name: str, type='track', filters={}):
         assert type in ['track', 'playlist'], f'{type} is unsupported'
         q = name + ' ' + ' '.join([x+':'+filters[x] for x in filters.keys()])
         result = self.sp.search(q=q, type=type, limit=1)

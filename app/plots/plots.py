@@ -10,7 +10,6 @@ class Plots:
     
         toPlot = radarData.mean().to_frame()
         
-        #print(toPlot)
         toPlot.columns = ['r']
         toPlot['theta'] = toPlot.index
 
