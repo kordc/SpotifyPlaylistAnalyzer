@@ -137,3 +137,4 @@ dmypy.json
 
 # tests
 plots/plots.ipynb
+main.py

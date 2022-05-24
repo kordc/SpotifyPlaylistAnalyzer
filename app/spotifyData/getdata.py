@@ -76,6 +76,9 @@ class Playlist:
         info = [track.getInfo() for track in self.tracks]
         return pd.DataFrame(info)
 
+    def __str__(self) -> str:
+        return ''.join(f'{x}\n' for x in self.tracks)
+
 
 
 class DatasetCreator:
@@ -92,6 +95,13 @@ class DatasetCreator:
             track = Track(line['track'])
             track.features = self.sp.audio_features(tracks=[track.id])[0]
             playlist.tracks.append(track)
+
+    def updateAlbumTracks(self, album: Playlist):
+        tracks = self.sp.album_tracks(album.id)
+        for line in tracks['items']:
+            track = self.search(line['name'], filters={'artist': line['artists'][0]['name']})
+            track.features = self.sp.audio_features(tracks=[track.id])[0]
+            album.tracks.append(track)
     
     def getTopPlaylist(self, country: str) -> list:
         assert country.upper() in self.country_codes, f"{country} is not a country code"
@@ -111,15 +121,20 @@ class DatasetCreator:
         return countryTop
     
     def search(self, name: str, type='track', filters={}):
-        assert type in ['track', 'playlist'], f'{type} is unsupported'
+        assert type in ['track', 'playlist', 'album'], f'{type} is unsupported'
         q = name + ' ' + ' '.join([x+':'+filters[x] for x in filters.keys()])
         result = self.sp.search(q=q, type=type, limit=1)
         if type == 'track':
             track = Track(result['tracks']['items'][0])
             track.features = self.sp.audio_features(tracks=[track.id])[0]
             return track
-        else:
+        elif type == 'playlist':
             playlist = Playlist()
             playlist.updateInfoFromOutput(result['playlists']['items'][0])
             self.updatePlaylistTracks(playlist)
+            return playlist
+        else:
+            playlist = Playlist()
+            playlist.updateInfoFromOutput(result['albums']['items'][0])
+            self.updateAlbumTracks(playlist)
             return playlist
