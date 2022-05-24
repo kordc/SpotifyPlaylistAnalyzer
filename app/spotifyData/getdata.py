@@ -108,7 +108,7 @@ class DatasetCreator:
 
         if country.upper() == 'GLOBAL':
             result = self.sp.category_playlists(
-                category_id='toplists', country=country, limit=2)['playlists']['items'][1]
+                category_id='toplists', country='PL', limit=2)['playlists']['items'][1]
         else:
             result = self.sp.category_playlists(
                 category_id='toplists', country=country, limit=1)['playlists']['items'][0]
