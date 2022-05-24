@@ -50,6 +50,9 @@ class Track:
         data.pop('analysis_url')
         return {f: data[f] for f in wanted_features} if wanted_features else data
 
+    def getDuration(self) -> int: #seconds
+        return self.features['duration_ms'] // 1000
+
 
 
 class Playlist:
@@ -79,6 +82,13 @@ class Playlist:
     def __str__(self) -> str:
         return ''.join(f'{x}\n' for x in self.tracks)
 
+    def getDurationInSec(self) -> int:
+        sec = sum([track.getDuration() for track in self.tracks])
+        return sec
+
+    def getDurationInMin(self) -> tuple: #(minutes, seconds)
+        sec = self.getDurationInSec()
+        return (sec//60, sec-(sec//60*60))
 
 
 class DatasetCreator:
