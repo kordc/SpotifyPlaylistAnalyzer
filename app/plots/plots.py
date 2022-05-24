@@ -42,5 +42,12 @@ class Plots:
                  }
             ))
         
-        return(fig)
+        return fig
+
+    def topTracks(self, data: pd.DataFrame, attribute='danceability', color='energy'):
+        plotData = data.sort_values(by=[attribute], ascending=False)
+        fig = px.bar(plotData.head(5), x='name', y=attribute, color=color)
+        fig.update_layout(title_text='Top 5 danceble tracks', title_x=0.5, title_font = {'size' : 24})
+
+        return fig
 
