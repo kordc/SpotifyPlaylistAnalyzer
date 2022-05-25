@@ -48,6 +48,7 @@ class Track:
         data.pop('uri')
         data.pop('track_href')
         data.pop('analysis_url')
+        data["duration"] = self.getDuration()
         return {f: data[f] for f in wanted_features} if wanted_features else data
 
     def getDuration(self) -> int: #seconds
