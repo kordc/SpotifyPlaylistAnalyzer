@@ -1,4 +1,5 @@
 from cv2 import randShuffle
+from numpy import average
 from regex import D
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -91,6 +92,13 @@ class Playlist:
         sec = self.getDurationInSec()
         return (sec//60, sec-(sec//60*60))
 
+    def getAverageTempo(self) -> float:
+        return average([track.features['tempo'] for track in self.tracks])
+
+    def isExplicit(self) -> int: #percetnage
+        explicits = [1 if track.features['explicit']
+                     == True else 0 for track in self.tracks]
+        return int(average(explicits)*100)
 
 class DatasetCreator:
     def __init__(self, sp=None) -> None:
