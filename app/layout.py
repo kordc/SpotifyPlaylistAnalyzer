@@ -55,9 +55,36 @@ def get_layout(table, footers_definitions):
                                     dbc.Table(table),
                                 ], width=6),
                         dbc.Col([
-                                    dcc.Graph(id=C.RADAR)
+                                 dbc.Row( dcc.Dropdown(options=[
+                                                    {'label': "Average everything", 'value': 'average'},
+                                                    {'label': 'By query', 'value': 'by_query'},
+                                                    {'label': 'Each song separately (Mess, if you don\'t select some songs)', 'value': 'separate'},
+                                                    ],
+                                            id=C.RADAR_DROPDOWN,
+                                            placeholder="Select the behaviour of radar plot"),
+                                    ),
+                                 dbc.Row(dcc.Graph(id=C.RADAR))   
                                 ], width=6)]) # style={"display": "none"} We could possibly use this to hide the graph entirely
                         ]),
+                    dbc.Row([
+                        dbc.Col([
+                                 dbc.Row( [
+                                            dcc.Slider(0, 30, 5,
+                                                    value=10,
+                                                    id=C.TOP_N_SLIDER),
+
+                                            dbc.Col(dcc.Dropdown(options=[ {'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],
+                                                        id=C.TOP_N_ATTR,
+                                                        placeholder="Top 5 in...")),
+                                                        
+                                            dbc.Col(dcc.Dropdown(options=[ {'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],
+                                                                id=C.TOP_N_COLOR,
+                                                                placeholder="color based on"),
+                                                    ),
+                                            ]
+                                    ),
+                                 dbc.Row(dcc.Graph(id=C.TOP_N_PLOT))   
+                                ], width=6)]), # style={"display": "none"} We could possibly use this to hide the graph entirely
                 dbc.Row(
                     [dbc.Col(dbc.Card(get_value_box(**parameters), color='success', inverse=True)) 
                                                     for parameters in footers_definitions ],

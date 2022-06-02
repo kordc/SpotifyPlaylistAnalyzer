@@ -16,12 +16,14 @@ class RequestManager():
 
     def add_data(self, rows: list, outcome, query_name: str):
         audio_info, audio_features = outcome
+        print(type(audio_features))
         if isinstance(audio_features, tk.model.AudioFeatures):
             rows.insert(0, self.get_instance(audio_info, audio_features, query_name))
+        
         elif isinstance(audio_features, tk.model.ModelList):
             for info, features in zip(audio_info, audio_features):
                 rows.insert(0, self.get_instance(info, features, query_name))
-        #print(rows)
+        
         return rows
 
     def get_instance(self, audio_info: tk.model.FullTrack, audio_features: tk.model.AudioFeatures, query_name : str):

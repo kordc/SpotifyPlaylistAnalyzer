@@ -6,18 +6,26 @@ class Plots:
     def __init__(self) -> None:
         pass
 
-    def radarPlot(self, data : pd.DataFrame):
-        radarData = data[['danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence']]
-    
-        toPlot = radarData.mean().to_frame()
-        
-        toPlot.columns = ['r']
-        toPlot['theta'] = toPlot.index
+    def radarPlot(self,data : pd.DataFrame, behaviour="average"):
+        if behaviour == "average":
+                radarData = data[['danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence']]
+                toPlot = radarData.mean()
+                fig = px.line_polar(r=toPlot.values, theta=toPlot.index, line_close=True, range_r=[0,1])
+        else:
+                if behaviour == "separate":
+                        separate_variable = "name"
+                elif behaviour == "by_query":
+                        separate_variable = "query"
+                radarData = data[['danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence', separate_variable]]
+                radarData = radarData.groupby([separate_variable]).mean().reset_index()
+                radarData = pd.melt(radarData, id_vars=[separate_variable])
 
-        fig = px.line_polar(toPlot, r='r', theta='theta',
-                            line_close=True, color_discrete_sequence=('#1ED760', '#1ED760', '#1ED760', '#1ED760', '#1ED760', '#1ED760'))
-        fig.update_traces(fill='toself')
-        
+                fig = px.line_polar(radarData, r="value", theta="variable", color=separate_variable,
+                            line_close=True, range_r=[0,1])
+                fig.update_traces(opacity=0.7)
+
+        fig.update_layout(margin=dict(l=0, r=0, t=25, b=25)) 
+
         return fig
 
     def gaugeColor(self, value):
@@ -44,10 +52,10 @@ class Plots:
         
         return fig
 
-    def topTracks(self, data: pd.DataFrame, attribute='danceability', color='energy'):
+    def topNTracks(self, data: pd.DataFrame, attribute='danceability', color='energy', top_n = 5):
         plotData = data.sort_values(by=[attribute], ascending=False)
-        fig = px.bar(plotData.head(5), x='name', y=attribute, color=color)
-        fig.update_layout(title_text='Top 5 danceble tracks', title_x=0.5, title_font = {'size' : 24})
+        fig = px.bar(plotData.head(top_n), x='name', y=attribute, color=color, range_color=[0,1])
+        fig.update_layout(title_text=f'Top {top_n} tracks based on {attribute}', title_x=0.5, title_font = {'size' : 24})
 
         return fig
 

@@ -7,7 +7,7 @@ def get_table(columns):
                             [{"name": i, "id": i} for i in columns[:3]],
                             #hidden_columns = columns[3:], This is not needed we can just omit not necesarry columns and data would be unchanged
                             id = C.TABLE,
-                            page_size = 10,
+                            page_size = 12,
                             fill_width=False,
                             style_table={
                             'maxHeight': '50ex',
