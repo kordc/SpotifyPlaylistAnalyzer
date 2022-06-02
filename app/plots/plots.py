@@ -59,3 +59,8 @@ class Plots:
 
         return fig
 
+    def keys(self, data: pd.DataFrame):
+        keys = pd.DataFrame(data.value_counts())
+        fig = px.bar(keys, orientation='h')
+        
+        return fig
