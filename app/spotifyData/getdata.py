@@ -18,6 +18,9 @@ class Track:
         self.preview = output['preview_url']
         self.popularity = float(output['popularity'])
         self.features = {}
+        self.analysis = {}
+        self.key_map = {0:"C", 1:"C#", 2:"D", 3:"D#", 4:"E", 5:"F", 6:"F#", 7:"G", 8:"G#", 9:"A", 10:"A#", 11:"B"}
+        self.mode_map = {0:"minor", 1:"major" }
 
     def __str__(self) -> str:
         return self.name
@@ -54,6 +57,13 @@ class Track:
     def getDuration(self) -> int: #seconds
         return self.features['duration_ms'] // 1000
 
+    def setAudioAnalysis(self, analysis):
+        analysis = analysis["track"]
+        self.analysis["loudness"] = analysis["loudness"]
+        self.analysis["tempo"] = analysis["tempo"]
+        self.analysis["time_signature"] = analysis["time_signature"]
+        self.analysis["key"] = self.key_map[analysis["key"]]
+        self.analysis["mode"] = self.mode_map[analysis["mode"]]
 
 
 class Playlist:
@@ -101,10 +111,11 @@ class DatasetCreator:
 
     def updatePlaylistTracks(self, playlist: Playlist):
         tracks = self.sp.playlist_tracks(playlist.id)
-
+        #print(tracks['items'][0])
         for line in tracks['items']:
             track = Track(line['track'])
             track.features = self.sp.audio_features(tracks=[track.id])[0]
+            track.setAudioAnalysis(self.sp.audio_analysis(track.id))
             playlist.tracks.append(track)
 
     def updateAlbumTracks(self, album: Playlist):
@@ -112,6 +123,7 @@ class DatasetCreator:
         for line in tracks['items']:
             track = self.search(line['name'], filters={'artist': line['artists'][0]['name']})
             track.features = self.sp.audio_features(tracks=[track.id])[0]
+            track.setAudioAnalysis(self.sp.audio_analysis(track.id))
             album.tracks.append(track)
     
     def getTopPlaylist(self, country: str) -> list:
@@ -138,6 +150,7 @@ class DatasetCreator:
         if type == 'track':
             track = Track(result['tracks']['items'][0])
             track.features = self.sp.audio_features(tracks=[track.id])[0]
+            track.setAudioAnalysis(self.sp.audio_analysis(track.id))
             return track
         elif type == 'playlist':
             playlist = Playlist()

@@ -4,9 +4,8 @@ import plotly.express as px
 from dash import dcc, html
 from dash_extensions.enrich import Output, DashProxy, Input, MultiplexerTransform, State
 import yaml
-from spotipy.oauth2 import SpotifyClientCredentials
-import spotipy
-from spotifyData import getdata
+import tekore as tk
+from spotifyData import getdata_faster
 from plots import plots
 from utils import request_manager, valueBox
 from utils.constants import COLUMNS, FOOTERS, EXTERNAL_STYLESHEETS
@@ -21,8 +20,11 @@ credentials_path = "credentials.yaml"
 with open(credentials_path) as file:
     cred = yaml.load(file, Loader=yaml.FullLoader)
 
-sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=cred['client_id'], client_secret= cred['client_secret']))
-creator = getdata.DatasetCreator(sp=sp)
+
+app_token = tk.request_client_token(cred['client_id'], cred['client_secret'])
+spotify = tk.Spotify(app_token)
+
+creator = getdata_faster.DatasetCreator(spotify_api=spotify)
 plots_generator = plots.Plots()
 
 request_manager = request_manager.RequestManager(columns=COLUMNS)
@@ -58,7 +60,7 @@ def undo_step(request_id, rows):
 def add_search_to_table(phrase, type_, rows, n_clicks):
     if n_clicks > 0:
         outcome = creator.search(phrase, type=type_)
-        request_manager.add_data(rows, outcome) #! Thisk works in place
+        request_manager.add_data(rows, outcome, query_name=phrase) #! Thisk works in place
         request_manager.add_request(phrase)
 
         return output_handler.get_updated(rows, request_manager, FOOTERS, table=True)
