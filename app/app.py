@@ -28,7 +28,7 @@ creator = getdata_faster.DatasetCreator(spotify_api=spotify)
 plots_generator = plots.Plots()
 
 request_manager = request_manager.RequestManager()
-output_handler = OutputController()
+output_handler = OutputController(plots_generator)
 
 app = DashProxy(prevent_initial_callbacks=True, transforms=[MultiplexerTransform()], external_stylesheets=EXTERNAL_STYLESHEETS)
 
@@ -118,7 +118,8 @@ def update_on_filter(query,rows):
 #############################################################################################
 @app.callback(
     Output(C.RADAR, "figure"),
-    Input(C.RADAR_DROPDOWN, 'value'), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows")
+    Input(C.RADAR_DROPDOWN, 'value'), State(C.TABLE, "data"), State(C.TABLE, "selected_rows")
+
 )
 def update_radar(radar_behaviour ,rows, selected_rows):
     output_handler.update_state(element=C.RADAR, key="behaviour", value=radar_behaviour)
@@ -146,5 +147,42 @@ def update_top_n(n, attribute,color ,rows, selected_rows):
 
     return plots_generator.topNTracks(pd.DataFrame(rows), attribute=attribute, color=color, top_n = n)
 
+@app.callback(
+    Output(C.PARALLEL_COORDS, "figure"),
+    Input(C.PARALLEL_COORDS_QUERIES_RESET, "n_clicks"), Input(C.PARALLEL_COORDS_ATTR_RESET, "n_clicks"),
+    State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+def reset_coords_options(n_clicks_query, n_clicks_attr, rows, selected_rows):
+    if n_clicks_query > 0:
+        plots_generator.parallel_lines_queries = []
+    if n_clicks_attr > 0:
+        plots_generator.parallel_lines_attributes = ["id"]
+
+    if selected_rows:
+        rows = [rows[index] for index in selected_rows]
+    
+    return plots_generator.parallel_coordinates_plot(pd.DataFrame(rows))
+
+@app.callback(
+    Output(C.PARALLEL_COORDS, "figure"), Input(C.PARALLEL_COORDS_QUERIES, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+def add_query(query, rows, selected_rows):
+    print(query)
+    plots_generator.change_query(query)
+
+    if selected_rows:
+        rows = [rows[index] for index in selected_rows]
+    
+    return plots_generator.parallel_coordinates_plot(pd.DataFrame(rows))
+
+@app.callback(
+    Output(C.PARALLEL_COORDS, "figure"), Input(C.PARALLEL_COORDS_ATTR, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+def add_attr(attr, rows, selected_rows):
+    print(attr)
+    plots_generator.change_attr(attr)
+
+    if selected_rows:
+        rows = [rows[index] for index in selected_rows]
+    
+    return plots_generator.parallel_coordinates_plot(pd.DataFrame(rows))
+        
 if __name__ == "__main__":
     app.run_server(debug=True)

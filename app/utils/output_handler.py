@@ -4,11 +4,9 @@ import pandas as pd
 from plots import plots
 import dash_bootstrap_components as dbc
 from utils import valueBox
-plots_generator = plots.Plots()
-
 
 class OutputController:
-    def __init__(self,):
+    def __init__(self, plots_generator):
         self.state_control = {
             C.RADAR: {
                 "behaviour" : "average"
@@ -19,6 +17,7 @@ class OutputController:
                 "color": "energy",
             }
         }
+        self.plots_generator = plots_generator
 
 
     def update_state(self, element, key, value):
@@ -31,8 +30,10 @@ class OutputController:
         if plots:
             outputs.append(Output(C.RADAR, "figure"))
             outputs.append(Output(C.TOP_N_PLOT, "figure"))
+            outputs.append(Output(C.PARALLEL_COORDS, "figure"))
         if undo:
             outputs.append(Output(C.UNDO_DROP, "options"))
+            outputs.append(Output(C.PARALLEL_COORDS_QUERIES, "options"))
         if footer:
             outputs.append(Output(C.FOOTER, "children"))
 
@@ -47,22 +48,31 @@ class OutputController:
             mask = rows_df[key].str.contains(query)
             rows_df = rows_df.loc[mask]
         if rows:
-            radar_plot = plots_generator.radarPlot(rows_df, behaviour = self.state_control["radar"]["behaviour"])
-            top_n_plot = plots_generator.topNTracks(rows_df)
-            footers[0]["value"] = f"{rows_df['duration'].sum()} sec"
-            footers[1]["figure"] = plots_generator.valenceGauge(rows_df)
+            radar_plot = self.plots_generator.radarPlot(rows_df, behaviour = self.state_control["radar"]["behaviour"])
+            top_n_plot = self.plots_generator.topNTracks(rows_df)
+            parallel_coords_plot = self.plots_generator.parallel_coordinates_plot(rows_df)
+
+            footers[0]["value"] = f"{rows_df['duration'].sum()}"
+            std = 0 if len(rows_df["tempo"]) == 1 else int(rows_df['tempo'].std())
+            footers[1]["value"] = f"{int(rows_df['tempo'].mean())} +- {std}"
+            footers[2]["value"] = f"{int(rows_df['explicit'].mean()*100)}%"
         else:
             radar_plot = {}
+            top_n_plot = {}
+            parallel_coords_plot = {}
             footers[0]["value"] = ""
-            footers[1]["figure"] = None
+            footers[1]["value"] = ""
+            footers[2]["value"] = ""
 
         if table:
             results.append(rows)
 
         results.append(radar_plot)
         results.append(top_n_plot)
+        results.append(parallel_coords_plot)
 
         if request_manager is not None:
+            results.append(request_manager.get_options())
             results.append(request_manager.get_options())
 
         if footers is not None:
@@ -72,4 +82,5 @@ class OutputController:
                 ]
             )
 
+       
         return tuple(results)

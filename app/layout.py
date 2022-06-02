@@ -67,24 +67,42 @@ def get_layout(table, footers_definitions):
                                 ], width=6)]) # style={"display": "none"} We could possibly use this to hide the graph entirely
                         ]),
                     dbc.Row([
-                        dbc.Col([
-                                 dbc.Row( [
-                                            dcc.Slider(0, 30, 5,
-                                                    value=10,
-                                                    id=C.TOP_N_SLIDER),
+                                dbc.Col([
+                                        dbc.Row( [
+                                                dcc.Slider(0, 30, 5,
+                                                        value=10,
+                                                        id=C.TOP_N_SLIDER),
 
-                                            dbc.Col(dcc.Dropdown(options=[ {'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],
-                                                        id=C.TOP_N_ATTR,
-                                                        placeholder="Top 5 in...")),
-                                                        
-                                            dbc.Col(dcc.Dropdown(options=[ {'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],
-                                                                id=C.TOP_N_COLOR,
-                                                                placeholder="color based on"),
-                                                    ),
-                                            ]
-                                    ),
-                                 dbc.Row(dcc.Graph(id=C.TOP_N_PLOT))   
-                                ], width=6)]), # style={"display": "none"} We could possibly use this to hide the graph entirely
+                                                dbc.Col(dcc.Dropdown(options=[ {'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],
+                                                                id=C.TOP_N_ATTR,
+                                                                placeholder="Top 5 in...")),
+                                                                
+                                                dbc.Col(dcc.Dropdown(options=[ {'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],
+                                                                        id=C.TOP_N_COLOR,
+                                                                        placeholder="color based on"),
+                                                        ),
+                                                ]
+                                        ),
+                                        dbc.Row(dcc.Graph(id=C.TOP_N_PLOT))   
+                                        ], width=6),
+                                dbc.Col([
+                                        dbc.Row([
+                                                dbc.Col(dcc.Dropdown(options=[],
+                                                        id=C.PARALLEL_COORDS_QUERIES,
+                                                        placeholder="Select query to be added/removed from plot"), width=8),
+                                                dbc.Col(dbc.Button('Reset queries', id=C.PARALLEL_COORDS_QUERIES_RESET, n_clicks=0, 
+                                                style={"height": "90%"}, outline=True, color="danger", className="me-1"),width=3)    
+                                        ]),
+                                        dbc.Row([
+                                                dbc.Col(dcc.Dropdown(options=C.PARALLEL_ATTR,
+                                                        id=C.PARALLEL_COORDS_ATTR,
+                                                        placeholder="Select attributes to be added/removed from plot"), width=8),
+                                                dbc.Col(dbc.Button('Reset attributes', id=C.PARALLEL_COORDS_ATTR_RESET, n_clicks=0, 
+                                                style={"height": "90%"}, outline=True, color="danger", className="me-1"),width=3)     
+                                        ]),
+                                        dbc.Row(dcc.Graph(id=C.PARALLEL_COORDS)) 
+                                ], width=6)
+                        ]),
                 dbc.Row(
                     [dbc.Col(dbc.Card(get_value_box(**parameters), color='success', inverse=True)) 
                                                     for parameters in footers_definitions ],

@@ -24,6 +24,8 @@ def get_feature_dict(audio_info: tk.model.FullTrack, audio_features: tk.model.Au
     features["speechiness"] = audio_features.speechiness
     features["time_signature"] = audio_features.time_signature
     features["valence"] = audio_features.valence
+    features["tempo"] = audio_features.tempo
+    
 
     return features
 

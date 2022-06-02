@@ -4,7 +4,22 @@ import pandas as pd
 
 class Plots:
     def __init__(self) -> None:
-        pass
+        self.parallel_lines_queries = []
+        self.parallel_lines_attributes = ["id"]
+
+    def change_query(self,query):
+        if query in self.parallel_lines_queries:
+            print("removing")
+            self.parallel_lines_queries.remove(query)
+        else:
+            self.parallel_lines_queries.append(query)
+
+    def change_attr(self,attr):
+        if attr in self.parallel_lines_attributes:
+            print("removing")
+            self.parallel_lines_attributes.remove(attr)
+        else:
+            self.parallel_lines_attributes.append(attr)
 
     def radarPlot(self,data : pd.DataFrame, behaviour="average"):
         if behaviour == "average":
@@ -63,4 +78,16 @@ class Plots:
         keys = pd.DataFrame(data.value_counts())
         fig = px.bar(keys, orientation='h')
         
+        return fig
+
+    def parallel_coordinates_plot(self, df: pd.DataFrame):
+        print(self.parallel_lines_attributes, self.parallel_lines_queries)
+        if not self.parallel_lines_queries or self.parallel_lines_attributes == ["id"]:
+            return {}
+        
+        df = df[df['id'].isin(self.parallel_lines_queries)]
+        
+        fig = px.parallel_coordinates(df[self.parallel_lines_attributes], color="id",
+                                color_continuous_scale=px.colors.diverging.Tealrose,
+                                color_continuous_midpoint=2)
         return fig
