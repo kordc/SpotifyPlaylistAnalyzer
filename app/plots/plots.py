@@ -1,11 +1,15 @@
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
-
+import math
+from plotly.subplots import make_subplots
+import utils.constants as C
 class Plots:
     def __init__(self) -> None:
         self.parallel_lines_queries = []
         self.parallel_lines_attributes = ["id"]
+
+        self.sunburst_path = ['mode', 'explicit', 'key']
 
     def change_query(self,query):
         if query in self.parallel_lines_queries:
@@ -82,12 +86,45 @@ class Plots:
 
     def parallel_coordinates_plot(self, df: pd.DataFrame):
         print(self.parallel_lines_attributes, self.parallel_lines_queries)
-        if not self.parallel_lines_queries or self.parallel_lines_attributes == ["id"]:
+        if not self.parallel_lines_queries:
             return {}
         
-        df = df[df['id'].isin(self.parallel_lines_queries)]
+        df = df[df['query'].isin(self.parallel_lines_queries)]
         
         fig = px.parallel_coordinates(df[self.parallel_lines_attributes], color="id",
                                 color_continuous_scale=px.colors.diverging.Tealrose,
                                 color_continuous_midpoint=2)
+
+                                
         return fig
+
+    def sunburst(self, df, num_of_cols = 3):
+        df = df[C.CATEGORICAL_COLUMNS + ["count"]]
+        queries = df["query"].unique()
+        num_of_plots = len(queries)
+        num_of_rows = max(math.ceil(num_of_plots/num_of_cols),1)
+
+        fig = make_subplots(rows=  num_of_rows , cols = num_of_cols, 
+        specs = [[{"type": "sunburst"} for i in range(num_of_cols)] for j in range(num_of_rows)],
+        subplot_titles=(queries))
+
+        curr_row = 1
+        curr_col = 1
+        for query in queries:
+            df_to_plot = df[df["query"] == query]
+            fig.add_trace(px.sunburst(df_to_plot, path = self.sunburst_path, values='count')["data"][0], 
+                            row=curr_row, col=curr_col,)
+            curr_col+=1
+            if curr_col == num_of_cols + 1:
+                curr_col = 1
+                curr_row += 1
+        
+        fig.update_layout(
+        grid= dict(columns=num_of_cols, rows=num_of_rows),
+        margin = dict(t=20, l=0, r=0, b=10)
+        )
+
+        return fig
+
+    def scatter(self, df, x = "danceability", y="liveness", color= "query", rug_type= "box"):
+        return px.scatter(df, x=x, y=y, color=color, marginal_y=rug_type, marginal_x= rug_type)

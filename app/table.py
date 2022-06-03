@@ -4,7 +4,7 @@ import utils.constants as C
 
 def get_table(columns):
     table = dash_table.DataTable(pd.DataFrame(columns=columns).to_dict("records"),
-                            [{"name": i, "id": i} for i in columns[:3]],
+                            [{"name": i, "id": i} for i in columns[:4]],
                             #hidden_columns = columns[3:], This is not needed we can just omit not necesarry columns and data would be unchanged
                             id = C.TABLE,
                             page_size = 12,

@@ -1,15 +1,17 @@
 import dash_bootstrap_components as dbc
 
-COLUMNS = ['name','album','artist', 'danceability',  'energy',  'speechiness', 
+COLUMNS = ['name','album','artist', "query", 'danceability',  'energy',  'speechiness', 
             'acousticness',  'liveness',  'valence', "duration", "explicit",
             "popularity", "instrumentalness", "key", "loudness",
-            "time_signature", "tempo"]
+            "time_signature", "tempo", "mode"]
 
 NUMERICAL_COLUMNS = ['danceability',  'energy',  'speechiness', 
                   'acousticness',  'liveness',  'valence', "duration",
                   "popularity", "energy", "instrumentalness", "loudness", "tempo"]
 
-PARALLEL_ATTR = COLUMNS[3:]
+CATEGORICAL_COLUMNS = ["explicit", "key", "mode", "query", "time_signature"]
+
+PARALLEL_ATTR = COLUMNS[4:]
 
 FOOTERS = [
             {"title": "Number of minutes", "icon": "fa fa-clock fa-5x", "value": "", "figure": None},
@@ -40,6 +42,18 @@ TOP_N_SLIDER = "top_n_slider"
 
 PARALLEL_COORDS = "parallel_coords"
 PARALLEL_COORDS_ATTR = "parallel_coords_attr"
-PARALLEL_COORDS_ATTR_RESET = "parallel_coords_attr_reset"
+PARALLEL_COORDS_ATTR_ADD = "parallel_coords_attr_reset"
+PARALLEL_COORDS_ATTR_OPTIONS = "parallel_coords_attr_options"
 PARALLEL_COORDS_QUERIES = "parallel_coords_queries"
-PARALLEL_COORDS_QUERIES_RESET = "parallel_coords_queries_reset"
+PARALLEL_COORDS_QUERIES_OPTIONS = "parallel_coords_queries_options"
+PARALLEL_COORDS_QUERIES_ADD = "parallel_coords_queries_reset"
+
+SUNBURST = "sunburst"
+SUNBURST_TEXT = "sunburst_text"
+SUNBURST_SUBMIT = "sunburst_submit"
+
+SCATTER = "scatter"
+SCATTER_X = "scatter_x"
+SCATTER_Y = "scatter_Y"
+SCATTER_COLOR = "scatter_c"
+SCATTER_RUG = "scatter_rug"

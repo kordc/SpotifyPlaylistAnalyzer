@@ -10,8 +10,9 @@ def get_layout(table, footers_definitions):
                     dbc.Row([
                             dbc.Col([
                                 dcc.Dropdown(options=[
-                                                    {'label': 'Funky 80\'s', 'value': 'funky.csv'},
-                                                    {'label': 'top 50 metal', 'value': 'metal.csv'},
+                                                    {'label': 'Different top 50', 'value': 'Different_top_50.csv'},
+                                                    {'label': 'Different genres', 'value': 'Different_genres.csv'},
+                                                    {'label': 'Different modes', 'value': 'Different_modes.csv'},
                                                     ],
                                             id=C.PRE_DROP,
                                             placeholder="Select one of the predefined datasets"),
@@ -69,7 +70,7 @@ def get_layout(table, footers_definitions):
                     dbc.Row([
                                 dbc.Col([
                                         dbc.Row( [
-                                                dcc.Slider(0, 30, 5,
+                                                dcc.Slider(5, 20, 5,
                                                         value=10,
                                                         id=C.TOP_N_SLIDER),
 
@@ -86,23 +87,66 @@ def get_layout(table, footers_definitions):
                                         dbc.Row(dcc.Graph(id=C.TOP_N_PLOT))   
                                         ], width=6),
                                 dbc.Col([
-                                        dbc.Row([
-                                                dbc.Col(dcc.Dropdown(options=[],
-                                                        id=C.PARALLEL_COORDS_QUERIES,
-                                                        placeholder="Select query to be added/removed from plot"), width=8),
-                                                dbc.Col(dbc.Button('Reset queries', id=C.PARALLEL_COORDS_QUERIES_RESET, n_clicks=0, 
-                                                style={"height": "90%"}, outline=True, color="danger", className="me-1"),width=3)    
+                                        dbc.Row(
+                                                [
+                                                dbc.Col(dbc.Input( id=C.PARALLEL_COORDS_QUERIES,
+                                                        type="text",
+                                                        placeholder="Type id of query to be added/removed from the plot, e.g: 0",
+                                                        style = {"width": "100%"},
+                                                        debounce=True),width = 8),
+                                                
+                                                dbc.Col(dbc.Button('Add/remove query', id=C.PARALLEL_COORDS_QUERIES_ADD, n_clicks=0, 
+                                                style={"height": "90%"}, outline=True, color="info", className="me-1"),width=3)    
                                         ]),
+                                        dbc.Row(dbc.Col(html.P(id=C.PARALLEL_COORDS_QUERIES_OPTIONS, children="Available options: "),width=8)),
+
                                         dbc.Row([
-                                                dbc.Col(dcc.Dropdown(options=C.PARALLEL_ATTR,
-                                                        id=C.PARALLEL_COORDS_ATTR,
-                                                        placeholder="Select attributes to be added/removed from plot"), width=8),
-                                                dbc.Col(dbc.Button('Reset attributes', id=C.PARALLEL_COORDS_ATTR_RESET, n_clicks=0, 
-                                                style={"height": "90%"}, outline=True, color="danger", className="me-1"),width=3)     
+                                                dbc.Col(dbc.Input( id=C.PARALLEL_COORDS_ATTR,
+                                                        type="text",
+                                                        placeholder="Type name of attribute to be added/removed from the plot, e.g: danceability",
+                                                        style = {"width": "100%"},
+                                                        debounce=True),width = 8),
+                                                dbc.Col(dbc.Button('Add/remove attr.', id=C.PARALLEL_COORDS_ATTR_ADD, n_clicks=0, 
+                                                style={"height": "90%"}, outline=True, color="info", className="me-1"),width=3)     
                                         ]),
+                                        dbc.Row(dbc.Col(html.P(id=C.PARALLEL_COORDS_ATTR_OPTIONS, 
+                                                children="Available options: " + " ".join(f"{v}," for v in C.NUMERICAL_COLUMNS)),width=11)),
                                         dbc.Row(dcc.Graph(id=C.PARALLEL_COORDS)) 
                                 ], width=6)
                         ]),
+                dbc.Row(([
+                        dbc.Col([dbc.Input(id=C.SUNBURST_TEXT,
+                                                        type="text",
+                                                        placeholder="order of categorical variables separated by comma e.g mode, explicit, time_signature",
+                                                        debounce=True),
+                                html.P(f'available attributes: {", ".join(C.CATEGORICAL_COLUMNS)}')], width = 8),
+                        dbc.Col(dbc.Button('Update', id=C.SUNBURST_SUBMIT, n_clicks=0, 
+                                                style={"height": "90%"}, outline=True, color="info", className="me-1"),width=3),
+                        dcc.Graph(id=C.SUNBURST)
+                ])),
+                 dbc.Row(([
+                         dbc.Col([
+                                html.P("x"),
+                                dcc.Dropdown(options=[ attr for attr in C.NUMERICAL_COLUMNS],
+                                                                        id=C.SCATTER_X,
+                                                                        value=C.NUMERICAL_COLUMNS[0]),
+                                html.P("y"),
+                                dcc.Dropdown(options=[ attr for attr in C.NUMERICAL_COLUMNS],
+                                                                        id=C.SCATTER_Y,
+                                                                        value=C.NUMERICAL_COLUMNS[1]),
+                                html.P("color"),
+                                dcc.Dropdown(options=[ attr for attr in C.CATEGORICAL_COLUMNS],
+                                                                        id=C.SCATTER_COLOR,
+                                                                        value=C.CATEGORICAL_COLUMNS[0]),
+                                html.P("rug type"),
+                                dcc.Dropdown(options=["box", "violin", "rug", "histogram"],
+                                                                        id=C.SCATTER_RUG,
+                                                                        value="box"),
+                                                        
+                         ]),
+                        dbc.Col(dcc.Graph(id=C.SCATTER), width=9)
+                        
+                ])),
                 dbc.Row(
                     [dbc.Col(dbc.Card(get_value_box(**parameters), color='success', inverse=True)) 
                                                     for parameters in footers_definitions ],
