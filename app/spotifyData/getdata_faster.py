@@ -57,6 +57,18 @@ class DatasetCreator:
             return track_info, track_features
 
         else:
-            pass
-           #handle album
+            track_info = []
+            track_features = tk.model.ModelList()
+            max_ids_in_request = 50
+            ids = []
+            album = self.spotify_api.album(item_id)
+
+            for track in album.tracks.items:
+                ids.append(track.id)
+
+            for i in range(0, len(ids), max_ids_in_request):
+                track_info += self.spotify_api.tracks(ids[i:i+max_ids_in_request])
+                track_features += self.spotify_api.tracks_audio_features(ids[i:i+max_ids_in_request])
+
+            return track_info, track_features
 
