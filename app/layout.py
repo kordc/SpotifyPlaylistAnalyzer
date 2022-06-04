@@ -77,7 +77,7 @@ radar_card = dbc.Card(
                 placeholder="Select the behaviour of radar plot"),
             ),
             dbc.Row(dcc.Graph(id=C.RADAR))
-        ]
+        ], style={'height': '100%'}
     )
 )
 
@@ -101,7 +101,7 @@ top_card = dbc.Card([
             ),
             dbc.Row(
                 dcc.Graph(id=C.TOP_N_PLOT))
-        ], width=6, style={'width': '100%'})
+        ], width=6, style={'width': '100%', 'height':'656px'})
     ])
 ])
 
@@ -168,6 +168,11 @@ def get_layout(table, footers_definitions):
     layout =  dbc.Card([
                 dbc.CardBody([
                     header_card,
+                    dbc.Row(
+                        [dbc.Col(dbc.Card(get_value_box(**parameters), color='success', inverse=True))
+                         for parameters in footers_definitions],
+                        className="mb-4",
+                        id=C.FOOTER, style={'margin-top': '15px'}), 
                     dbc.Row([
                         dbc.Col([
                             dbc.Card(
@@ -177,21 +182,16 @@ def get_layout(table, footers_definitions):
                                     ]
                                 )
                             )
-                        ], width=6),
-                        dbc.Col(radar_card, width=6)
+                        ], width=6, style={}),
+                        dbc.Col(radar_card, width=6, style={})
                     ], style={'margin-top': '15px'}),  # style={"display": "none"} We could possibly use this to hide the graph entirely
                     dbc.Row([
                         dbc.Col(top_card),
                         dbc.Col(parallel_lines_card)
                     ], style={'margin-top': '15px'}),
                     sun_card,
-                    scatter_card,
-                    dbc.Row(
-                        [dbc.Col(dbc.Card(get_value_box(**parameters), color='success', inverse=True)) 
-                                                        for parameters in footers_definitions ],
-                        className="mb-4",
-                        id=C.FOOTER, style={'margin-top': '15px'}),
-                ], style={'margin': '1% 10% 1% 10%', 'background': '#ECF0F5'})
+                    scatter_card
+                ], style={'margin': '1% 6% 1% 6%', 'background': '#ECF0F5'})
     ], style={'background': '#ECF0F5'})
 
     return layout
