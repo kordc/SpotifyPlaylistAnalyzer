@@ -8,11 +8,11 @@ def get_value_box(title, icon=None, value = "", figure = None):
         dbc.CardBody(
             [
                dbc.Row([
-                   dbc.Col([html.H5(title, className="card-title"),
+                   dbc.Col([html.H6(title, className="card-title"),
                         html.P(
                             value,
                             className="card-text", 
-                            style={'font-weight': 'bold', 'font-size': '280%'}
+                            style={'font-weight': 'bold', 'font-size': '250%'}
                    )], width=9) if figure is None else dcc.Graph(title, figure=figure),
                 dbc.Col(html.I(className=icon))
                 ])
