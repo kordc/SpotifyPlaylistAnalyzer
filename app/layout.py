@@ -191,7 +191,7 @@ def get_layout(table, footers_definitions):
                                                         for parameters in footers_definitions ],
                         className="mb-4",
                         id=C.FOOTER, style={'margin-top': '15px'}),
-                ], style={'margin': 'auto', 'background': '#ECF0F5'})
-    ])
+                ], style={'margin': '1% 10% 1% 10%', 'background': '#ECF0F5'})
+    ], style={'background': '#ECF0F5'})
 
     return layout
