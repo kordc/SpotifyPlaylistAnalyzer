@@ -12,7 +12,7 @@ def get_value_box(title, icon=None, value = "", figure = None):
                         html.P(
                             value,
                             className="card-text", 
-                            style={'font-weight': 'bold', 'font-size': '280%'}
+                            style={'font-weight': 'bold', 'font-size': '250%'}
                    )], width=9) if figure is None else dcc.Graph(title, figure=figure),
                 dbc.Col(html.I(className=icon))
                 ])
