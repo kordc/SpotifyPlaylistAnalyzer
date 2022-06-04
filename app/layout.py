@@ -101,7 +101,7 @@ top_card = dbc.Card([
             ),
             dbc.Row(
                 dcc.Graph(id=C.TOP_N_PLOT))
-        ], width=6, style={'width': '100%'})
+        ], width=6, style={'width': '100%', 'height':'656px'})
     ])
 ])
 
