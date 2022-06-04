@@ -35,7 +35,9 @@ class Plots:
         if behaviour == "average":
                 radarData = data[['danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence']]
                 toPlot = radarData.mean()
-                fig = px.line_polar(r=toPlot.values, theta=toPlot.index, line_close=True, range_r=[0,1])
+                fig = px.line_polar(r=toPlot.values, theta=toPlot.index, line_close=True, range_r=[
+                                    0, 1], color_discrete_sequence=('#1ED760', '#1ED760', '#1ED760', '#1ED760', '#1ED760', '#1ED760'))
+                fig.update_traces(fill='toself')
         else:
                 if behaviour == "separate":
                         separate_variable = "name"
