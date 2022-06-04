@@ -119,7 +119,6 @@ class DatasetCreator:
 
     def updatePlaylistTracks(self, playlist: Playlist):
         tracks = self.sp.playlist_tracks(playlist.id)
-        #print(tracks['items'][0])
         for line in tracks['items']:
             track = Track(line['track'])
             track.features = self.sp.audio_features(tracks=[track.id])[0]
