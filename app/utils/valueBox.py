@@ -8,7 +8,7 @@ def get_value_box(title, icon=None, value = "", figure = None):
         dbc.CardBody(
             [
                dbc.Row([
-                   dbc.Col([html.H5(title, className="card-title"),
+                   dbc.Col([html.H6(title, className="card-title"),
                         html.P(
                             value,
                             className="card-text", 

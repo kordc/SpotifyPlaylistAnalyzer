@@ -39,7 +39,7 @@ navbar = dbc.Navbar(
                 id="modal",
                 size='xl',
                 scrollable=True,
-                is_open=True,
+                is_open=False,
             ),
         ]
     ),
@@ -107,6 +107,7 @@ search_card = dbc.Card(
 radar_card = dbc.Card(
     dbc.CardBody(
         [
+            html.H2("General statistics"),
             dbc.Row(dcc.Dropdown(options=[
                 {'label': "Average everything",
                  'value': 'average'},
@@ -126,6 +127,7 @@ radar_card = dbc.Card(
 top_card = dbc.Card([
     dbc.CardBody([
         dbc.Col([
+            html.H2("Top 5 songs"),
             dbc.Row([
                 dcc.Slider(5, 20, 5,
                            value=10,
@@ -143,12 +145,13 @@ top_card = dbc.Card([
             ),
             dbc.Row(
                 dcc.Graph(id=C.TOP_N_PLOT))
-        ], width=6, style={'width': '100%', 'height': '656px'})
+        ], width=6, style={'width': '100%', 'height': '556px'})
     ])
 ])
 
 parallel_lines_card = dbc.Card([
     dbc.CardBody([
+        html.H2("Parallel Coordinates Plot"),
         dbc.Col([
             dbc.Row(dbc.Col(dbc.Checklist(options=[],
                                           id=C.PARALLEL_COORDS_QUERIES, inline=True))),
@@ -157,12 +160,13 @@ parallel_lines_card = dbc.Card([
                                           id=C.PARALLEL_COORDS_ATTR, inline=True))),
             dbc.Row(
                 dcc.Graph(id=C.PARALLEL_COORDS))
-        ], width=6, style={'width': '100%'})
+        ], width=6, style={'width': '100%', 'height': '508px'})
     ])
 ])
 
 sun_card = dbc.Card([
     dbc.CardBody([
+        html.H2("Compare data on a sunchart"),
         dbc.Row(([
             dbc.Col([dbc.Input(id=C.SUNBURST_TEXT,
                                type="text",
@@ -179,6 +183,7 @@ sun_card = dbc.Card([
 
 scatter_card = dbc.Card([
     dbc.CardBody([
+        html.H2("Scatterplot"),
         dbc.Row(([
             dbc.Col([
                 html.P("x"),
@@ -221,6 +226,7 @@ def get_layout(table, footers_definitions):
                     dbc.Card(
                         dbc.CardBody(
                             [
+                                html.H2("List of all songs"),
                                 dbc.Table(table)
                             ]
                         )
