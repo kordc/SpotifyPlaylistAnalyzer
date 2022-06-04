@@ -156,13 +156,8 @@ parallel_lines_card = dbc.Card([
             dbc.Row(dbc.Col(dbc.Checklist(options=[],
                                           id=C.PARALLEL_COORDS_QUERIES, inline=True))),
 
-<<<<<<< HEAD
             dbc.Row(dbc.Col(dbc.Checklist(options = [{'label': x, 'value': x} for x in C.NUMERICAL_COLUMNS], value= [C.NUMERICAL_COLUMNS[0]],
                                         id=C.PARALLEL_COORDS_ATTR, inline=True))),
-=======
-            dbc.Row(dbc.Col(dbc.Checklist(options=[{'label': x, 'value': x} for x in C.NUMERICAL_COLUMNS],
-                                          id=C.PARALLEL_COORDS_ATTR, inline=True))),
->>>>>>> 0999f9ad1614086ffeb0ff90eabdafbed6faeb71
             dbc.Row(
                 dcc.Graph(id=C.PARALLEL_COORDS))
         ], width=6, style={'width': '100%', 'height': '508px'})
