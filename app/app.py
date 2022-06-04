@@ -26,6 +26,7 @@ spotify = tk.Spotify(app_token)
 
 creator = getdata_faster.DatasetCreator(spotify_api=spotify)
 plots_generator = plots.Plots()
+plots_generator.set_attr([C.NUMERICAL_COLUMNS[0]])
 
 request_manager = request_manager.RequestManager()
 output_handler = OutputController(plots_generator)
@@ -66,17 +67,23 @@ def undo_step(request_id, rows):
     return output_handler.get_updated(new_rows, request_manager, FOOTERS, table=True)
 
 @app.callback(
-    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True),
+    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True, value_parallel=True),
     State(C.SEARCH_PHRASE, "value"), State(C.SEARCH_TYPE, "value"), State(C.TABLE, "data"),
-    Input(C.SEARCH_BUTTON, "n_clicks")
+    Input(C.SEARCH_BUTTON, "n_clicks"), State(C.PARALLEL_COORDS_QUERIES, "value")
 )
-def add_search_to_table(phrase, type_, rows, n_clicks):
+def add_search_to_table(phrase, type_, rows, n_clicks, checklist_values):
     if n_clicks > 0:
         outcome = creator.search(phrase, type=type_)
         request_manager.add_data(rows, outcome, query_name=phrase) #! Thisk works in place
+
+        if checklist_values is None: checklist_values = []
+        query_id = 0 if type_ == "track" else request_manager.num_of_requests
+        if query_id not in checklist_values:
+            checklist_values.append(query_id)
+
         request_manager.add_request(phrase, type_)
         
-        return output_handler.get_updated(rows, request_manager, FOOTERS, table=True)
+        return output_handler.get_updated(rows, request_manager, FOOTERS, table=True, checklist_values = checklist_values)
 
 @app.callback(
     output_handler.get_outputs(table=True, plots=True, undo=True, footer=True),
@@ -143,7 +150,7 @@ def update_radar(radar_behaviour ,rows, selected_rows):
 @app.callback(
     Output(C.TOP_N_PLOT, "figure"),
     Input(C.TOP_N_SLIDER, 'value'), Input(C.TOP_N_ATTR, 'value'),  Input(C.TOP_N_COLOR, 'value'), 
-    State(C.TABLE, "data"), Input(C.TABLE, "selected_rows")
+    State(C.TABLE, "data"), State(C.TABLE, "selected_rows")
 )
 def update_top_n(n, attribute,color ,rows, selected_rows):
     if color is None: color = "energy"
@@ -160,7 +167,7 @@ def update_top_n(n, attribute,color ,rows, selected_rows):
 
 @app.callback(
     Output(C.PARALLEL_COORDS, "figure"), 
-    Input(C.PARALLEL_COORDS_QUERIES, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+    Input(C.PARALLEL_COORDS_QUERIES, "value"), State(C.TABLE, "data"), State(C.TABLE, "selected_rows"))
 def add_query(query, rows, selected_rows):
     plots_generator.set_query(sorted(query))
 
@@ -171,9 +178,11 @@ def add_query(query, rows, selected_rows):
 
 @app.callback(
     Output(C.PARALLEL_COORDS, "figure"), 
-    Input(C.PARALLEL_COORDS_ATTR, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+    Input(C.PARALLEL_COORDS_ATTR, "value"), State(C.TABLE, "data"), State(C.TABLE, "selected_rows"))
 def add_attr(attr, rows, selected_rows):
+    
     plots_generator.set_attr(attr)
+
     if selected_rows:
         rows = [rows[index] for index in selected_rows]
     
@@ -181,7 +190,7 @@ def add_attr(attr, rows, selected_rows):
 
 @app.callback(
     Output(C.SUNBURST, "figure"), 
-    Input(C.SUNBURST_SUBMIT, "n_clicks"), State(C.SUNBURST_TEXT, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+    Input(C.SUNBURST_SUBMIT, "n_clicks"), State(C.SUNBURST_TEXT, "value"), State(C.TABLE, "data"), State(C.TABLE, "selected_rows"))
 def update_sunburst(n_clicks, path, rows, selected_rows):
     if n_clicks > 0: 
         print(path)
@@ -194,7 +203,7 @@ def update_sunburst(n_clicks, path, rows, selected_rows):
 
 @app.callback(
     Output(C.SCATTER, "figure"),
-    Input(C.SCATTER_X, "value"), Input(C.SCATTER_Y, "value"), Input(C.SCATTER_COLOR, "value"), Input(C.SCATTER_RUG, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows")
+    Input(C.SCATTER_X, "value"), Input(C.SCATTER_Y, "value"), Input(C.SCATTER_COLOR, "value"), Input(C.SCATTER_RUG, "value"), State(C.TABLE, "data"), State(C.TABLE, "selected_rows")
 )
 def update_scatter(x,y,color, rug_type, rows, selected_rows):
     if selected_rows:

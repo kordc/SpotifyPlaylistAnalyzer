@@ -29,8 +29,10 @@ class OutputController:
     def update_state(self, element, key, value):
         self.state_control[element][key] = value
 
-    def get_outputs(self, table=True, plots=True, undo=True, footer=True):
+    def get_outputs(self, table=True, plots=True, undo=True, footer=True, value_parallel = False):
         outputs = []
+        if value_parallel:
+            outputs.append(Output(C.PARALLEL_COORDS_QUERIES, "value"))
         if table:
             outputs.append(Output(C.TABLE, "data"))
         if plots:
@@ -44,20 +46,23 @@ class OutputController:
             outputs.append(Output(C.PARALLEL_COORDS_QUERIES, "options"))
         if footer:
             outputs.append(Output(C.FOOTER, "children"))
+        
 
         return outputs
 
-    def get_updated(self, rows: dict, request_manager=None, footers=None, table=True, search=None):
+    def get_updated(self, rows: dict, request_manager=None, footers=None, table=True, search=None, checklist_values=None):
         results = []
         rows_df = pd.DataFrame(rows)
         
         if search is not None:
             key, query = search
-            print(key,query)
-            print(rows_df[key])
             mask = rows_df[key].str.contains(query)
             rows_df = rows_df.loc[mask]
-            print(rows_df)
+
+        if checklist_values is not None:
+            self.plots_generator.set_query(checklist_values)
+            results.append(checklist_values)
+
         if rows:
             radar_plot = self.plots_generator.radarPlot(rows_df, behaviour = self.state_control["radar"]["behaviour"])
             top_n_plot = self.plots_generator.topNTracks(rows_df)
@@ -98,6 +103,8 @@ class OutputController:
                     dbc.Col(dbc.Card(valueBox.get_value_box(**parameters), color='success', inverse=True)) for parameters in footers
                 ]
             )
+
+        
 
        
         return tuple(results)

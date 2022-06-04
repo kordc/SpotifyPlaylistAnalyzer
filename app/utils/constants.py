@@ -56,5 +56,7 @@ SCATTER_COLOR = "scatter_c"
 SCATTER_RUG = "scatter_rug"
 
 
-COLOR_SCALE_CONTINUOUS = "tealgrn"
-COLOR_SCALE_DISCRETE = ['#59f5d1', '#0ea58d', '#8f062f', '#db5550', '#23ffa6']
+#COLOR_SCALE_CONTINUOUS = "tealgrn"
+COLOR_SCALE_CONTINUOUS = [ '#ffffcc', '#d9f0a3', '#addd8e', '#78c679', '#41ab5d', '#238443', '#005a32']
+#COLOR_SCALE_DISCRETE = ['#1ED760', '#005a32', '#238443', '#41ab5d', '#78c679', '#addd8e', '#d9f0a3',  '#ffffcc']
+COLOR_SCALE_DISCRETE_TWO = ['#1ED760', '#005a32']
