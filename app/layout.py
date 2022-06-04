@@ -100,8 +100,8 @@ search_card = dbc.Card(
                     html.P("LOADING")
                 ], width=2, style={'text-align': 'center'})
             ]),
-        ], style={}
-    )
+        ]
+    ), style={'text-align': 'center'}
 )
 
 radar_card = dbc.Card(
@@ -120,7 +120,7 @@ radar_card = dbc.Card(
                 placeholder="Select the behaviour of radar plot"),
             ),
             dbc.Row(dcc.Graph(id=C.RADAR))
-        ], style={'height': '100%'}
+        ], style={'height': '100%', 'text-align': 'center'}
     )
 )
 
@@ -145,8 +145,8 @@ top_card = dbc.Card([
             ),
             dbc.Row(
                 dcc.Graph(id=C.TOP_N_PLOT))
-        ], width=6, style={'width': '100%', 'height': '556px'})
-    ])
+        ], width=6, style={'width': '100%', 'height': '556px', 'text-align': 'center'})
+    ], style={'text-align': 'center'})
 ])
 
 parallel_lines_card = dbc.Card([
@@ -161,23 +161,23 @@ parallel_lines_card = dbc.Card([
             dbc.Row(
                 dcc.Graph(id=C.PARALLEL_COORDS))
         ], width=6, style={'width': '100%', 'height': '508px'})
-    ])
+    ], style={'text-align': 'center'})
 ])
 
 sun_card = dbc.Card([
     dbc.CardBody([
         html.H2("Compare data on a sunchart"),
-        dbc.Row(([
+        dbc.Row([
             dbc.Col([dbc.Input(id=C.SUNBURST_TEXT,
                                type="text",
                                placeholder="order of categorical variables separated by comma e.g mode, explicit, time_signature",
                                debounce=True),
-                     html.P(f'available attributes: {", ".join(C.CATEGORICAL_COLUMNS)}')], width=8),
+                     html.P(f'available attributes: {", ".join(C.CATEGORICAL_COLUMNS)}')], width=8, style={'text-align': 'left'}),
             dbc.Col(dbc.Button('Update', id=C.SUNBURST_SUBMIT, n_clicks=0,
                                style={"height": "90%"}, outline=True, color="info", className="me-1"), width=3),
             dcc.Graph(id=C.SUNBURST)
-        ]))
-    ])
+        ])
+    ], style={'text-align': 'center'})
 ], style={'margin-top': '15px'})
 
 
@@ -207,7 +207,7 @@ scatter_card = dbc.Card([
             dbc.Col(dcc.Graph(id=C.SCATTER), width=9)
 
         ]))
-    ])
+    ], style={'text-align': 'center'})
 ], style={'margin-top': '15px'})
 
 
@@ -228,7 +228,7 @@ def get_layout(table, footers_definitions):
                             [
                                 html.H2("List of all songs"),
                                 dbc.Table(table)
-                            ]
+                            ], style={'text-align': 'center'}
                         )
                     )
                 ], width=6, style={}),
