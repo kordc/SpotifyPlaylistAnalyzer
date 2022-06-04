@@ -172,11 +172,11 @@ sun_card = dbc.Card([
                                type="text",
                                placeholder="order of categorical variables separated by comma e.g mode, explicit, time_signature",
                                debounce=True),
-                     html.P(f'available attributes: {", ".join(C.CATEGORICAL_COLUMNS)}')], width=8, style={'text-align': 'left'}),
+                     html.P(f'available attributes: {", ".join(C.CATEGORICAL_COLUMNS)}')], width=11, style={'text-align': 'center'}),
             dbc.Col(dbc.Button('Update', id=C.SUNBURST_SUBMIT, n_clicks=0,
-                               style={"height": "90%"}, outline=True, color="info", className="me-1"), width=3),
+                               style={"height": "90%"}, outline=True, color="info", className="me-1"), width=1),
             dcc.Graph(id=C.SUNBURST)
-        ])
+        ], style={'margin': 'auto'})
     ], style={'text-align': 'center'})
 ], style={'margin-top': '15px'})
 
