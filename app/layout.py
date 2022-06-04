@@ -168,6 +168,11 @@ def get_layout(table, footers_definitions):
     layout =  dbc.Card([
                 dbc.CardBody([
                     header_card,
+                    dbc.Row(
+                        [dbc.Col(dbc.Card(get_value_box(**parameters), color='success', inverse=True))
+                         for parameters in footers_definitions],
+                        className="mb-4",
+                        id=C.FOOTER, style={'margin-top': '15px'}), 
                     dbc.Row([
                         dbc.Col([
                             dbc.Card(
@@ -185,13 +190,8 @@ def get_layout(table, footers_definitions):
                         dbc.Col(parallel_lines_card)
                     ], style={'margin-top': '15px'}),
                     sun_card,
-                    scatter_card,
-                    dbc.Row(
-                        [dbc.Col(dbc.Card(get_value_box(**parameters), color='success', inverse=True)) 
-                                                        for parameters in footers_definitions ],
-                        className="mb-4",
-                        id=C.FOOTER, style={'margin-top': '15px'}),
-                ], style={'margin': '1% 10% 1% 10%', 'background': '#ECF0F5'})
+                    scatter_card
+                ], style={'margin': '1% 6% 1% 6%', 'background': '#ECF0F5'})
     ], style={'background': '#ECF0F5'})
 
     return layout
