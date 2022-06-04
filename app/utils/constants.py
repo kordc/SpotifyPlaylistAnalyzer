@@ -15,7 +15,7 @@ PARALLEL_ATTR = COLUMNS[4:]
 
 FOOTERS = [
             {"title": "Number of minutes", "icon": "fa fa-clock fa-5x", "value": "", "figure": None},
-            {"title": "Mean of the BPM", "icon": "fa fa-heart fa-5x", "value": "", "figure": None},
+            {"title": "Tempo (BPM)", "icon": "fa fa-heart fa-5x", "value": "", "figure": None},
             {"title": "Percentage of explicit songs", "icon": "fa fa-exclamation fa-5x", "value": "", "figure": None},    
           ]
 

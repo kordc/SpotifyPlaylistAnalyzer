@@ -4,10 +4,7 @@ from utils.valueBox import get_value_box
 
 import utils.constants as C
 
-HELP = dcc.Markdown('''
-
-    # Here the help will be placed
-''')
+from utils.help import HELP
 
 navbar = dbc.Navbar(
     dbc.Container(
@@ -39,7 +36,7 @@ navbar = dbc.Navbar(
                 id="modal",
                 size='xl',
                 scrollable=True,
-                is_open=False,
+                is_open=True,
             ),
         ]
     ),
@@ -113,7 +110,7 @@ radar_card = dbc.Card(
                  'value': 'average'},
                 {'label': 'By query',
                  'value': 'by_query'},
-                {'label': 'Each song separately (Mess, if you don\'t select some songs)',
+                {'label': 'Each song separately',
                  'value': 'separate'},
             ],
                 id=C.RADAR_DROPDOWN,
@@ -127,10 +124,10 @@ radar_card = dbc.Card(
 top_card = dbc.Card([
     dbc.CardBody([
         dbc.Col([
-            html.H2("Top 5 songs"),
+            html.H2("Top songs"),
             dbc.Row([
                 dcc.Slider(5, 20, 5,
-                           value=10,
+                           value=5,
                            id=C.TOP_N_SLIDER),
 
                 dbc.Col(dcc.Dropdown(options=[{'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],

@@ -24,7 +24,6 @@ class RequestManager():
 
     def add_data(self, rows: list, outcome, query_name: str):
         audio_info, audio_features = outcome
-        print(type(audio_features))
         if isinstance(audio_features, tk.model.AudioFeatures):
             rows.insert(0, self.get_instance(audio_info, audio_features, self.your_playlist_name, "track"))
         

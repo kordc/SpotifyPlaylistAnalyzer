@@ -1,4 +1,7 @@
-# Overview
+from dash import dcc
+
+
+HELP = dcc.Markdown('''# Overview
 
 Spotify Analyzer is an app which allows you analyzing tracks, albums and (public) playlists from Spotify. 
 
@@ -81,3 +84,4 @@ We have following audio attributes:
 * Key - the key the track is in. Integers map to pitches using standard Pitch Class notation. E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1.
 * Explicit - define whether a song is explicit
 * Time_signature - nn estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of "3/4", to "7/4".
+''')

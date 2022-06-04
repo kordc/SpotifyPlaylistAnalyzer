@@ -15,14 +15,12 @@ class Plots:
 
     def change_query(self,query):
         if query in self.parallel_lines_queries:
-            #print("removing")
             self.parallel_lines_queries.remove(query)
         else:
             self.parallel_lines_queries.append(query)
 
     def change_attr(self,attr):
         if attr in self.parallel_lines_attributes:
-            #print("removing")
             self.parallel_lines_attributes.remove(attr)
         else:
             self.parallel_lines_attributes.append(attr)
@@ -138,5 +136,4 @@ class Plots:
         return fig
 
     def scatter(self, df, x = "danceability", y="liveness", color= "query", rug_type= "box"):
-        #print(df.columns)
         return px.scatter(df, x=x, y=y, color=color, marginal_y=rug_type, marginal_x= rug_type, hover_name="name", color_discrete_sequence=C.COLOR_SCALE_DISCRETE_TWO)
