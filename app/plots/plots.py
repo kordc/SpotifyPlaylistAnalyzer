@@ -30,14 +30,12 @@ class Plots:
 
     def change_query(self,query):
         if query in self.parallel_lines_queries:
-            #print("removing")
             self.parallel_lines_queries.remove(query)
         else:
             self.parallel_lines_queries.append(query)
 
     def change_attr(self,attr):
         if attr in self.parallel_lines_attributes:
-            #print("removing")
             self.parallel_lines_attributes.remove(attr)
         else:
             self.parallel_lines_attributes.append(attr)
