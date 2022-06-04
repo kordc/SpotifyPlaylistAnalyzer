@@ -160,25 +160,22 @@ def update_top_n(n, attribute,color ,rows, selected_rows):
 
 @app.callback(
     Output(C.PARALLEL_COORDS, "figure"), 
-    Input(C.PARALLEL_COORDS_QUERIES_ADD, "n_clicks"), State(C.PARALLEL_COORDS_QUERIES, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
-def add_query(n_clicks, query, rows, selected_rows):
-    if n_clicks > 0:
-        plots_generator.change_query(request_manager.requests[int(query)]["label"])
+    Input(C.PARALLEL_COORDS_QUERIES, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+def add_query(query, rows, selected_rows):
+    plots_generator.set_query(sorted(query))
 
-        if selected_rows:
-            rows = [rows[index] for index in selected_rows]
+    if selected_rows:
+        rows = [rows[index] for index in selected_rows]
     
     return plots_generator.parallel_coordinates_plot(pd.DataFrame(rows))
 
 @app.callback(
     Output(C.PARALLEL_COORDS, "figure"), 
-    Input(C.PARALLEL_COORDS_ATTR_ADD, "n_clicks"), State(C.PARALLEL_COORDS_ATTR, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
-def add_attr(n_clicks, attr, rows, selected_rows):
-    if n_clicks > 0: 
-        plots_generator.change_attr(attr)
-
-        if selected_rows:
-            rows = [rows[index] for index in selected_rows]
+    Input(C.PARALLEL_COORDS_ATTR, "value"), State(C.TABLE, "data"), Input(C.TABLE, "selected_rows"))
+def add_attr(attr, rows, selected_rows):
+    plots_generator.set_attr(attr)
+    if selected_rows:
+        rows = [rows[index] for index in selected_rows]
     
     return plots_generator.parallel_coordinates_plot(pd.DataFrame(rows))
 

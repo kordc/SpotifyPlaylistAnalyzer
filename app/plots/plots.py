@@ -25,6 +25,12 @@ class Plots:
         else:
             self.parallel_lines_attributes.append(attr)
 
+    def set_attr(self, attr: list):
+        self.parallel_lines_attributes = ["id"] + attr
+
+    def set_query(self, query: list):
+        self.parallel_lines_queries = query
+
     def radarPlot(self,data : pd.DataFrame, behaviour="average"):
         if behaviour == "average":
                 radarData = data[['danceability',  'energy',  'speechiness',  'acousticness',  'liveness',  'valence']]
@@ -86,14 +92,12 @@ class Plots:
 
     def parallel_coordinates_plot(self, df: pd.DataFrame):
         print(self.parallel_lines_attributes, self.parallel_lines_queries)
+
         if not self.parallel_lines_queries:
             return {}
         
-        df = df[df['query'].isin(self.parallel_lines_queries)]
-        
-        fig = px.parallel_coordinates(df[self.parallel_lines_attributes], color="id",
-                                color_continuous_scale=px.colors.diverging.Tealrose,
-                                color_continuous_midpoint=2)
+        df = df[df['id'].isin(self.parallel_lines_queries)].reset_index()
+        fig = px.parallel_coordinates(df[self.parallel_lines_attributes], color='id')
 
                                 
         return fig

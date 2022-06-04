@@ -41,7 +41,7 @@ class OutputController:
             outputs.append(Output(C.SCATTER, "figure"))
         if undo:
             outputs.append(Output(C.UNDO_DROP, "options"))
-            outputs.append(Output(C.PARALLEL_COORDS_QUERIES_OPTIONS, "children"))
+            outputs.append(Output(C.PARALLEL_COORDS_QUERIES, "options"))
         if footer:
             outputs.append(Output(C.FOOTER, "children"))
 
@@ -90,7 +90,7 @@ class OutputController:
 
         if request_manager is not None:
             results.append(request_manager.get_options())
-            results.append(" ".join([ f"{k}: {v['label']}" for k,v in request_manager.requests.items() ]))
+            results.append([ {'label': f"{k}: {v['label']}", "value": k} for k,v in request_manager.requests.items() ])
 
         if footers is not None:
             results.append(

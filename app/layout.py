@@ -108,33 +108,11 @@ top_card = dbc.Card([
 parallel_lines_card = dbc.Card([
     dbc.CardBody([
         dbc.Col([
-            dbc.Row(
-                [
-                    dbc.Col(dbc.Input(id=C.PARALLEL_COORDS_QUERIES,
-                                      type="text",
-                                      placeholder="Type id of query to be added/removed from the plot, e.g: 0",
-                                      style={
-                                          "width": "100%"},
-                                      debounce=True), width=8),
+            dbc.Row(dbc.Col(dbc.Checklist(options = [],
+                                        id=C.PARALLEL_COORDS_QUERIES, inline=True))),
 
-                    dbc.Col(dbc.Button('Add/remove query', id=C.PARALLEL_COORDS_QUERIES_ADD, n_clicks=0,
-                                       style={"height": "90%"}, outline=True, color="info", className="me-1"), width=3)
-                ]),
-            dbc.Row(dbc.Col(html.P(
-                id=C.PARALLEL_COORDS_QUERIES_OPTIONS, children="Available options: "), width=8)),
-
-            dbc.Row([
-                dbc.Col(dbc.Input(id=C.PARALLEL_COORDS_ATTR,
-                                  type="text",
-                                  placeholder="Type name of attribute to be added/removed from the plot, e.g: danceability",
-                                  style={
-                                      "width": "100%"},
-                                  debounce=True), width=8),
-                dbc.Col(dbc.Button('Add/remove attr.', id=C.PARALLEL_COORDS_ATTR_ADD, n_clicks=0,
-                                   style={"height": "90%"}, outline=True, color="info", className="me-1"), width=3)
-            ]),
-            dbc.Row(dbc.Col(html.P(id=C.PARALLEL_COORDS_ATTR_OPTIONS,
-                                   children="Available options: " + " ".join(f"{v}," for v in C.NUMERICAL_COLUMNS)), width=11)),
+            dbc.Row(dbc.Col(dbc.Checklist(options = [{'label': x, 'value': x} for x in C.NUMERICAL_COLUMNS],
+                                        id=C.PARALLEL_COORDS_ATTR, inline=True))),
             dbc.Row(
                 dcc.Graph(id=C.PARALLEL_COORDS))
         ], width=6, style={'width': '100%'})

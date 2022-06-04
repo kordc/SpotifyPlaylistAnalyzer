@@ -7,7 +7,7 @@ COLUMNS = ['name','album','artist', "query", 'danceability',  'energy',  'speech
 
 NUMERICAL_COLUMNS = ['danceability',  'energy',  'speechiness', 
                   'acousticness',  'liveness',  'valence', "duration",
-                  "popularity", "energy", "instrumentalness", "loudness", "tempo"]
+                  "popularity", "instrumentalness", "loudness", "tempo"]
 
 CATEGORICAL_COLUMNS = ["explicit", "key", "mode", "query", "time_signature"]
 
@@ -42,11 +42,8 @@ TOP_N_SLIDER = "top_n_slider"
 
 PARALLEL_COORDS = "parallel_coords"
 PARALLEL_COORDS_ATTR = "parallel_coords_attr"
-PARALLEL_COORDS_ATTR_ADD = "parallel_coords_attr_reset"
-PARALLEL_COORDS_ATTR_OPTIONS = "parallel_coords_attr_options"
 PARALLEL_COORDS_QUERIES = "parallel_coords_queries"
-PARALLEL_COORDS_QUERIES_OPTIONS = "parallel_coords_queries_options"
-PARALLEL_COORDS_QUERIES_ADD = "parallel_coords_queries_reset"
+
 
 SUNBURST = "sunburst"
 SUNBURST_TEXT = "sunburst_text"
