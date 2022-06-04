@@ -54,3 +54,7 @@ SCATTER_X = "scatter_x"
 SCATTER_Y = "scatter_Y"
 SCATTER_COLOR = "scatter_c"
 SCATTER_RUG = "scatter_rug"
+
+
+COLOR_SCALE_CONTINUOUS = "tealgrn"
+COLOR_SCALE_DISCRETE = ['#59f5d1', '#0ea58d', '#8f062f', '#db5550', '#23ffa6']

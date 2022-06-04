@@ -79,7 +79,7 @@ class Plots:
 
     def topNTracks(self, data: pd.DataFrame, attribute='danceability', color='energy', top_n = 5):
         plotData = data.sort_values(by=[attribute], ascending=False)
-        fig = px.bar(plotData.head(top_n), x='name', y=attribute, color=color, range_color=[0,1])
+        fig = px.bar(plotData.head(top_n), x='name', y=attribute, color=color, range_color=[0,1],color_continuous_scale=C.COLOR_SCALE_CONTINUOUS)
         fig.update_layout(title_text=f'Top {top_n} tracks based on {attribute}', title_x=0.5, title_font = {'size' : 24})
 
         return fig
@@ -97,7 +97,8 @@ class Plots:
             return {}
         
         df = df[df['id'].isin(self.parallel_lines_queries)].reset_index()
-        fig = px.parallel_coordinates(df[self.parallel_lines_attributes], color='id')
+
+        fig = px.parallel_coordinates(df[self.parallel_lines_attributes], color='id', color_continuous_scale=C.COLOR_SCALE_CONTINUOUS)
 
                                 
         return fig
@@ -116,7 +117,7 @@ class Plots:
         curr_col = 1
         for query in queries:
             df_to_plot = df[df["query"] == query]
-            fig.add_trace(px.sunburst(df_to_plot, path = self.sunburst_path, values='count')["data"][0], 
+            fig.add_trace(px.sunburst(df_to_plot, path = self.sunburst_path, values='count', color_discrete_sequence=C.COLOR_SCALE_DISCRETE)["data"][0], 
                             row=curr_row, col=curr_col,)
             curr_col+=1
             if curr_col == num_of_cols + 1:
@@ -125,10 +126,11 @@ class Plots:
         
         fig.update_layout(
         grid= dict(columns=num_of_cols, rows=num_of_rows),
-        margin = dict(t=20, l=0, r=0, b=10)
+        margin = dict(t=20, l=0, r=0, b=10),
+        sunburstcolorway = C.COLOR_SCALE_DISCRETE,
         )
 
         return fig
 
     def scatter(self, df, x = "danceability", y="liveness", color= "query", rug_type= "box"):
-        return px.scatter(df, x=x, y=y, color=color, marginal_y=rug_type, marginal_x= rug_type)
+        return px.scatter(df, x=x, y=y, color=color, marginal_y=rug_type, marginal_x= rug_type, color_discrete_sequence=C.COLOR_SCALE_DISCRETE)

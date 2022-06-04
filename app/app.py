@@ -61,7 +61,7 @@ def load_predefined_data(path):
 )
 def undo_step(request_id, rows):
     if request_id is not None:
-        plots_generator.change_query(request_manager.requests[int(request_id)]["label"])
+        plots_generator.change_query(int(request_id))
     new_rows = request_manager.remove_data(rows, request_id)
     return output_handler.get_updated(new_rows, request_manager, FOOTERS, table=True)
 
