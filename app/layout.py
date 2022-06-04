@@ -77,7 +77,7 @@ radar_card = dbc.Card(
                 placeholder="Select the behaviour of radar plot"),
             ),
             dbc.Row(dcc.Graph(id=C.RADAR))
-        ]
+        ], style={'height': '100%'}
     )
 )
 
@@ -177,8 +177,8 @@ def get_layout(table, footers_definitions):
                                     ]
                                 )
                             )
-                        ], width=6),
-                        dbc.Col(radar_card, width=6)
+                        ], width=6, style={}),
+                        dbc.Col(radar_card, width=6, style={})
                     ], style={'margin-top': '15px'}),  # style={"display": "none"} We could possibly use this to hide the graph entirely
                     dbc.Row([
                         dbc.Col(top_card),
