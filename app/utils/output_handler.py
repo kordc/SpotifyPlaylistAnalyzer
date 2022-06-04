@@ -67,7 +67,7 @@ class OutputController:
 
             footers[0]["value"] = f"{rows_df['duration'].sum()}"
             std = 0 if len(rows_df["tempo"]) == 1 else int(rows_df['tempo'].std())
-            footers[1]["value"] = f"{int(rows_df['tempo'].mean())} +- {std}"
+            footers[1]["value"] = f"{int(rows_df['tempo'].mean())} (+/- {std})"
             footers[2]["value"] = f"{int(rows_df['explicit'].mean()*100)}%"
         else:
             radar_plot = {}
