@@ -51,8 +51,8 @@ On default this bar chart shows top 5 category based on danceability, while the 
 
 ### Parallel Coordinates Plot
 
-A parallel coordinates plot show nice corelations between parameters. It's very helpful with multivariete data. 
-You can choose what parameters you want to include in the plot, as well as specific queries.
+On parallel coordinates plot you can see for some clusters. It's very helpful with multivariete data. 
+You can choose what parameters you want to include in the plot, as well as specific queries (Unfortunatelly these are denoted by numbers, you can read them at the left of each query).
 
 ### Compare data on a sunchart
 
@@ -61,7 +61,7 @@ A sunchart is a round plot which shows us proportions in data given the paramete
 
 ### Scatterplot
 
-Here we can show the distributtion of the data given parameters. All parameters can be changed using left-side drop-down menus.
+Here we can see relations between parameters but also the distributtion of the data given on the rug plots. All parameters can be changed using left-side drop-down menus.
 
 ## Parameters overview
 
