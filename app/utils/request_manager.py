@@ -1,11 +1,12 @@
-from spotifyData import getdata, getdata_faster
 import tekore as tk
 from spotifyData.getdata_faster import get_feature_dict
 
 class RequestManager():
+    """This class handles entire logic of adding data and queries
+    """
     def __init__(self):
         self.requests = {}
-        self.num_of_requests = 1
+        self.num_of_requests = 1 # since 0 is for user's playlist other requests starts from 1
         self.your_playlist_id = 0 # This is is devoted for the tracks added by the user
         self.your_playlist_name = "Your playlist"
         
@@ -24,7 +25,6 @@ class RequestManager():
 
     def add_data(self, rows: list, outcome, query_name: str):
         audio_info, audio_features = outcome
-        print(type(audio_features))
         if isinstance(audio_features, tk.model.AudioFeatures):
             rows.insert(0, self.get_instance(audio_info, audio_features, self.your_playlist_name, "track"))
         
@@ -36,9 +36,9 @@ class RequestManager():
 
     def get_instance(self, audio_info: tk.model.FullTrack, audio_features: tk.model.AudioFeatures, query_name : str, type_= "track"):
         features = get_feature_dict(audio_info, audio_features)
-        features["id"] = self.num_of_requests if type_ != "track" else self.your_playlist_id
+        features["id"] = self.num_of_requests if type_ != "track" else self.your_playlist_id # sometimes we need query as categorical sometimes as numerical
         features["query"] = query_name if type_ != "track" else self.your_playlist_name
-        features["count"] = 1 #special thing for sunburst plot
+        features["count"] = 1 #special thing for sunburst plot, to show proportions apropriatelly
         return features
 
     def remove_request(self, request_id):

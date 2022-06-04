@@ -1,20 +1,17 @@
 import pandas as pd
 import plotly.express as px
 
-from dash import dcc, html
 from dash_extensions.enrich import Output, DashProxy, Input, MultiplexerTransform, State
 import yaml
 import tekore as tk
 from spotifyData import getdata_faster
 from plots import plots
-from utils import request_manager, valueBox
+from utils import request_manager
 from utils.constants import COLUMNS, FOOTERS, EXTERNAL_STYLESHEETS
 import utils.constants as C
 from table import get_table
 from layout import get_layout
 from utils.output_handler import OutputController
-import dash_bootstrap_components as dbc
-
 
 credentials_path = "credentials.yaml"
 with open(credentials_path) as file:
@@ -26,7 +23,7 @@ spotify = tk.Spotify(app_token)
 
 creator = getdata_faster.DatasetCreator(spotify_api=spotify)
 plots_generator = plots.Plots()
-plots_generator.set_attr([C.NUMERICAL_COLUMNS[0]])
+plots_generator.set_attr([C.NUMERICAL_COLUMNS[0]]) # This sets default attribute to show on plots
 
 request_manager = request_manager.RequestManager()
 output_handler = OutputController(plots_generator)
@@ -44,30 +41,33 @@ app.layout = get_layout(table=table, footers_definitions=FOOTERS)
 ##############################################################################################
 #############################################################################################
 @app.callback(
-    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True),
+    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True, value_parallel = True, loading=C.LOADING_PREDEFINED),
     Input(C.PRE_DROP, 'value')
 )
 def load_predefined_data(path):
+    
     request_manager.reset_requests()
     rows = pd.read_csv(path)
-    
+    queries = []
     for query in rows["query"].unique():
+        queries.append(request_manager.num_of_requests) # this is for parallel coordinates plot
         request_manager.add_request(query, "playlist")
     
-    return output_handler.get_updated(rows.to_dict("records"), request_manager, FOOTERS, table=True)
+    return output_handler.get_updated(rows.to_dict("records"), request_manager, FOOTERS, table=True, checklist_values=queries)
 
 @app.callback(
-    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True),
+    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True, loading=C.LOADING_UNDO),
     Input(C.UNDO_DROP, 'value'), State(C.TABLE, "data")
 )
 def undo_step(request_id, rows):
     if request_id is not None:
-        plots_generator.change_query(int(request_id))
+        plots_generator.change_query(int(request_id)) # This is for parallel coordinates plot
+
     new_rows = request_manager.remove_data(rows, request_id)
     return output_handler.get_updated(new_rows, request_manager, FOOTERS, table=True)
 
 @app.callback(
-    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True, value_parallel=True),
+    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True, value_parallel=True, loading=C.LOADING_SEARCH),
     State(C.SEARCH_PHRASE, "value"), State(C.SEARCH_TYPE, "value"), State(C.TABLE, "data"),
     Input(C.SEARCH_BUTTON, "n_clicks"), State(C.PARALLEL_COORDS_QUERIES, "value")
 )
@@ -76,33 +76,35 @@ def add_search_to_table(phrase, type_, rows, n_clicks, checklist_values):
         outcome = creator.search(phrase, type=type_)
         request_manager.add_data(rows, outcome, query_name=phrase) #! Thisk works in place
 
+        #This is for parallel coordinates plot
         if checklist_values is None: checklist_values = []
         query_id = 0 if type_ == "track" else request_manager.num_of_requests
         if query_id not in checklist_values:
             checklist_values.append(query_id)
 
         request_manager.add_request(phrase, type_)
-        
+
         return output_handler.get_updated(rows, request_manager, FOOTERS, table=True, checklist_values = checklist_values)
 
 @app.callback(
-    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True),
+    output_handler.get_outputs(table=True, plots=True, undo=True, footer=True, loading=C.LOADING_RESET),
     Input(C.RESET_BUTTON, 'n_clicks'),
 )
 def reset_table(n_clicks):
     if n_clicks > 0:
         request_manager.reset_requests()
+        plots_generator.set_query([])
         return output_handler.get_updated(pd.DataFrame(columns=COLUMNS).to_dict("records"), request_manager, FOOTERS, table=True)
 
 @app.callback(
-    output_handler.get_outputs(table=False, plots=True, undo=False, footer=True),
+    output_handler.get_outputs(table=False, plots=True, undo=False, footer=True, loading=C.LOADING_REMOVAL),
     Input(C.TABLE, "data_previous"), State(C.TABLE, "data")
 )
 def update_at_removal(old_data, rows):
     return output_handler.get_updated(rows, None, FOOTERS, table=False)
 
 @app.callback(
-    output_handler.get_outputs(table=False, plots=True, undo=False, footer=True),
+    output_handler.get_outputs(table=False, plots=True, undo=False, footer=True, loading=C.LOADING_SELECT),
     Input(C.TABLE, "selected_rows"), State(C.TABLE, "data")
 )
 def only_selected_rows(selected_rows,rows):
@@ -112,11 +114,12 @@ def only_selected_rows(selected_rows,rows):
 
 
 @app.callback(
-    output_handler.get_outputs(table=False, plots=True, undo=False, footer=True),
+    output_handler.get_outputs(table=False, plots=True, undo=False, footer=True, loading=C.LOADING_FILTER),
     Input(C.TABLE, "filter_query"), State(C.TABLE, "data")
 )
 def update_on_filter(query,rows):
     if query:
+        #This querying system works weirdly I have to do some gymnastic with returned sentences to make it work
         query = query.split(" ")
         if len(query) == 2:
             key, query_value = query[0], query[1], (" ".join(query[2:])).replace('"','')
@@ -163,7 +166,7 @@ def update_top_n(n, attribute,color ,rows, selected_rows):
     if selected_rows:
         rows = [rows[index] for index in selected_rows]
 
-    return plots_generator.topNTracks(pd.DataFrame(rows), attribute=attribute, color=color, top_n = n)
+    return plots_generator.topNTracks(pd.DataFrame(rows), attribute=attribute, color=color, n = n)
 
 @app.callback(
     Output(C.PARALLEL_COORDS, "figure"), 

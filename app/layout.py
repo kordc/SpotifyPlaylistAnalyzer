@@ -81,11 +81,11 @@ search_card = dbc.Card(
                         inline=True,
                         label_style={
                         "margin-right": "30px"},
-                        inputStyle={"margin-right": "5px"})
+                        inputStyle={"margin-right": "5px"}),
                 ], width=3),
                 dbc.Col([
                     dbc.Button('Search', id=C.SEARCH_BUTTON, n_clicks=0,
-                               style={"height": "90%"}, outline=True, color="info", className="me-1")
+                               style={"height": "90%"}, outline=True, color="success", className="me-1")
                 ], width=1, style={"border-right": "2px solid #1DB954", 'text-align': 'center'}),
                 dbc.Col([
                     dcc.Dropdown(options=[],
@@ -96,9 +96,16 @@ search_card = dbc.Card(
                     dbc.Button('Reset', id=C.RESET_BUTTON, n_clicks=0, style={"height": "90%"},
                                outline=True, color="danger", className="me-1"),
                 ], width=1, style={"border-right": "2px solid #1DB954", 'text-align': 'center'}),
-                dbc.Col([
-                    html.P("LOADING")
-                ], width=2, style={'text-align': 'center'})
+               dbc.Col([
+                   #7 of these components are needed as it works only if one output is connected with one component
+                   dbc.Spinner(html.Div(id=C.LOADING_PREDEFINED), color="success",spinner_style=C.SPINNER_STYLE),
+                   dbc.Spinner(html.Div(id=C.LOADING_SEARCH), color="success",spinner_style=C.SPINNER_STYLE),
+                   dbc.Spinner(html.Div(id=C.LOADING_RESET), color="success",spinner_style=C.SPINNER_STYLE),
+                   dbc.Spinner(html.Div(id=C.LOADING_UNDO), color="success",spinner_style=C.SPINNER_STYLE),
+                   dbc.Spinner(html.Div(id=C.LOADING_REMOVAL), color="success",spinner_style=C.SPINNER_STYLE),
+                   dbc.Spinner(html.Div(id=C.LOADING_FILTER), color="success",spinner_style=C.SPINNER_STYLE),
+                   dbc.Spinner(html.Div(id=C.LOADING_SELECT), color="success",spinner_style=C.SPINNER_STYLE),
+               ])
             ]),
         ]
     ), style={'text-align': 'center'}
@@ -127,10 +134,10 @@ radar_card = dbc.Card(
 top_card = dbc.Card([
     dbc.CardBody([
         dbc.Col([
-            html.H2("Top 5 songs"),
+            html.H2("Top songs"),
             dbc.Row([
                 dcc.Slider(5, 20, 5,
-                           value=10,
+                           value=5,
                            id=C.TOP_N_SLIDER),
 
                 dbc.Col(dcc.Dropdown(options=[{'label': attr, "value": attr} for attr in C.NUMERICAL_COLUMNS],
@@ -155,7 +162,7 @@ parallel_lines_card = dbc.Card([
         dbc.Col([
             dbc.Row(dbc.Col(dbc.Checklist(options=[],
                                           id=C.PARALLEL_COORDS_QUERIES, inline=True))),
-
+            html.Hr(),
             dbc.Row(dbc.Col(dbc.Checklist(options = [{'label': x, 'value': x} for x in C.NUMERICAL_COLUMNS], value= [C.NUMERICAL_COLUMNS[0]],
                                         id=C.PARALLEL_COORDS_ATTR, inline=True))),
             dbc.Row(
@@ -174,7 +181,7 @@ sun_card = dbc.Card([
                                debounce=True),
                      html.P(f'available attributes: {", ".join(C.CATEGORICAL_COLUMNS)}')], width=11, style={'text-align': 'center'}),
             dbc.Col(dbc.Button('Update', id=C.SUNBURST_SUBMIT, n_clicks=0,
-                               style={"height": "90%"}, outline=True, color="info", className="me-1"), width=1),
+                               style={"height": "90%"}, outline=True, color="success", className="me-1"), width=1),
             dcc.Graph(id=C.SUNBURST)
         ], style={'margin': 'auto'})
     ], style={'text-align': 'center'})

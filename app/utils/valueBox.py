@@ -3,7 +3,18 @@ import dash_bootstrap_components as dbc
 from dash import html
 from dash import dcc
 
-def get_value_box(title, icon=None, value = "", figure = None):
+def get_value_box(title : str, icon=None, value = "", figure = None):
+    """This function return kind of falue box with font awesome icon at the right
+
+    Args:
+        title (str): Header of the value box
+        icon (str, optional): font awesome icon search
+        value (str, optional): Text inside
+        figure (dict, optional): If you want you can place plotly dict inside
+
+    Returns:
+        dbc.CardBody: with the component inside
+    """
     return [
         dbc.CardBody(
             [

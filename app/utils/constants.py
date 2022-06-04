@@ -1,5 +1,9 @@
 import dash_bootstrap_components as dbc
 
+###############################################################################################
+# ALL CONSTANTS ARE CREATED THERE, NOT TO HAVE MAGIC VALUES
+###############################################################################################
+
 COLUMNS = ['name','album','artist', "query", 'danceability',  'energy',  'speechiness', 
             'acousticness',  'liveness',  'valence', "duration", "explicit",
             "popularity", "instrumentalness", "key", "loudness",
@@ -58,5 +62,17 @@ SCATTER_RUG = "scatter_rug"
 
 #COLOR_SCALE_CONTINUOUS = "tealgrn"
 COLOR_SCALE_CONTINUOUS = [ '#ffffcc', '#d9f0a3', '#addd8e', '#78c679', '#41ab5d', '#238443', '#005a32']
-#COLOR_SCALE_DISCRETE = ['#1ED760', '#005a32', '#238443', '#41ab5d', '#78c679', '#addd8e', '#d9f0a3',  '#ffffcc']
+COLOR_SCALE_DISCRETE = ['#1ED760', '#005a32', '#f7fcb9', '#fdbb84', '#e34a33', '#c994c7', '#636363']
 COLOR_SCALE_DISCRETE_TWO = ['#1ED760', '#005a32']
+
+LOADING_PREDEFINED = "loading_predefined"
+LOADING_SEARCH = "loading_search"
+LOADING_UNDO = "undo_search"
+LOADING_RESET = "reset_loading"
+LOADING_REMOVAL = "loading_removal"
+LOADING_SELECT = "loading_select"
+LOADING_FILTER = "loading_filter"
+SPINNER_STYLE = {"margin-top": "5rem", "width": "3rem", "height": "3rem"}
+
+
+PLOT_FONT = dict(size=18)

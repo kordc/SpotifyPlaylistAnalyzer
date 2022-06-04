@@ -1,4 +1,4 @@
-import tekore as tk
+import tekore as tk #Thank you tekore for creating such a wonderful module :) 
 
 key_map = {0:"C", 1:"C#", 2:"D", 3:"D#", 4:"E", 5:"F", 6:"F#", 7:"G", 8:"G#", 9:"A", 10:"A#", 11:"B"}
 mode_map = {0:"minor", 1:"major" }
@@ -30,6 +30,7 @@ def get_feature_dict(audio_info: tk.model.FullTrack, audio_features: tk.model.Au
     return features
 
 class DatasetCreator:
+    """Handle track/playlist/album searches on spotify API"""
     def __init__(self, spotify_api=None) -> None:
         self.spotify_api = spotify_api
     

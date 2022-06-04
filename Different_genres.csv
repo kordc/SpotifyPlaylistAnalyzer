@@ -1,301 +1,301 @@
 ,artist,explicit,name,album,popularity,acousticness,danceability,duration,energy,instrumentalness,key,liveness,loudness,mode,speechiness,time_signature,valence,tempo,id,query,count
-0,Mary Jane Girls,False,In My House - Single Version,80s Soul (International Version),24,0.0137,0.795,3,0.664,0.0796,A#,0.0726,-9.171,minor,0.0316,4,0.936,116.808,7,Funky 80's,1
-1,Michael Jackson,False,Thriller - Single Version,The Essential Michael Jackson,0,0.0934,0.775,5,0.815,3.4e-05,B,0.256,-5.639,major,0.0477,4,0.835,118.402,7,Funky 80's,1
-2,Change,False,A Lovers'S Holiday - Single Edit,Greatest Hits & Rare Tracks,0,0.0277,0.932,4,0.651,0.00959,B,0.0714,-5.747,minor,0.224,4,0.821,116.357,7,Funky 80's,1
-3,George Duke,False,Shine On,DREAM ON,40,0.0176,0.8,5,0.77,0.0115,C#,0.0285,-11.271,minor,0.0415,4,0.96,118.832,7,Funky 80's,1
-4,CHIC,False,Believer,The Best of Chic Vol. 2,20,0.36,0.855,5,0.506,0.00687,G,0.0391,-14.156,major,0.0944,4,0.882,115.708,7,Funky 80's,1
-5,Phyllis Hyman,False,You Know How To Love Me - Edit Version,Essential - Soul Love,0,0.268,0.802,3,0.832,8.4e-05,F#,0.152,-5.156,minor,0.042,4,0.965,115.915,7,Funky 80's,1
-6,Billy Ocean,False,Caribbean Queen (No More Love On the Run),L.I.F.E. (Love Is For Ever),0,0.295,0.82,4,0.596,8.54e-06,D,0.0635,-8.384,minor,0.0275,4,0.961,113.799,7,Funky 80's,1
-7,Cameo,False,Word Up,The Best Of Cameo,0,0.0525,0.863,4,0.838,0.00217,F#,0.0569,-12.38,minor,0.0636,4,0.899,115.931,7,Funky 80's,1
-8,Aretha Franklin,False,Jump To It,Aretha Franklin - The Very Best Of,0,0.26,0.784,4,0.516,3.94e-06,B,0.433,-12.669,major,0.176,4,0.937,120.265,7,Funky 80's,1
-9,"Earth, Wind & Fire",False,Fantasy,"The Best Of Earth, Wind & Fire Vol. II",0,0.207,0.669,3,0.532,0.0074,G,0.163,-14.148,major,0.0504,4,0.676,88.75,7,Funky 80's,1
-10,Sister Sledge,False,"All American Girls - 12"" Version; 2006 Remaster",Definitive Groove: Sister Sledge,19,0.0555,0.792,3,0.754,0.0,A,0.369,-7.147,minor,0.0443,4,0.935,120.764,7,Funky 80's,1
-11,Commodores,False,Nightshift - Single Version,80s Soul (International Version),30,0.722,0.736,4,0.437,0.0211,C#,0.0676,-13.029,major,0.0424,4,0.388,105.29,7,Funky 80's,1
-12,Michael Jackson,False,Rock with You - Single Version,The Essential Michael Jackson,0,0.0633,0.803,3,0.701,0.000111,C#,0.142,-7.208,major,0.0392,4,0.836,114.511,7,Funky 80's,1
-13,Slave,False,Just a Touch of Love,Just A Touch Of Love,46,0.0508,0.742,6,0.473,2.08e-05,C,0.0387,-14.567,major,0.0309,4,0.904,108.783,7,Funky 80's,1
-14,Luther Vandross,False,Never Too Much,"The Ultimate Luther Vandross & ""Shine"" Single",0,0.142,0.735,3,0.694,0.0,D,0.0466,-8.405,major,0.116,4,0.735,109.758,7,Funky 80's,1
-15,Kool & The Gang,False,Take My Heart (You Can Have It If You Want It),The Ultimate Celebration,0,0.0748,0.904,3,0.493,2.79e-05,B,0.133,-15.178,major,0.0626,4,0.963,110.653,7,Funky 80's,1
-16,Sharon Brown,False,I Specialize In Love - 12 Inch Version,I Specialize In Love,37,0.0387,0.852,7,0.752,0.000272,F#,0.609,-7.774,major,0.0576,4,0.834,113.287,7,Funky 80's,1
-17,Tom Browne,False,Funkin' for Jamaica,The Best Year Of My Life: 1981G010004775674D,32,0.217,0.786,3,0.795,0.00205,F,0.0164,-10.239,minor,0.245,4,0.666,110.926,7,Funky 80's,1
-18,Chaka Khan,False,Ain't Nobody,"Epiphany: The Best of Chaka Khan, Vol. 1",66,0.189,0.8,4,0.878,0.000104,C#,0.14,-7.109,major,0.0434,4,0.816,104.282,7,Funky 80's,1
-19,CHIC,False,"Everybody Dance - 12"" Mix",Les Plus Grands Success De Chic - Chic's Greatest Hits,37,0.0823,0.76,8,0.595,0.107,C,0.0671,-14.579,minor,0.0913,4,0.891,128.584,7,Funky 80's,1
-20,"Earth, Wind & Fire",False,Let's Groove,Raise!!,0,0.194,0.877,5,0.546,3.18e-05,B,0.0687,-12.409,minor,0.0645,4,0.955,125.574,7,Funky 80's,1
-21,The Emotions,False,Best of My Love,The Best Of The Emotions: Best Of My Love,54,0.45,0.764,3,0.57,0.362,C,0.0812,-11.361,major,0.0348,4,0.972,115.376,7,Funky 80's,1
-22,Delegation,False,You and I,The Best of Delegation,54,0.153,0.718,5,0.676,0.0306,B,0.0706,-11.633,minor,0.0318,4,0.944,112.711,7,Funky 80's,1
-23,George Benson,False,Give Me the Night,Classic Love Songs,25,0.314,0.85,3,0.466,0.0234,C#,0.129,-15.673,major,0.0555,4,0.86,109.936,7,Funky 80's,1
-24,Sade,False,Nothing Can Come Between Us,The Best Of Sade,0,0.28,0.739,3,0.678,0.197,F,0.0954,-10.324,minor,0.0314,4,0.907,103.791,7,Funky 80's,1
-25,Rodney Franklin,False,The Groove,BarJazz Connection,24,0.202,0.656,4,0.637,0.549,A,0.0441,-12.898,minor,0.0339,4,0.728,109.358,7,Funky 80's,1
-26,The Jacksons,False,"Shake Your Body (Down to the Ground) - 7"" Version",Pure... Summer,20,0.056,0.79,3,0.716,0.0,C,0.337,-6.833,major,0.0815,4,0.852,117.404,7,Funky 80's,1
-27,The Pointer Sisters,False,Jump (For My Love),Fire! The Very Best of The Pointer Sisters,49,0.107,0.86,4,0.705,8.87e-06,A#,0.149,-12.514,minor,0.0894,4,0.854,134.395,7,Funky 80's,1
-28,Cameo,False,"She's Strange - Original 12"" Mix",The Best Of Cameo,0,0.11,0.865,6,0.779,0.000293,C#,0.103,-10.141,major,0.127,4,0.884,108.809,7,Funky 80's,1
-29,Lionel Richie,False,Running With The Night,The Definitive Collection (International 2CD Version),0,0.0251,0.769,4,0.574,0.000212,A,0.489,-10.253,minor,0.0367,4,0.737,120.201,7,Funky 80's,1
-30,Sparks,False,When I'm With You,Terminal Jive,0,0.14,0.713,5,0.727,0.00369,C,0.252,-9.844,major,0.0282,4,0.933,119.511,7,Funky 80's,1
-31,Kool & The Gang,False,Joanna - Single Version,True 80's Love,0,0.353,0.848,3,0.661,0.0209,A#,0.355,-6.737,major,0.0286,4,0.961,105.135,7,Funky 80's,1
-32,Kajagoogoo,False,Too Shy,Pure 80s Pop,0,0.101,0.714,3,0.709,9.38e-05,F,0.0786,-11.067,minor,0.0743,4,0.728,108.018,7,Funky 80's,1
-33,Imagination,False,"So Good, So Right",Body Talk,0,0.249,0.788,7,0.275,0.0149,B,0.0554,-17.953,minor,0.0577,4,0.79,103.422,7,Funky 80's,1
-34,CHIC,False,"Good Times - Original 12"" Mix",Les Plus Grands Success De Chic - Chic's Greatest Hits,30,0.153,0.869,8,0.452,0.0115,D,0.0672,-14.448,major,0.046,4,0.934,112.673,7,Funky 80's,1
-35,Donald Byrd,False,Loving You,100 Tubes Soul Vol.2,0,0.00918,0.813,4,0.552,0.00416,E,0.131,-13.715,major,0.0616,4,0.907,109.561,7,Funky 80's,1
-36,The Blow Monkeys,False,It Doesn't Have to Be This Way,The Best Year Of My Life: 1987,18,0.239,0.655,4,0.806,0.0,A,0.227,-6.838,major,0.0514,4,0.9,97.793,7,Funky 80's,1
-37,The Pointer Sisters,False,I'm So Excited,The Best Year Of My Life: 1984,21,0.0903,0.714,3,0.828,0.000135,F,0.109,-6.354,minor,0.0349,4,0.739,92.269,7,Funky 80's,1
-38,Patti Austin,False,(Ooh-Wee) He's Killing Me,The Best Year Of My Life: 1980,18,0.0694,0.785,3,0.858,0.000471,D,0.0553,-6.156,minor,0.0327,4,0.925,110.168,7,Funky 80's,1
-39,Joyce Sims,False,Come Into My Life - Radio Mix,Soul In Love - 35 Essential Love Songs,0,0.193,0.49,3,0.659,0.362,G#,0.0421,-11.885,minor,0.0459,4,0.834,94.658,7,Funky 80's,1
-40,Imagination,False,Flashback,Body Talk,0,0.306,0.698,4,0.432,0.00816,D,0.048,-17.328,major,0.0375,4,0.675,110.146,7,Funky 80's,1
-41,Sister Sledge,False,Lost in Music - 1995 Remaster,The Best of Sister Sledge (1973-1985),48,0.0544,0.758,4,0.841,0.000153,C,0.103,-7.509,major,0.0319,4,0.849,114.487,7,Funky 80's,1
-42,Lionel Richie,False,All Night Long (All Night),The Definitive Collection (International 2CD Version),0,0.136,0.728,4,0.556,0.00298,C#,0.0455,-12.888,major,0.0472,4,0.805,108.81,7,Funky 80's,1
-43,Amii Stewart,False,Friends (Extended Mix),Friends,27,0.14,0.643,4,0.63,0.0333,B,0.217,-11.014,major,0.0393,4,0.534,95.458,7,Funky 80's,1
-44,Sade,False,The Sweetest Taboo,Diamond Life / Promise / Stronger Than Pride,0,0.177,0.738,4,0.655,0.0146,A#,0.319,-14.742,minor,0.07,4,0.966,91.594,7,Funky 80's,1
-45,Stevie Wonder,False,That Girl,Number Ones,0,0.0563,0.787,5,0.67,0.0,F#,0.0739,-9.726,major,0.045,4,0.903,106.959,7,Funky 80's,1
-46,Shalamar,False,A Night To Remember,A Night To Remember,38,0.298,0.77,3,0.827,0.000357,C#,0.199,-8.754,major,0.0369,4,0.888,109.058,7,Funky 80's,1
-47,Stacy Lattisaw,False,Jump to the Beat,Let Me Be Your Angel,48,0.178,0.778,5,0.818,0.000639,F,0.0647,-9.526,minor,0.0461,4,0.921,119.04,7,Funky 80's,1
-48,Kool & The Gang,False,Get Down On It - Single Version,Colour Collection (International Version),0,0.201,0.877,3,0.609,0.00021,G,0.052,-6.982,major,0.0593,4,0.97,110.877,7,Funky 80's,1
-49,Coati Mundi,False,Me No Pop I,The Best Of Kid Creole & The Coconuts,25,0.141,0.761,4,0.708,1.08e-06,C#,0.0487,-12.423,major,0.0994,4,0.823,110.288,7,Funky 80's,1
-50,Blondie,False,Rapture - Remastered 2001,Blondie Singles Collection: 1977-1982,22,0.118,0.722,4,0.701,0.00364,B,0.545,-8.264,minor,0.0517,4,0.947,107.483,7,Funky 80's,1
-51,CHIC,False,My Forbidden Lover,"Dance, Dance, Dance: The Best of Chic",25,0.0293,0.81,4,0.85,1.71e-06,D,0.313,-9.77,major,0.0352,4,0.887,106.624,7,Funky 80's,1
-52,Change,False,Hold Tight,Miracles,0,0.254,0.775,4,0.796,0.0,F,0.24,-5.508,minor,0.0828,5,0.861,114.962,7,Funky 80's,1
-53,Imagination,False,Music And Lights,In The Heat Of The Night,0,0.55,0.77,5,0.516,0.0307,E,0.0764,-11.363,minor,0.0392,4,0.683,99.945,7,Funky 80's,1
-54,Fat Larry's Band,False,Act Like You Know,Les 150 Plus Grands Hits (Le Meilleur De Vos Tubes Des Années 70 - 80 - 90),0,0.00917,0.739,6,0.408,1.68e-05,A#,0.0517,-19.869,minor,0.122,4,0.677,102.962,7,Funky 80's,1
-55,Michael Jackson,False,Another Part Of Me - Single Version,The Essential Michael Jackson,0,0.131,0.768,3,0.887,0.00599,C#,0.162,-4.227,major,0.0692,4,0.82,110.112,7,Funky 80's,1
-56,Prince,False,1999,1999,60,0.137,0.866,6,0.73,0.0,F,0.0843,-8.201,major,0.0767,4,0.625,118.523,7,Funky 80's,1
-57,Maze,False,Back In Stride - Edit/Remastered,Greatest Hits: 35 Years Of Soul,0,0.574,0.802,4,0.855,0.00921,A#,0.11,-5.946,major,0.0436,4,0.963,113.092,7,Funky 80's,1
-58,Geraldine Hunt feat. Freddie James & Rosalind aka Cheri,False,Can't Fake the Feeling,"Soultry, Jazzy, & Sexy",36,0.162,0.788,5,0.643,0.0199,F,0.0721,-8.125,minor,0.107,4,0.922,116.404,7,Funky 80's,1
-59,Bohannon,False,Lets Start the Dance,This Is Burns 001 European Sex Music,0,0.000429,0.782,5,0.938,0.121,A#,0.118,-8.692,minor,0.05,4,0.871,118.086,7,Funky 80's,1
-60,Herbie Hancock,False,Rockit,Playlist: The Very Best Of Herbie Hancock,0,0.0361,0.878,5,0.836,0.478,G,0.0683,-12.003,major,0.0724,4,0.635,111.334,7,Funky 80's,1
-61,Indeep,False,Last Night a D.J. Saved My Life,The Collection,53,0.154,0.968,5,0.345,0.00344,B,0.0425,-14.17,major,0.151,4,0.954,109.803,7,Funky 80's,1
-62,Gwen Guthrie,False,"Ain't Nothin' Goin' On But The Rent - 12"" Club Mix",Music For Groovin',31,0.102,0.769,3,0.827,2.02e-05,A#,0.0484,-8.618,minor,0.132,4,0.944,107.826,7,Funky 80's,1
-63,Peaches & Herb,False,Shake Your Groove Thing,2 Hot!,0,0.415,0.863,5,0.726,0.0299,A,0.0735,-6.649,major,0.0494,4,0.93,132.574,7,Funky 80's,1
-64,Odyssey,False,Going Back To My Roots (Original Radio Version),Going Back To My Roots,48,0.225,0.693,4,0.918,0.00106,B,0.0547,-6.429,minor,0.0632,4,0.765,111.128,7,Funky 80's,1
-65,Kool & The Gang,False,Ladies Night - Single Version,Colour Collection (International Version),0,0.212,0.674,3,0.739,3.1e-05,B,0.0442,-7.636,major,0.153,4,0.926,111.925,7,Funky 80's,1
-66,Melba Moore,False,Love's Comin' At Ya - Remastered,Other Side Of The Rainbow,46,0.0278,0.911,5,0.476,0.000364,C#,0.104,-10.827,minor,0.0927,4,0.62,114.408,7,Funky 80's,1
-67,Michael Jackson,False,Off the Wall,The Essential Michael Jackson,0,0.196,0.841,3,0.811,0.0,D#,0.132,-6.685,minor,0.0521,4,0.886,119.232,7,Funky 80's,1
-68,The Brothers Johnson,False,Stomp! - Single Version,Strawberry Letter 23/The Very Best Of The Brothers Johnson,0,0.154,0.859,4,0.782,0.0297,A#,0.0693,-8.344,major,0.0369,4,0.931,119.518,7,Funky 80's,1
-69,Nu Shooz,False,I Can't Wait,Smash Hits 1986,0,0.078,0.851,5,0.574,0.0392,F,0.128,-13.622,minor,0.07,4,0.84,104.274,7,Funky 80's,1
-70,Imagination,False,Just An Illusion,In The Heat Of The Night,0,0.309,0.746,6,0.548,0.169,B,0.0594,-10.506,minor,0.0334,4,0.684,105.13,7,Funky 80's,1
-71,Delegation,False,Darlin' (I Think About You),The Best of Delegation,44,0.0491,0.724,4,0.672,0.0103,C,0.0576,-12.94,minor,0.0297,4,0.975,114.968,7,Funky 80's,1
-72,A Taste Of Honey,False,"Boogie Oogie Oogie - 7"" Single Edit",Platinum 70,0,0.116,0.808,3,0.523,2.51e-05,D,0.207,-10.933,minor,0.0522,4,0.934,123.576,7,Funky 80's,1
-73,CHIC,False,I Want Your Love - Edit,Les Plus Grands Success De Chic - Chic's Greatest Hits,31,0.118,0.736,3,0.498,0.00212,A,0.0963,-17.093,minor,0.0393,4,0.897,113.934,7,Funky 80's,1
-74,Oliver Cheatham,False,Get Down Saturday Night,"Smash Soul & R&B Hits, Vol 2",0,0.0239,0.723,7,0.698,0.00693,B,0.0405,-8.587,minor,0.0518,4,0.863,117.148,7,Funky 80's,1
-75,Prince,False,Controversy,Controversy,49,0.00996,0.852,7,0.321,0.239,C#,0.0684,-17.139,minor,0.0527,4,0.629,119.378,7,Funky 80's,1
-76,Change,False,Change Of Heart,Change Of Heart,0,0.0138,0.767,7,0.687,0.00367,C#,0.0423,-12.493,major,0.0531,4,0.955,107.45,7,Funky 80's,1
-77,Leon Haywood,False,Don't Push It Don't Force It,80s Soul (International Version),39,0.429,0.834,3,0.673,0.0297,G#,0.098,-11.045,minor,0.0518,4,0.952,113.732,7,Funky 80's,1
-78,Frankie Smith,False,Double Dutch Bus,Soul From The Big Screen,0,0.00275,0.918,5,0.378,0.00608,G#,0.0306,-14.333,major,0.145,4,0.538,119.504,7,Funky 80's,1
-79,Carl Carlton,False,"She's a Bad Mama Jama (She's Built, She's Stacked)",Soul On Fire: The Number Ones,0,0.0642,0.904,3,0.342,1.42e-06,A,0.0721,-13.506,minor,0.105,4,0.549,113.744,7,Funky 80's,1
-80,"Evelyn ""Champagne"" King",False,Shame,Legends,42,0.00289,0.679,6,0.85,0.115,B,0.0633,-6.131,minor,0.0371,4,0.822,134.49,7,Funky 80's,1
-81,Sade,False,Never as Good as the First Time,Diamond Life / Promise / Stronger Than Pride,0,0.137,0.787,5,0.47,0.14,F#,0.0482,-17.661,minor,0.0397,4,0.967,107.623,7,Funky 80's,1
-82,Latimore,False,Let's Straighten It Out,I'll Do Anything For You,0,0.283,0.705,5,0.451,0.000211,D,0.0908,-15.08,minor,0.0501,4,0.895,159.399,7,Funky 80's,1
-83,Al Jarreau,False,Mornin',100 Tubes Soul Vol.2,0,0.19,0.58,4,0.464,3e-05,D,0.264,-13.252,major,0.0339,4,0.563,89.775,7,Funky 80's,1
-84,Womack & Womack,False,"Teardrops - 7"" Edit",The Pink Album 2007,0,0.0914,0.855,3,0.889,0.0421,B,0.263,-5.585,major,0.041,4,0.966,133.237,7,Funky 80's,1
-85,Kool & The Gang,False,Straight Ahead,The Ultimate Celebration,0,0.0165,0.731,3,0.545,0.0262,F#,0.314,-13.41,major,0.0488,4,0.876,120.105,7,Funky 80's,1
-86,Sister Sledge,False,He's the Greatest Dancer - 2006 Remaster,Definitive Groove: Sister Sledge,42,0.00145,0.652,6,0.881,0.00291,F,0.177,-9.182,minor,0.0455,4,0.905,113.317,7,Funky 80's,1
-87,George Duke,False,Reach Out,The Essential George Duke,36,0.0397,0.819,4,0.64,0.000149,D,0.304,-9.124,minor,0.0371,4,0.917,112.637,7,Funky 80's,1
-88,Cheryl Lynn,False,Got to Be Real - Single Version,The Best Of Cheryl Lynn: Got To Be Real,46,0.0585,0.802,3,0.599,0.00602,F,0.0804,-11.259,major,0.0537,4,0.886,114.651,7,Funky 80's,1
-89,Chaz Jankel,False,Glad To Know You,Best Of,0,0.00344,0.766,6,0.787,0.865,F,0.0832,-7.955,minor,0.0478,4,0.962,116.815,7,Funky 80's,1
-90,Imagination,False,Body Talk,Body Talk,0,0.0893,0.755,6,0.511,0.000501,F,0.0447,-15.799,minor,0.0522,4,0.802,83.993,7,Funky 80's,1
-91,Marvin Gaye,False,Sexual Healing,Songbook,49,0.117,0.799,3,0.602,0.000267,C,0.0658,-9.714,minor,0.061,4,0.717,94.333,7,Funky 80's,1
-92,Mtume,False,Juicy Fruit,Juicy Fruit,49,0.135,0.747,5,0.573,0.0114,E,0.0811,-6.474,major,0.368,4,0.722,192.763,7,Funky 80's,1
-93,Dennis Edwards,False,Don't Look Any Further,Motown 40 Forever,0,0.0419,0.758,4,0.715,0.00263,A,0.0703,-6.589,minor,0.0391,4,0.886,95.135,7,Funky 80's,1
-94,Patrice Rushen,False,Forget Me Nots,Straight From The Heart,0,0.139,0.912,4,0.534,0.102,F#,0.0387,-5.319,minor,0.0366,4,0.963,114.681,7,Funky 80's,1
-95,Diana Ross,False,I'm Coming Out,Diana,5,0.177,0.739,5,0.917,0.119,F,0.0834,-4.459,major,0.0504,4,0.749,110.163,7,Funky 80's,1
-96,Delegation,False,Heartache No. 9,Put A Little Love On Me - EP,32,0.097,0.734,4,0.843,0.145,E,0.0696,-8.415,minor,0.0416,4,0.885,115.8,7,Funky 80's,1
-97,B.B.,False,On the Beat,B. B. & Q. Band,0,0.162,0.785,5,0.788,0.000115,G#,0.139,-7.864,minor,0.0598,4,0.852,119.592,7,Funky 80's,1
-98,Michael Jackson,False,Don't Stop 'Til You Get Enough - 2003 Edit,The Essential Michael Jackson,0,0.0546,0.875,3,0.932,0.0127,E,0.299,-4.179,major,0.0691,4,0.936,119.037,7,Funky 80's,1
-99,Gary's Gang,False,Knock Me Out - Original Version,Dance Party,38,0.0611,0.793,7,0.602,0.0158,B,0.0494,-6.981,minor,0.0685,4,0.885,121.769,7,Funky 80's,1
-0,Bullet For My Valentine,False,Your Betrayal,Fever,66,8.07e-05,0.569,4,0.883,7.74e-05,D,0.0883,-4.41,minor,0.0748,4,0.373,134.001,8,best metal songs,1
-1,Black Sabbath,False,War Pigs,Paranoid (2009 Remastered Version),66,0.116,0.464,7,0.612,0.00559,A,0.171,-12.019,major,0.0591,4,0.496,91.499,8,best metal songs,1
-2,Korn,True,Got the Life,Follow The Leader,68,1.88e-05,0.501,3,0.905,0.765,B,0.383,-5.721,minor,0.0518,4,0.584,123.277,8,best metal songs,1
-3,Twisted Sister,False,I Wanna Rock,Stay Hungry,70,0.00512,0.504,2,0.911,0.0123,D,0.355,-2.97,major,0.0738,4,0.671,106.244,8,best metal songs,1
-4,Marilyn Manson,False,Personal Jesus,Personal Jesus,57,0.000246,0.573,4,0.942,0.00514,D,0.524,-5.259,major,0.124,4,0.278,130.147,8,best metal songs,1
-5,Halestorm,False,I Miss the Misery,The Strange Case of...,59,0.009,0.469,3,0.969,1.11e-05,C,0.346,-2.219,major,0.0589,4,0.476,164.042,8,best metal songs,1
-6,Arch Enemy,False,The Eagle Flies Alone - edit,Will To Power,52,0.000894,0.492,4,0.982,0.205,F,0.118,-4.237,major,0.0856,4,0.148,136.004,8,best metal songs,1
-7,Papa Roach,True,Between Angels And Insects,Infest,0,0.000186,0.494,3,0.953,0.000163,D,0.359,-3.272,minor,0.0616,4,0.365,93.6,8,best metal songs,1
-8,Def Leppard,False,Pour Some Sugar On Me,Hysteria,64,0.00211,0.267,4,0.953,0.0,C#,0.283,-4.899,minor,0.096,4,0.568,84.989,8,best metal songs,1
-9,Avenged Sevenfold,False,Heaven Theme,Hail to the King: Deathbat (Original Video Game Soundtrack),20,0.0248,0.459,4,0.66,0.763,G,0.0955,-7.043,minor,0.0322,4,0.293,114.996,8,best metal songs,1
-10,Skillet,False,Not Gonna Die,Rise (Deluxe Edition),64,0.0106,0.445,3,0.953,0.0,F,0.281,-2.463,minor,0.0704,4,0.475,172.063,8,best metal songs,1
-11,Disturbed,False,The Light,Immortalized,49,0.00456,0.512,4,0.968,1.24e-06,F#,0.115,-3.874,major,0.0658,4,0.646,160.102,8,best metal songs,1
-12,Avenged Sevenfold,True,Buried Alive,Nightmare,63,0.00116,0.607,6,0.804,0.0,A,0.159,-5.209,minor,0.0296,4,0.469,139.983,8,best metal songs,1
-13,System Of A Down,False,Question!,Mezmerize,63,0.00083,0.207,3,0.973,0.0158,E,0.318,-3.21,minor,0.185,4,0.364,180.683,8,best metal songs,1
-14,Breaking Benjamin,False,I Will Not Bow,Dear Agony,69,0.000165,0.533,3,0.955,1.36e-05,G#,0.38,-3.708,major,0.0653,4,0.55,107.984,8,best metal songs,1
-15,Five Finger Death Punch,True,The Pride,American Capitalist,0,8.96e-06,0.492,3,0.987,0.0,E,0.231,-3.398,major,0.122,4,0.354,103.98,8,best metal songs,1
-16,Saliva,False,Click Click Boom,Every Six Seconds,68,0.0029,0.609,4,0.935,0.000359,F#,0.188,-2.941,major,0.0479,4,0.498,95.957,8,best metal songs,1
-17,Within Temptation,True,Paradise (What About Us?),Hydra,0,0.000583,0.461,5,0.928,0.0012,E,0.615,-3.542,minor,0.0697,4,0.428,135.03,8,best metal songs,1
-18,Five Finger Death Punch,False,Gone Away,A Decade Of Destruction,50,0.000436,0.505,4,0.76,4.18e-05,A#,0.139,-6.408,major,0.0414,4,0.244,106.058,8,best metal songs,1
-19,Original Backing Tracks,False,Still Loving You (In the Style of Scorpions) [instrumental Backing Track],Karaoke Hits: Rock Hard,24,0.0164,0.356,6,0.474,0.836,G,0.0904,-11.04,minor,0.0311,4,0.0507,109.866,8,best metal songs,1
-20,Linkin Park,True,Given Up,Minutes to Midnight,68,0.00117,0.655,3,0.885,0.000473,G,0.0448,-4.116,major,0.0438,4,0.938,100.088,8,best metal songs,1
-21,Five Finger Death Punch,True,Jekyll and Hyde,Got Your Six,63,0.000599,0.537,3,0.964,1.14e-05,A,0.0564,-4.157,major,0.113,4,0.712,155.017,8,best metal songs,1
-22,Suicide Silence,False,You Only Live Once,The Black Crown,57,0.00018,0.613,3,0.953,0.0614,F#,0.116,-4.936,major,0.153,4,0.213,119.976,8,best metal songs,1
-23,Slipknot,False,Sulfur,All Hope Is Gone,59,0.000234,0.278,4,0.985,0.000235,B,0.104,-1.934,major,0.129,4,0.342,104.803,8,best metal songs,1
-24,Whitesnake,False,Here I Go Again - 1987 Version; 2017 Remaster,Whitesnake (30th Anniversary Edition),47,0.151,0.384,4,0.846,7.73e-05,G,0.0913,-5.591,major,0.0365,4,0.272,90.172,8,best metal songs,1
-25,System Of A Down,False,Spiders,System Of A Down,65,0.0324,0.46,3,0.54,0.0168,F,0.326,-5.132,major,0.0381,4,0.0506,137.855,8,best metal songs,1
-26,In This Moment,True,Whore,Blood,63,0.0254,0.604,4,0.883,0.0,B,0.0813,-3.821,minor,0.047,4,0.544,90.001,8,best metal songs,1
-27,Korn,False,Coming Undone,See You On the Other Side,9,0.000658,0.687,3,0.677,0.000146,D,0.0564,-4.172,major,0.0508,4,0.546,75.052,8,best metal songs,1
-28,Limp Bizkit,False,Nookie,Significant Other,0,0.00218,0.573,4,0.929,0.0723,B,0.718,-5.996,major,0.082,4,0.284,97.57,8,best metal songs,1
-29,Limp Bizkit,True,My Generation,Chocolate Starfish And The Hot Dog Flavored Water,0,0.00271,0.461,3,0.979,3.07e-06,B,0.118,-2.381,major,0.2,4,0.346,103.904,8,best metal songs,1
-30,Avenged Sevenfold,False,Afterlife,Avenged Sevenfold,68,0.000429,0.487,5,0.949,2.91e-05,D,0.231,-4.217,minor,0.0798,4,0.406,110.02,8,best metal songs,1
-31,Evanescence,False,Everybody's Fool,Fallen,0,0.00162,0.439,3,0.841,2.08e-05,D,0.248,-5.064,minor,0.0411,4,0.261,95.092,8,best metal songs,1
-32,Disturbed,False,The Vengeful One,Immortalized (Deluxe Edition),64,0.000213,0.238,4,0.967,1.18e-06,E,0.26,-2.602,minor,0.136,4,0.58,170.128,8,best metal songs,1
-33,Bring Me The Horizon,False,Drown,That's The Spirit,68,0.000102,0.405,3,0.94,2.79e-05,C#,0.719,-3.103,minor,0.0844,4,0.24,143.126,8,best metal songs,1
-34,Slipknot,True,Killpop,.5: The Gray Chapter (Special Edition),61,0.000311,0.306,3,0.926,0.000644,C#,0.0776,-2.754,minor,0.0912,4,0.483,158.47,8,best metal songs,1
-35,Metallica,False,Whiskey In The Jar,Garage Inc.,0,5.6e-06,0.511,5,0.97,0.00136,A#,0.18,-3.72,major,0.0414,4,0.566,132.986,8,best metal songs,1
-36,Bring Me The Horizon,True,Can You Feel My Heart,Sempiternal (Expanded Edition),79,0.00201,0.15,3,0.859,0.194,E,0.387,-2.827,minor,0.0595,5,0.354,170.527,8,best metal songs,1
-37,Slipknot,True,Unsainted,Unsainted,0,0.000197,0.427,4,0.944,0.0159,G,0.0625,-2.885,major,0.0565,4,0.248,101.078,8,best metal songs,1
-38,System Of A Down,True,Sugar,System Of A Down,70,0.00167,0.451,2,0.889,0.00215,C#,0.258,-2.693,major,0.261,4,0.586,131.073,8,best metal songs,1
-39,Slipknot,False,Wait and Bleed,Slipknot (10th Anniversary Edition),69,0.00208,0.382,2,0.996,0.0,G,0.417,-4.119,major,0.104,4,0.327,93.345,8,best metal songs,1
-40,Linkin Park,True,Bleed It Out,Minutes to Midnight,73,0.114,0.529,2,0.967,0.0,C#,0.61,-3.647,minor,0.0508,4,0.596,140.127,8,best metal songs,1
-41,Korn,True,Falling Away from Me,Issues,70,0.00014,0.468,4,0.769,0.00124,E,0.271,-7.036,major,0.041,4,0.17,104.102,8,best metal songs,1
-42,Metallica,False,For Whom The Bell Tolls - Remastered,Ride The Lightning (Deluxe / Remastered),45,0.00563,0.518,5,0.858,0.00349,C,0.0598,-6.147,major,0.0672,4,0.249,117.897,8,best metal songs,1
-43,Slipknot,False,Dead Memories,All Hope Is Gone,62,0.000443,0.547,4,0.963,0.0251,E,0.353,-2.337,minor,0.0744,4,0.441,130.061,8,best metal songs,1
-44,Linkin Park,False,From the Inside,Meteora (Bonus Edition),64,0.042,0.466,2,0.965,0.0,C#,0.101,-2.597,minor,0.0904,3,0.453,95.028,8,best metal songs,1
-45,Five Finger Death Punch,True,I Apologize,Got Your Six (Deluxe),0,0.00068,0.505,4,0.929,0.0,A,0.167,-4.69,minor,0.0529,4,0.419,77.991,8,best metal songs,1
-46,DragonForce,False,Through The Fire And Flames,Killer Elite,0,0.00144,0.109,7,0.952,0.00922,C,0.345,-4.885,minor,0.123,4,0.137,199.952,8,best metal songs,1
-47,Five Finger Death Punch,True,House of The Rising Sun,"The Wrong Side Of Heaven And The Righteous Side Of Hell, Volume 2",57,0.00171,0.47,4,0.964,0.00112,E,0.107,-2.839,minor,0.09,4,0.264,76.969,8,best metal songs,1
-48,Nightwish,False,Bye Bye Beautiful,Bye Bye Beautiful (Maxi),0,0.000116,0.492,4,0.887,0.000777,A,0.126,-5.116,major,0.0441,4,0.423,148.04,8,best metal songs,1
-49,Twisted Sister,False,We're Not Gonna Take It,Stay Hungry,72,0.0127,0.502,3,0.924,0.0,E,0.162,-6.299,major,0.0503,4,0.922,149.186,8,best metal songs,1
-50,Pierce The Veil,True,King For A Day,Collide With The Sky,0,4.23e-05,0.425,3,0.971,0.000818,F#,0.281,-2.239,major,0.0935,4,0.407,112.248,8,best metal songs,1
-51,Evanescence,False,Call Me When You're Sober,The Open Door,0,0.00234,0.459,3,0.879,0.0,G,0.291,-4.098,major,0.0518,4,0.304,93.469,8,best metal songs,1
-52,Bring Me The Horizon,False,Throne,That's The Spirit,71,0.000455,0.426,3,0.888,0.0,C,0.306,-3.72,minor,0.0987,4,0.387,144.111,8,best metal songs,1
-53,Black Sabbath,False,Paranoid,Paranoid (2009 Remastered Version),77,7.85e-05,0.429,2,0.631,0.00411,E,0.175,-11.514,minor,0.0769,4,0.376,162.734,8,best metal songs,1
-54,Black Veil Brides,False,In The End,Wretched and Divine: The Story Of The Wild Ones,65,0.000183,0.442,3,0.939,0.00589,G#,0.0857,-4.18,major,0.0941,4,0.27,140.021,8,best metal songs,1
-55,Rob Zombie,False,Dragula,Hellbilly Deluxe,0,0.000104,0.591,3,0.966,0.000103,C,0.0922,-6.444,minor,0.0529,4,0.581,125.056,8,best metal songs,1
-56,Disturbed,True,Down with the Sickness,The Sickness,74,0.000996,0.695,4,0.876,6.89e-06,D#,0.106,-4.262,minor,0.0553,4,0.941,89.954,8,best metal songs,1
-57,Rammstein,False,Feuer frei!,Mutter,66,9.12e-05,0.491,3,0.966,0.346,D#,0.153,-3.974,major,0.0463,4,0.223,95.141,8,best metal songs,1
-58,Drowning Pool,False,Bodies,Sinner,0,0.00366,0.654,3,0.928,0.002,E,0.139,-3.406,minor,0.0717,4,0.52,130.951,8,best metal songs,1
-59,Evanescence,False,Lithium,The Open Door,0,0.215,0.49,3,0.63,0.0,A#,0.122,-3.775,minor,0.0352,4,0.205,117.949,8,best metal songs,1
-60,Limp Bizkit,True,My Way,Chocolate Starfish And The Hot Dog Flavored Water,0,0.0183,0.581,4,0.857,1.09e-06,F#,0.682,-4.0,major,0.0462,4,0.6,97.006,8,best metal songs,1
-61,System Of A Down,False,Hypnotize,Hypnotize,66,0.0303,0.274,3,0.92,0.000412,F#,0.115,-4.096,major,0.0489,4,0.0397,154.016,8,best metal songs,1
-62,Rage Against The Machine,True,Killing In The Name,Rage Against The Machine - XX (20th Anniversary Special Edition),77,0.0266,0.466,5,0.833,0.0,G,0.0327,-4.215,major,0.304,4,0.661,88.785,8,best metal songs,1
-63,Avenged Sevenfold,True,Nightmare,Nightmare,70,0.000318,0.554,6,0.949,9.98e-05,D,0.2,-4.928,major,0.0787,4,0.233,129.984,8,best metal songs,1
-64,Godsmack,False,I Stand Alone,Faceless,0,4.56e-05,0.214,4,0.926,0.0,C,0.124,-4.491,major,0.0759,4,0.369,171.846,8,best metal songs,1
-65,Breaking Benjamin,False,The Diary Of Jane - Single Version,Phobia,0,6.97e-05,0.392,3,0.965,0.0427,A#,0.106,-4.441,minor,0.063,4,0.298,167.094,8,best metal songs,1
-66,Bullet For My Valentine,True,Tears Don't Fall,The Poison (Deluxe Version),54,0.000729,0.212,5,0.924,2.23e-06,G,0.0831,-3.349,minor,0.135,4,0.244,162.128,8,best metal songs,1
-67,Avenged Sevenfold,False,Hail to the King,Hail to the King,74,0.000297,0.58,5,0.916,0.0259,D#,0.126,-4.358,minor,0.0387,4,0.683,118.004,8,best metal songs,1
-68,Evanescence,False,Going Under,Fallen,0,0.0107,0.378,3,0.847,3.67e-05,B,0.205,-4.858,minor,0.0514,4,0.49,175.104,8,best metal songs,1
-69,Linkin Park,False,Papercut,Hybrid Theory (Bonus Edition),72,0.00022,0.524,3,0.939,0.0,A,0.623,-3.994,major,0.113,4,0.661,150.184,8,best metal songs,1
-70,Limp Bizkit,True,Rollin' (Air Raid Vehicle),Chocolate Starfish And The Hot Dog Flavored Water,0,0.00516,0.604,3,0.931,0.0,A,0.271,-3.326,major,0.175,4,0.682,96.249,8,best metal songs,1
-71,Pantera,True,Walk,Vulgar Display of Power,72,0.000155,0.43,5,0.704,0.00221,C#,0.0933,-8.008,minor,0.0804,4,0.703,118.242,8,best metal songs,1
-72,Marilyn Manson,False,Sweet Dreams (Are Made Of This),Smells Like Children,0,0.00502,0.39,4,0.642,0.565,G#,0.296,-5.266,major,0.0326,4,0.132,92.397,8,best metal songs,1
-73,Slipknot,False,Before I Forget,Vol. 3: The Subliminal Verses,74,0.0177,0.291,4,0.974,5.44e-06,F#,0.886,-2.997,minor,0.171,4,0.348,134.724,8,best metal songs,1
-74,Marilyn Manson,True,The Beautiful People,Antichrist Superstar,0,0.000779,0.621,3,0.834,0.456,A#,0.0611,-10.068,minor,0.0557,4,0.937,143.973,8,best metal songs,1
-75,Korn,True,Freak On a Leash,Follow The Leader,74,2.23e-05,0.353,4,0.898,0.105,D,0.39,-5.877,major,0.052,4,0.525,103.293,8,best metal songs,1
-76,Linkin Park,False,Somewhere I Belong,Meteora (Bonus Edition),70,0.00038,0.451,3,0.951,2.39e-06,C#,0.261,-3.754,major,0.0645,4,0.442,162.065,8,best metal songs,1
-77,Alien Ant Farm,False,Smooth Criminal,Anthology,0,0.00287,0.653,3,0.966,0.0026,A,0.143,-4.236,minor,0.0598,4,0.874,126.921,8,best metal songs,1
-78,Alice Cooper,False,Poison,Trash,71,0.0327,0.28,4,0.908,8.85e-06,D,0.18,-5.509,minor,0.109,4,0.26,118.698,8,best metal songs,1
-79,Metallica,False,One,...And Justice For All,0,0.00111,0.437,7,0.695,0.0857,G,0.124,-9.447,major,0.0617,3,0.413,102.178,8,best metal songs,1
-80,Five Finger Death Punch,True,Wash It All Away,Got Your Six (Deluxe),0,2.08e-05,0.485,3,0.987,0.0,E,0.267,-3.1,major,0.0738,4,0.272,123.576,8,best metal songs,1
-81,Slipknot,False,Duality,Vol. 3: The Subliminal Verses,77,0.000237,0.354,4,0.982,0.000294,E,0.204,-3.026,minor,0.168,4,0.194,143.772,8,best metal songs,1
-82,Linkin Park,False,Faint,Meteora (Bonus Edition),64,0.111,0.554,2,0.978,0.0,E,0.0731,-3.554,major,0.131,4,0.594,135.095,8,best metal songs,1
-83,Linkin Park,False,Crawling,Hybrid Theory (Bonus Edition),73,0.0466,0.58,3,0.702,3.2e-06,E,0.536,-5.565,major,0.0337,4,0.299,105.076,8,best metal songs,1
-84,Slipknot,False,The Devil in I,.5: The Gray Chapter (Special Edition),71,0.00591,0.398,5,0.939,0.000881,A,0.357,-2.865,minor,0.0648,4,0.235,92.027,8,best metal songs,1
-85,System Of A Down,False,Aerials,Toxicity,0,0.00107,0.404,3,0.923,0.0163,C,0.0637,-4.235,minor,0.0547,4,0.248,81.058,8,best metal songs,1
-86,Five Finger Death Punch,True,Wrong Side of Heaven,"The Wrong Side Of Heaven And The Righteous Side Of Hell, Volume 1",64,0.00721,0.481,4,0.932,0.0,E,0.337,-4.592,minor,0.083,4,0.543,149.992,8,best metal songs,1
-87,System Of A Down,True,B.Y.O.B.,Mezmerize,74,0.00662,0.538,4,0.981,0.0,C#,0.219,-2.688,minor,0.14,4,0.711,101.414,8,best metal songs,1
-88,Mr. Gun,False,Sky Of The Morning,Sky Of The Morning,46,0.0512,0.693,2,0.411,0.843,A,0.118,-12.117,major,0.0426,4,0.439,148.01,8,best metal songs,1
-89,Metallica,False,The Unforgiven,Metallica,72,0.0108,0.54,6,0.584,0.00296,G,0.253,-9.579,major,0.0254,4,0.244,139.261,8,best metal songs,1
-90,Rammstein,False,Du hast,Sehnsucht,0,0.00369,0.64,3,0.922,0.055,A,0.332,-6.283,minor,0.0385,4,0.716,125.105,8,best metal songs,1
-91,Sid Shyne,True,Halo Effect,ADRENALINE,37,0.000335,0.637,2,0.619,0.0,A#,0.379,-9.272,minor,0.0762,4,0.356,82.438,8,best metal songs,1
-92,Slipknot,False,Psychosocial,All Hope Is Gone,64,0.00252,0.576,4,0.989,0.0032,D,0.0243,-1.909,major,0.112,4,0.352,135.093,8,best metal songs,1
-93,Metallica,False,Enter Sandman,Metallica,0,0.00213,0.577,5,0.828,0.0114,F#,0.0581,-8.691,minor,0.0298,4,0.604,123.257,8,best metal songs,1
-94,Kev Dollaz,True,No Competition,No Competition,43,0.149,0.836,2,0.67,0.0,A,0.104,-6.723,minor,0.28,4,0.486,139.981,8,best metal songs,1
-95,System Of A Down,False,Toxicity,Toxicity,0,0.000254,0.407,3,0.876,0.00265,G#,0.215,-4.145,major,0.0529,3,0.521,116.335,8,best metal songs,1
-96,Europe,False,The Final Countdown,The Final Countdown (Expanded Edition),75,0.0628,0.529,5,0.843,0.000827,F#,0.0608,-6.908,minor,0.0616,4,0.188,117.662,8,best metal songs,1
-97,System Of A Down,False,Chop Suey!,Toxicity,0,0.000353,0.42,3,0.929,0.000747,G,0.122,-3.899,minor,0.121,4,0.3,127.204,8,best metal songs,1
-98,Linkin Park,False,In the End,Hybrid Theory (Bonus Edition),83,0.00958,0.556,3,0.864,0.0,D#,0.209,-5.87,minor,0.0584,4,0.4,105.143,8,best metal songs,1
-99,Linkin Park,False,Numb,Meteora,81,0.0046,0.496,3,0.863,0.0,A,0.639,-4.153,major,0.0381,4,0.243,110.018,8,best metal songs,1
-0,Deep Purple,False,Smoke On The Water - Remastered 2012,Machine Head (Remastered),72,0.13,0.598,5,0.676,0.225,C,0.112,-9.211,major,0.0279,4,0.805,114.169,9,best rock,1
-1,Ted Nugent,False,Stranglehold,Great Gonzos! The Best Of Ted Nugent,51,0.0152,0.491,8,0.738,0.168,D,0.2,-7.04,major,0.0335,4,0.51,148.003,9,best rock,1
-2,Lynyrd Skynyrd,False,Free Bird,(Pronounced 'Leh-'Nérd 'Skin-'Nérd) [Expanded Edition],0,0.0119,0.279,9,0.852,0.076,G,0.0624,-7.838,major,0.0511,4,0.438,117.418,9,best rock,1
-3,Goldfinger,False,99 Red Balloons,Stomping Ground,63,0.00103,0.285,3,0.843,0.00037,E,0.327,-7.318,major,0.129,4,0.282,97.051,9,best rock,1
-4,ZZ Top,False,La Grange - 2005 Remaster,Tres Hombres (Expanded 2006 Remaster),74,0.00249,0.545,3,0.64,0.0304,E,0.196,-9.937,minor,0.224,4,0.606,80.544,9,best rock,1
-5,Johnny Cash,False,The Man Comes Around,American IV: The Man Comes Around,0,0.553,0.624,4,0.594,0.0808,C,0.952,-7.927,major,0.138,4,0.753,96.874,9,best rock,1
-6,Stereophonics,False,Handbags And Gladrags,Decade In The Sun - Best Of Stereophonics (Deluxe),0,0.0287,0.344,4,0.687,0.00068,D#,0.178,-5.28,major,0.0311,4,0.193,134.503,9,best rock,1
-7,Wolfmother,False,Gypsy Caravan,Gypsy Caravan,0,0.000141,0.273,3,0.948,0.000706,A#,0.318,-3.109,major,0.096,4,0.483,171.806,9,best rock,1
-8,Psychostick,False,Obey The Beard,IV Revenge of the Vengeance,0,0.0019,0.603,3,0.872,0.0231,B,0.0554,-7.553,minor,0.0584,4,0.358,116.65,9,best rock,1
-9,Volbeat,False,Lola Montez,Outlaw Gentlemen & Shady Ladies,57,0.000139,0.513,4,0.875,3.28e-05,D,0.0715,-4.819,major,0.0336,4,0.677,151.986,9,best rock,1
-10,Halestorm,False,Love Bites (So Do I),"Hello, It's Mz. Hyde",40,0.00116,0.536,3,0.966,0.00531,D,0.173,-2.037,minor,0.137,4,0.379,125.008,9,best rock,1
-11,Steriogram,False,Walkie Talkie Man,Schmack!,51,0.000254,0.548,2,0.935,0.0,A,0.422,-2.112,major,0.0775,4,0.593,141.118,9,best rock,1
-12,Weezer,False,Back To The Shack,Everything Will Be Alright In The End,46,0.00686,0.441,3,0.69,7.43e-05,C#,0.0375,-5.214,major,0.044,4,0.642,171.907,9,best rock,1
-13,Queens of the Stone Age,False,I Sat By The Ocean,...Like Clockwork,0,0.00136,0.516,3,0.781,0.000735,G#,0.11,-4.004,minor,0.0364,4,0.897,116.793,9,best rock,1
-14,Queens of the Stone Age,False,Go With The Flow,Songs For The Deaf,65,0.00944,0.246,3,0.991,0.0753,A,0.867,-3.903,major,0.087,4,0.415,159.39,9,best rock,1
-15,Wolfmother,False,Joker And The Thief,Wolfmother,0,0.0452,0.264,4,0.78,0.0222,C,0.376,-2.741,major,0.0517,4,0.456,155.376,9,best rock,1
-16,Wolfmother,False,City Lights,City Lights,0,0.000137,0.443,3,0.962,0.041,G,0.366,-2.924,major,0.103,4,0.606,163.965,9,best rock,1
-17,Jimmy Eat World,False,The Middle,Bleed American (Deluxe Edition),0,0.0424,0.629,2,0.897,0.0,D,0.263,-3.401,major,0.0483,4,0.93,161.944,9,best rock,1
-18,Jet,False,Are You Gonna Be My Girl,Get Born,74,0.00148,0.613,3,0.953,0.000582,D,0.152,-3.435,major,0.0855,4,0.537,105.046,9,best rock,1
-19,Pearl Jam,False,Animal - Remastered,Vs.,53,7.74e-05,0.494,2,0.955,2.77e-06,G,0.051,-4.984,major,0.0626,4,0.487,106.087,9,best rock,1
-20,Motörhead,False,Ace of Spades,Ace of Spades,0,0.00248,0.321,2,0.99,0.00631,F#,0.0924,-4.461,major,0.204,4,0.209,140.574,9,best rock,1
-21,Creedence Clearwater Revival,False,Have You Ever Seen The Rain,Pendulum (40th Anniversary Edition),79,0.0664,0.741,2,0.697,2.28e-05,C,0.133,-7.028,major,0.0277,4,0.774,116.109,9,best rock,1
-22,Rage Against The Machine,True,Killing In The Name,Rage Against The Machine,0,0.0185,0.457,5,0.779,2.04e-06,G,0.0247,-6.323,major,0.257,4,0.734,86.573,9,best rock,1
-23,The Scene,False,Locked Open,Anthem Alive,1,0.000894,0.277,4,0.916,0.0177,C,0.0753,-4.849,major,0.0644,4,0.704,160.628,9,best rock,1
-24,Hushpuppies,False,You're Gonna Say Yeah,The Trap,50,0.00392,0.401,3,0.93,0.0,D,0.0676,-2.645,major,0.12,4,0.603,166.306,9,best rock,1
-25,AFI,False,The Days Of The Phoenix,The Art Of Drowning,0,0.00112,0.398,3,0.985,0.000582,B,0.179,-4.472,minor,0.0585,4,0.539,110.687,9,best rock,1
-26,Rancid,False,Salvation,Let's Go,47,0.0039,0.47,2,0.895,5.45e-05,A,0.296,-8.083,major,0.0476,4,0.877,141.951,9,best rock,1
-27,blink-182,False,All The Small Things,Enema Of The State,0,0.0122,0.439,2,0.891,0.0,C,0.547,-4.764,major,0.057,4,0.695,148.599,9,best rock,1
-28,Stone Sour,False,Through Glass,Come What(ever) May [Special Edition],49,0.0417,0.545,4,0.753,0.0,D#,0.389,-4.618,minor,0.036,4,0.434,105.754,9,best rock,1
-29,Electric Six,False,Naked Pictures (Of Your Mother),Fire,41,0.00599,0.566,2,0.916,0.0,A,0.303,-4.317,major,0.0319,4,0.963,127.149,9,best rock,1
-30,Black Stone Cherry,False,Blind Man,Folklore and Superstition (Special Edition),33,0.000369,0.499,3,0.975,0.0,C#,0.0823,-3.722,minor,0.0804,4,0.33,117.102,9,best rock,1
-31,Puddle Of Mudd,True,She Hates Me,Come Clean (Repackaged International Version),0,0.00643,0.585,3,0.757,0.0,E,0.741,-5.424,major,0.0302,4,0.619,109.781,9,best rock,1
-32,Rancid,False,Time Bomb,...And Out Come The Wolves,63,0.138,0.646,2,0.962,0.0,A,0.471,-4.862,major,0.0536,4,0.961,164.79,9,best rock,1
-33,Billy Talent,False,Devil on My Shoulder,Billy Talent III,55,0.00193,0.588,3,0.892,0.000991,D,0.32,-4.322,major,0.0337,4,0.565,95.905,9,best rock,1
-34,Bad Religion,True,Fuck You,True North,50,0.00146,0.563,2,0.952,2.16e-06,E,0.348,-3.64,major,0.0962,4,0.744,124.455,9,best rock,1
-35,Bad Religion,False,21st Century (Digital Boy),Against The Grain (Reissue),0,0.00046,0.474,2,0.971,0.0,F,0.284,-4.134,major,0.0595,4,0.743,132.21,9,best rock,1
-36,Disturbed,False,Land of Confusion,Ten Thousand Fists,63,4.44e-05,0.553,4,0.991,0.0729,G#,0.179,-3.703,major,0.0925,4,0.324,114.919,9,best rock,1
-37,Pennywise,False,Bro Hymn,Pennywise,0,0.0118,0.408,3,0.82,6.58e-06,C,0.689,-5.116,major,0.0423,4,0.382,98.288,9,best rock,1
-38,Pennywise,True,Fuck Authority,Land Of The Free?,60,0.000887,0.45,3,0.937,0.00457,F,0.379,-2.819,minor,0.0504,4,0.791,101.922,9,best rock,1
-39,The Vines,False,Get Free,Highly Evolved,64,0.000163,0.502,2,0.978,1.27e-06,G,0.287,-3.278,major,0.0649,4,0.603,138.811,9,best rock,1
-40,NOFX,False,Don't Call Me White,Punk In Drublic,53,2.2e-05,0.329,2,0.919,9.7e-05,A,0.351,-8.215,major,0.0754,4,0.319,93.078,9,best rock,1
-41,NOFX,True,Linoleum,The Greatest Songs Ever Written (By Us),0,1.68e-05,0.149,2,0.948,0.000263,E,0.316,-4.624,major,0.135,4,0.416,196.687,9,best rock,1
-42,Lagwagon,False,May 16,Let's Talk About Feelings (Reissue),0,0.000409,0.337,2,0.985,0.00027,D,0.238,-4.675,major,0.0787,4,0.371,103.95,9,best rock,1
-43,Godsmack,False,I Stand Alone,"Good Times, Bad Times - Ten Years of Godsmack",0,4.51e-05,0.211,4,0.921,0.0,C,0.1,-4.468,major,0.0729,4,0.351,171.9,9,best rock,1
-44,Velvet Revolver,False,She Builds Quick Machines,Libertad,44,0.000193,0.334,4,0.883,0.242,C,0.313,-4.486,major,0.0403,4,0.673,148.814,9,best rock,1
-45,Disturbed,True,Down with the Sickness,The Sickness (10th Anniversary Edition),64,0.000319,0.649,4,0.896,1.19e-05,A#,0.102,-2.704,minor,0.056,4,0.924,90.009,9,best rock,1
-46,Serj Tankian,False,Lie Lie Lie,Elect The Dead (Standard Version),0,0.044,0.545,3,0.892,0.00807,F,0.131,-3.97,minor,0.0336,4,0.383,120.096,9,best rock,1
-47,Me First and the Gimme Gimmes,False,Straight Up,Are We Not Men? We Are Diva!,49,0.000665,0.511,2,0.899,0.00012,B,0.0573,-5.723,minor,0.0686,4,0.562,101.928,9,best rock,1
-48,Serj Tankian,True,Empty Walls,Elect The Dead (Standard Version),0,0.00161,0.464,3,0.963,0.0,C,0.196,-3.568,minor,0.0484,4,0.528,160.071,9,best rock,1
-49,System Of A Down,False,Hypnotize,Hypnotize,66,0.0303,0.274,3,0.92,0.000412,F#,0.115,-4.096,major,0.0489,4,0.0397,154.016,9,best rock,1
-50,Tenacious D,True,Master Exploder,The Pick Of Destiny,53,0.00962,0.311,2,0.934,0.00863,B,0.127,-3.942,minor,0.0737,4,0.574,74.47,9,best rock,1
-51,System Of A Down,False,Toxicity,Toxicity,0,0.000254,0.407,3,0.876,0.00265,G#,0.215,-4.145,major,0.0529,3,0.521,116.335,9,best rock,1
-52,System Of A Down,False,Lonely Day,Hypnotize,71,0.362,0.47,2,0.796,1.1e-06,G#,0.133,-3.277,minor,0.0336,3,0.215,113.108,9,best rock,1
-53,System Of A Down,True,B.Y.O.B.,Mezmerize,74,0.00662,0.538,4,0.981,0.0,C#,0.219,-2.688,minor,0.14,4,0.711,101.414,9,best rock,1
-54,System Of A Down,False,Chop Suey!,Toxicity,0,0.000353,0.42,3,0.929,0.000747,G,0.122,-3.899,minor,0.121,4,0.3,127.204,9,best rock,1
-55,Slipknot,False,Duality,Vol. 3: The Subliminal Verses,77,0.000237,0.354,4,0.982,0.000294,E,0.204,-3.026,minor,0.168,4,0.194,143.772,9,best rock,1
-56,Weezer,False,My Name Is Jonas,Weezer,61,0.00021,0.295,3,0.94,0.00106,B,0.276,-5.247,major,0.0449,3,0.58,186.186,9,best rock,1
-57,Korn,True,A.D.I.D.A.S.,Life Is Peachy,62,0.00406,0.334,2,0.898,0.0202,B,0.162,-6.821,minor,0.196,4,0.226,110.364,9,best rock,1
-58,Nirvana,False,Rape Me,In Utero - 20th Anniversary - Deluxe Edition,68,0.0141,0.42,2,0.746,0.0,G#,0.0661,-10.628,major,0.0467,4,0.229,111.886,9,best rock,1
-59,Korn,True,Got the Life,Follow The Leader,0,1.26e-05,0.482,3,0.878,0.647,B,0.409,-6.154,minor,0.0549,4,0.538,123.543,9,best rock,1
-60,Korn,True,Freak On a Leash,Follow The Leader,0,3.22e-05,0.339,4,0.891,0.115,D,0.388,-6.527,major,0.0522,4,0.542,102.925,9,best rock,1
-61,Linkin Park,False,Papercut,Hybrid Theory (Bonus Edition),72,0.00022,0.524,3,0.939,0.0,A,0.623,-3.994,major,0.113,4,0.661,150.184,9,best rock,1
-62,Linkin Park,False,One Step Closer,Hybrid Theory (Bonus Edition),75,0.0014,0.492,2,0.969,1.32e-06,A,0.0787,-4.419,major,0.0491,4,0.538,95.136,9,best rock,1
-63,Linkin Park,True,Bleed It Out,Minutes to Midnight,73,0.114,0.529,2,0.967,0.0,C#,0.61,-3.647,minor,0.0508,4,0.596,140.127,9,best rock,1
-64,JAY-Z,True,Numb / Encore,Collision Course (Deluxe Version),67,0.0601,0.685,3,0.803,0.0,D,0.546,-4.251,major,0.156,4,0.799,107.005,9,best rock,1
-65,Linkin Park,False,In the End,Hybrid Theory (Bonus Edition),83,0.00958,0.556,3,0.864,0.0,D#,0.209,-5.87,minor,0.0584,4,0.4,105.143,9,best rock,1
-66,Guns N' Roses,False,Live And Let Die,Use Your Illusion I,69,0.0109,0.262,3,0.777,0.113,B,0.12,-8.671,major,0.0632,4,0.264,152.5,9,best rock,1
-67,Audioslave,False,Doesn't Remind Me,Out of Exile,63,0.169,0.457,4,0.768,0.0,A,0.103,-3.592,major,0.0378,4,0.232,99.739,9,best rock,1
-68,Limp Bizkit,True,My Way,Greatest Hitz,0,0.0181,0.564,4,0.881,2.26e-06,F#,0.682,-4.05,major,0.0545,4,0.59,96.932,9,best rock,1
-69,Limp Bizkit,True,Rollin' (Air Raid Vehicle),Greatest Hitz,0,0.00452,0.595,3,0.933,0.0,F#,0.222,-3.156,major,0.169,4,0.711,96.371,9,best rock,1
-70,Limp Bizkit,False,Take A Look Around,Greatest Hitz,0,0.0124,0.494,5,0.887,0.265,B,0.112,-4.894,major,0.049,4,0.554,101.844,9,best rock,1
-71,One Bad Son,False,Psycho Killer - Radio Edit,Psycho Killer (Radio Edit),42,9.75e-05,0.571,3,0.947,0.000571,C#,0.0919,-3.855,major,0.0549,4,0.766,121.944,9,best rock,1
-72,Limp Bizkit,False,Behind Blue Eyes,Greatest Hitz,0,0.455,0.584,4,0.526,0.0,G,0.141,-6.028,major,0.0267,4,0.0788,120.345,9,best rock,1
-73,Limp Bizkit,False,Break Stuff,Greatest Hitz,0,0.00384,0.427,2,0.917,0.000102,G#,0.0544,-5.427,major,0.161,4,0.574,109.853,9,best rock,1
-74,P.O.D.,False,Boom - 2006 Remaster,Greatest Hits (The Atlantic Years),45,0.00156,0.563,3,0.924,1.15e-06,D,0.0468,-5.567,major,0.0734,4,0.539,90.928,9,best rock,1
-75,P.O.D.,False,Alive - 2006 Remaster,Greatest Hits (The Atlantic Years),54,1.23e-05,0.409,3,0.952,0.000156,D,0.31,-3.761,minor,0.0756,4,0.55,80.899,9,best rock,1
-76,P.O.D.,False,Youth of the Nation,Satellite (U.S. Version),69,0.00834,0.563,4,0.86,0.0106,G#,0.39,-7.533,major,0.0621,4,0.517,97.867,9,best rock,1
-77,Bloodhound Gang,True,I Hope You Die,Hooray For Boobies,54,0.00124,0.544,3,0.888,0.0505,C#,0.244,-6.005,major,0.0386,4,0.973,159.995,9,best rock,1
-78,Rage Against The Machine,False,Wake Up,Rage Against The Machine - XX (20th Anniversary Special Edition),64,0.00563,0.411,6,0.893,0.00967,G,0.149,-3.646,major,0.139,4,0.513,170.407,9,best rock,1
-79,Papa Roach,False,Scars,To Be Loved: The Best Of Papa Roach (Explicit Version),0,0.0856,0.428,3,0.92,0.0,B,0.177,-3.852,major,0.054,4,0.453,89.895,9,best rock,1
-80,The Offspring,False,(Can't Get My) Head Around You,Splinter,58,0.00807,0.539,2,0.814,1.36e-05,G,0.0916,-4.643,major,0.0771,4,0.646,143.28,9,best rock,1
-81,Papa Roach,True,Last Resort,To Be Loved: The Best Of Papa Roach (Explicit Version),0,0.000624,0.56,3,0.892,0.000164,E,0.177,-3.365,minor,0.0644,4,0.67,90.615,9,best rock,1
-82,Audioslave,False,Show Me How to Live,Audioslave,68,0.000336,0.433,4,0.854,0.000177,A,0.162,-3.868,major,0.0483,4,0.368,89.4,9,best rock,1
-83,Rage Against The Machine,True,Killing In The Name,Rage Against The Machine - XX (20th Anniversary Special Edition),77,0.0266,0.466,5,0.833,0.0,G,0.0327,-4.215,major,0.304,4,0.661,88.785,9,best rock,1
-84,Bad Religion,False,Punk Rock Song,The Gray Race,54,0.000215,0.318,2,0.984,0.000244,C#,0.386,-4.673,minor,0.0806,4,0.716,177.229,9,best rock,1
-85,Nirvana,False,Heart-Shaped Box,In Utero - 20th Anniversary - Deluxe Edition,77,0.199,0.256,4,0.641,0.0329,C#,0.0853,-10.283,major,0.0552,4,0.382,203.006,9,best rock,1
-86,Seether,True,Fake It,Finding Beauty In Negative Spaces (Bonus Track Version),73,0.00141,0.611,3,0.95,1.59e-06,G#,0.0543,-3.509,major,0.0518,4,0.607,132.078,9,best rock,1
-87,The Black Keys,False,Howlin' For You,Brothers (Deluxe Edition),0,0.0299,0.708,3,0.737,0.0804,B,0.101,-6.665,minor,0.0943,4,0.476,132.612,9,best rock,1
-88,Queens of the Stone Age,False,No One Knows,Songs For The Deaf,70,0.0368,0.509,4,0.584,9.96e-05,C,0.384,-4.907,major,0.057,4,0.685,170.411,9,best rock,1
-89,Blur,False,Song 2 - 2012 Remaster,Blur (Special Edition),76,0.00178,0.674,2,0.789,0.00708,G#,0.0753,-6.903,major,0.0676,4,0.918,129.802,9,best rock,1
-90,Chickenfoot,False,Oh Yeah,Chickenfoot,48,5.58e-05,0.459,4,0.8,0.000795,D,0.148,-4.151,major,0.0285,4,0.332,95.229,9,best rock,1
-91,Jimmy Eat World,False,Bleed American,Bleed American,63,0.00842,0.438,3,0.938,1.08e-06,F#,0.806,-5.611,minor,0.094,4,0.584,160.212,9,best rock,1
-92,H-Blockx,False,Countdown To Insanity,Open Letter To A Friend,53,0.00528,0.673,3,0.93,0.0,A#,0.338,-2.619,minor,0.0415,4,0.791,103.025,9,best rock,1
-93,Soundgarden,False,Rusty Cage - Remastered,Badmotorfinger (25th Anniversary Remaster),61,1.65e-05,0.307,4,0.917,0.00044,A,0.0566,-7.599,major,0.0977,4,0.266,101.879,9,best rock,1
-94,Bloodhound Gang,True,Along Comes Mary,Hooray For Boobies,57,0.00107,0.635,3,0.758,0.575,C,0.239,-7.173,minor,0.095,4,0.733,155.043,9,best rock,1
-95,Tenacious D,True,Tribute,Tenacious D,65,0.181,0.365,4,0.767,0.000856,A,0.0942,-6.185,minor,0.0681,4,0.422,94.174,9,best rock,1
-96,Muse,False,Knights of Cydonia,Black Holes and Revelations,67,0.000273,0.366,6,0.963,0.0122,B,0.115,-5.301,minor,0.142,4,0.211,137.114,9,best rock,1
-97,Puddle Of Mudd,False,Gimme Shelter,Re (Disc) Overed,45,0.00482,0.502,5,0.898,0.0219,C#,0.146,-4.086,minor,0.0431,4,0.456,120.015,9,best rock,1
-98,Green Day,True,American Idiot,American Idiot,77,2.64e-05,0.38,2,0.988,7.86e-05,C#,0.368,-2.042,major,0.0639,4,0.769,186.113,9,best rock,1
-99,Weezer,False,Say It Ain't So,Weezer,0,0.00737,0.634,4,0.551,1.82e-05,D#,0.07,-7.136,major,0.0352,4,0.453,151.779,9,best rock,1
+0,Mary Jane Girls,False,In My House - Single Version,80s Soul (International Version),24,0.0137,0.795,3,0.664,0.0796,A#,0.0726,-9.171,minor,0.0316,4,0.936,116.808,1,Funky 80's,1
+1,Michael Jackson,False,Thriller - Single Version,The Essential Michael Jackson,0,0.0934,0.775,5,0.815,3.4e-05,B,0.256,-5.639,major,0.0477,4,0.835,118.402,1,Funky 80's,1
+2,Change,False,A Lovers'S Holiday - Single Edit,Greatest Hits & Rare Tracks,0,0.0277,0.932,4,0.651,0.00959,B,0.0714,-5.747,minor,0.224,4,0.821,116.357,1,Funky 80's,1
+3,George Duke,False,Shine On,DREAM ON,40,0.0176,0.8,5,0.77,0.0115,C#,0.0285,-11.271,minor,0.0415,4,0.96,118.832,1,Funky 80's,1
+4,CHIC,False,Believer,The Best of Chic Vol. 2,21,0.36,0.855,5,0.506,0.00687,G,0.0391,-14.156,major,0.0944,4,0.882,115.708,1,Funky 80's,1
+5,Phyllis Hyman,False,You Know How To Love Me - Edit Version,Essential - Soul Love,0,0.268,0.802,3,0.832,8.4e-05,F#,0.152,-5.156,minor,0.042,4,0.965,115.915,1,Funky 80's,1
+6,Billy Ocean,False,Caribbean Queen (No More Love On the Run),L.I.F.E. (Love Is For Ever),0,0.295,0.82,4,0.596,8.54e-06,D,0.0635,-8.384,minor,0.0275,4,0.961,113.799,1,Funky 80's,1
+7,Cameo,False,Word Up,The Best Of Cameo,0,0.0525,0.863,4,0.838,0.00217,F#,0.0569,-12.38,minor,0.0636,4,0.899,115.931,1,Funky 80's,1
+8,Aretha Franklin,False,Jump To It,Aretha Franklin - The Very Best Of,0,0.26,0.784,4,0.516,3.94e-06,B,0.433,-12.669,major,0.176,4,0.937,120.265,1,Funky 80's,1
+9,"Earth, Wind & Fire",False,Fantasy,"The Best Of Earth, Wind & Fire Vol. II",0,0.207,0.669,3,0.532,0.0074,G,0.163,-14.148,major,0.0504,4,0.676,88.75,1,Funky 80's,1
+10,Sister Sledge,False,"All American Girls - 12"" Version; 2006 Remaster",Definitive Groove: Sister Sledge,19,0.0555,0.792,3,0.754,0.0,A,0.369,-7.147,minor,0.0443,4,0.935,120.764,1,Funky 80's,1
+11,Commodores,False,Nightshift - Single Version,80s Soul (International Version),30,0.722,0.736,4,0.437,0.0211,C#,0.0676,-13.029,major,0.0424,4,0.388,105.29,1,Funky 80's,1
+12,Michael Jackson,False,Rock with You - Single Version,The Essential Michael Jackson,0,0.0633,0.803,3,0.701,0.000111,C#,0.142,-7.208,major,0.0392,4,0.836,114.511,1,Funky 80's,1
+13,Slave,False,Just a Touch of Love,Just A Touch Of Love,46,0.0508,0.742,6,0.473,2.08e-05,C,0.0387,-14.567,major,0.0309,4,0.904,108.783,1,Funky 80's,1
+14,Luther Vandross,False,Never Too Much,"The Ultimate Luther Vandross & ""Shine"" Single",0,0.142,0.735,3,0.694,0.0,D,0.0466,-8.405,major,0.116,4,0.735,109.758,1,Funky 80's,1
+15,Kool & The Gang,False,Take My Heart (You Can Have It If You Want It),The Ultimate Celebration,0,0.0748,0.904,3,0.493,2.79e-05,B,0.133,-15.178,major,0.0626,4,0.963,110.653,1,Funky 80's,1
+16,Sharon Brown,False,I Specialize In Love - 12 Inch Version,I Specialize In Love,37,0.0387,0.852,7,0.752,0.000272,F#,0.609,-7.774,major,0.0576,4,0.834,113.287,1,Funky 80's,1
+17,Tom Browne,False,Funkin' for Jamaica,The Best Year Of My Life: 1981G010004775674D,32,0.217,0.786,3,0.795,0.00205,F,0.0164,-10.239,minor,0.245,4,0.666,110.926,1,Funky 80's,1
+18,Chaka Khan,False,Ain't Nobody,"Epiphany: The Best of Chaka Khan, Vol. 1",67,0.189,0.8,4,0.878,0.000104,C#,0.14,-7.109,major,0.0434,4,0.816,104.282,1,Funky 80's,1
+19,CHIC,False,"Everybody Dance - 12"" Mix",Les Plus Grands Success De Chic - Chic's Greatest Hits,37,0.0823,0.76,8,0.595,0.107,C,0.0671,-14.579,minor,0.0913,4,0.891,128.584,1,Funky 80's,1
+20,"Earth, Wind & Fire",False,Let's Groove,Raise!!,0,0.194,0.877,5,0.546,3.18e-05,B,0.0687,-12.409,minor,0.0645,4,0.955,125.574,1,Funky 80's,1
+21,The Emotions,False,Best of My Love,The Best Of The Emotions: Best Of My Love,54,0.45,0.764,3,0.57,0.362,C,0.0812,-11.361,major,0.0348,4,0.972,115.376,1,Funky 80's,1
+22,Delegation,False,You and I,The Best of Delegation,54,0.153,0.718,5,0.676,0.0306,B,0.0706,-11.633,minor,0.0318,4,0.944,112.711,1,Funky 80's,1
+23,George Benson,False,Give Me the Night,Classic Love Songs,25,0.314,0.85,3,0.466,0.0234,C#,0.129,-15.673,major,0.0555,4,0.86,109.936,1,Funky 80's,1
+24,Sade,False,Nothing Can Come Between Us,The Best Of Sade,0,0.28,0.739,3,0.678,0.197,F,0.0954,-10.324,minor,0.0314,4,0.907,103.791,1,Funky 80's,1
+25,Rodney Franklin,False,The Groove,BarJazz Connection,24,0.202,0.656,4,0.637,0.549,A,0.0441,-12.898,minor,0.0339,4,0.728,109.358,1,Funky 80's,1
+26,The Jacksons,False,"Shake Your Body (Down to the Ground) - 7"" Version",Pure... Summer,20,0.056,0.79,3,0.716,0.0,C,0.337,-6.833,major,0.0815,4,0.852,117.404,1,Funky 80's,1
+27,The Pointer Sisters,False,Jump (For My Love),Fire! The Very Best of The Pointer Sisters,50,0.107,0.86,4,0.705,8.87e-06,A#,0.149,-12.514,minor,0.0894,4,0.854,134.395,1,Funky 80's,1
+28,Cameo,False,"She's Strange - Original 12"" Mix",The Best Of Cameo,0,0.11,0.865,6,0.779,0.000293,C#,0.103,-10.141,major,0.127,4,0.884,108.809,1,Funky 80's,1
+29,Lionel Richie,False,Running With The Night,The Definitive Collection (International 2CD Version),0,0.0251,0.769,4,0.574,0.000212,A,0.489,-10.253,minor,0.0367,4,0.737,120.201,1,Funky 80's,1
+30,Sparks,False,When I'm With You,Terminal Jive,0,0.14,0.713,5,0.727,0.00369,C,0.252,-9.844,major,0.0282,4,0.933,119.511,1,Funky 80's,1
+31,Kool & The Gang,False,Joanna - Single Version,True 80's Love,0,0.353,0.848,3,0.661,0.0209,A#,0.355,-6.737,major,0.0286,4,0.961,105.135,1,Funky 80's,1
+32,Kajagoogoo,False,Too Shy,Pure 80s Pop,0,0.101,0.714,3,0.709,9.38e-05,F,0.0786,-11.067,minor,0.0743,4,0.728,108.018,1,Funky 80's,1
+33,Imagination,False,"So Good, So Right",Body Talk,0,0.249,0.788,7,0.275,0.0149,B,0.0554,-17.953,minor,0.0577,4,0.79,103.422,1,Funky 80's,1
+34,CHIC,False,"Good Times - Original 12"" Mix",Les Plus Grands Success De Chic - Chic's Greatest Hits,30,0.153,0.869,8,0.452,0.0115,D,0.0672,-14.448,major,0.046,4,0.934,112.673,1,Funky 80's,1
+35,Donald Byrd,False,Loving You,100 Tubes Soul Vol.2,0,0.00918,0.813,4,0.552,0.00416,E,0.131,-13.715,major,0.0616,4,0.907,109.561,1,Funky 80's,1
+36,The Blow Monkeys,False,It Doesn't Have to Be This Way,The Best Year Of My Life: 1987,19,0.239,0.655,4,0.806,0.0,A,0.227,-6.838,major,0.0514,4,0.9,97.793,1,Funky 80's,1
+37,The Pointer Sisters,False,I'm So Excited,The Best Year Of My Life: 1984,21,0.0903,0.714,3,0.828,0.000135,F,0.109,-6.354,minor,0.0349,4,0.739,92.269,1,Funky 80's,1
+38,Patti Austin,False,(Ooh-Wee) He's Killing Me,The Best Year Of My Life: 1980,18,0.0694,0.785,3,0.858,0.000471,D,0.0553,-6.156,minor,0.0327,4,0.925,110.168,1,Funky 80's,1
+39,Joyce Sims,False,Come Into My Life - Radio Mix,Soul In Love - 35 Essential Love Songs,0,0.193,0.49,3,0.659,0.362,G#,0.0421,-11.885,minor,0.0459,4,0.834,94.658,1,Funky 80's,1
+40,Imagination,False,Flashback,Body Talk,0,0.306,0.698,4,0.432,0.00816,D,0.048,-17.328,major,0.0375,4,0.675,110.146,1,Funky 80's,1
+41,Sister Sledge,False,Lost in Music - 1995 Remaster,The Best of Sister Sledge (1973-1985),48,0.0544,0.758,4,0.841,0.000153,C,0.103,-7.509,major,0.0319,4,0.849,114.487,1,Funky 80's,1
+42,Lionel Richie,False,All Night Long (All Night),The Definitive Collection (International 2CD Version),0,0.136,0.728,4,0.556,0.00298,C#,0.0455,-12.888,major,0.0472,4,0.805,108.81,1,Funky 80's,1
+43,Amii Stewart,False,Friends (Extended Mix),Friends,28,0.14,0.643,4,0.63,0.0333,B,0.217,-11.014,major,0.0393,4,0.534,95.458,1,Funky 80's,1
+44,Sade,False,The Sweetest Taboo,Diamond Life / Promise / Stronger Than Pride,0,0.177,0.738,4,0.655,0.0146,A#,0.319,-14.742,minor,0.07,4,0.966,91.594,1,Funky 80's,1
+45,Stevie Wonder,False,That Girl,Number Ones,0,0.0563,0.787,5,0.67,0.0,F#,0.0739,-9.726,major,0.045,4,0.903,106.959,1,Funky 80's,1
+46,Shalamar,False,A Night To Remember,A Night To Remember,38,0.298,0.77,3,0.827,0.000357,C#,0.199,-8.754,major,0.0369,4,0.888,109.058,1,Funky 80's,1
+47,Stacy Lattisaw,False,Jump to the Beat,Let Me Be Your Angel,48,0.178,0.778,5,0.818,0.000639,F,0.0647,-9.526,minor,0.0461,4,0.921,119.04,1,Funky 80's,1
+48,Kool & The Gang,False,Get Down On It - Single Version,Colour Collection (International Version),0,0.201,0.877,3,0.609,0.00021,G,0.052,-6.982,major,0.0593,4,0.97,110.877,1,Funky 80's,1
+49,Coati Mundi,False,Me No Pop I,The Best Of Kid Creole & The Coconuts,25,0.141,0.761,4,0.708,1.08e-06,C#,0.0487,-12.423,major,0.0994,4,0.823,110.288,1,Funky 80's,1
+50,Blondie,False,Rapture - Remastered 2001,Blondie Singles Collection: 1977-1982,22,0.118,0.722,4,0.701,0.00364,B,0.545,-8.264,minor,0.0517,4,0.947,107.483,1,Funky 80's,1
+51,CHIC,False,My Forbidden Lover,"Dance, Dance, Dance: The Best of Chic",25,0.0293,0.81,4,0.85,1.71e-06,D,0.313,-9.77,major,0.0352,4,0.887,106.624,1,Funky 80's,1
+52,Change,False,Hold Tight,Miracles,0,0.254,0.775,4,0.796,0.0,F,0.24,-5.508,minor,0.0828,5,0.861,114.962,1,Funky 80's,1
+53,Imagination,False,Music And Lights,In The Heat Of The Night,0,0.55,0.77,5,0.516,0.0307,E,0.0764,-11.363,minor,0.0392,4,0.683,99.945,1,Funky 80's,1
+54,Fat Larry's Band,False,Act Like You Know,Les 150 Plus Grands Hits (Le Meilleur De Vos Tubes Des Années 70 - 80 - 90),0,0.00917,0.739,6,0.408,1.68e-05,A#,0.0517,-19.869,minor,0.122,4,0.677,102.962,1,Funky 80's,1
+55,Michael Jackson,False,Another Part Of Me - Single Version,The Essential Michael Jackson,0,0.131,0.768,3,0.887,0.00599,C#,0.162,-4.227,major,0.0692,4,0.82,110.112,1,Funky 80's,1
+56,Prince,False,1999,1999,60,0.137,0.866,6,0.73,0.0,F,0.0843,-8.201,major,0.0767,4,0.625,118.523,1,Funky 80's,1
+57,Maze,False,Back In Stride - Edit/Remastered,Greatest Hits: 35 Years Of Soul,0,0.574,0.802,4,0.855,0.00921,A#,0.11,-5.946,major,0.0436,4,0.963,113.092,1,Funky 80's,1
+58,Geraldine Hunt feat. Freddie James & Rosalind aka Cheri,False,Can't Fake the Feeling,"Soultry, Jazzy, & Sexy",36,0.162,0.788,5,0.643,0.0199,F,0.0721,-8.125,minor,0.107,4,0.922,116.404,1,Funky 80's,1
+59,Bohannon,False,Lets Start the Dance,This Is Burns 001 European Sex Music,0,0.000429,0.782,5,0.938,0.121,A#,0.118,-8.692,minor,0.05,4,0.871,118.086,1,Funky 80's,1
+60,Herbie Hancock,False,Rockit,Playlist: The Very Best Of Herbie Hancock,0,0.0361,0.878,5,0.836,0.478,G,0.0683,-12.003,major,0.0724,4,0.635,111.334,1,Funky 80's,1
+61,Indeep,False,Last Night a D.J. Saved My Life,The Collection,53,0.154,0.968,5,0.345,0.00344,B,0.0425,-14.17,major,0.151,4,0.954,109.803,1,Funky 80's,1
+62,Gwen Guthrie,False,"Ain't Nothin' Goin' On But The Rent - 12"" Club Mix",Music For Groovin',31,0.102,0.769,3,0.827,2.02e-05,A#,0.0484,-8.618,minor,0.132,4,0.944,107.826,1,Funky 80's,1
+63,Peaches & Herb,False,Shake Your Groove Thing,2 Hot!,0,0.415,0.863,5,0.726,0.0299,A,0.0735,-6.649,major,0.0494,4,0.93,132.574,1,Funky 80's,1
+64,Odyssey,False,Going Back To My Roots (Original Radio Version),Going Back To My Roots,49,0.225,0.693,4,0.918,0.00106,B,0.0547,-6.429,minor,0.0632,4,0.765,111.128,1,Funky 80's,1
+65,Kool & The Gang,False,Ladies Night - Single Version,Colour Collection (International Version),0,0.212,0.674,3,0.739,3.1e-05,B,0.0442,-7.636,major,0.153,4,0.926,111.925,1,Funky 80's,1
+66,Melba Moore,False,Love's Comin' At Ya - Remastered,Other Side Of The Rainbow,46,0.0278,0.911,5,0.476,0.000364,C#,0.104,-10.827,minor,0.0927,4,0.62,114.408,1,Funky 80's,1
+67,Michael Jackson,False,Off the Wall,The Essential Michael Jackson,0,0.196,0.841,3,0.811,0.0,D#,0.132,-6.685,minor,0.0521,4,0.886,119.232,1,Funky 80's,1
+68,The Brothers Johnson,False,Stomp! - Single Version,Strawberry Letter 23/The Very Best Of The Brothers Johnson,0,0.154,0.859,4,0.782,0.0297,A#,0.0693,-8.344,major,0.0369,4,0.931,119.518,1,Funky 80's,1
+69,Nu Shooz,False,I Can't Wait,Smash Hits 1986,0,0.078,0.851,5,0.574,0.0392,F,0.128,-13.622,minor,0.07,4,0.84,104.274,1,Funky 80's,1
+70,Imagination,False,Just An Illusion,In The Heat Of The Night,0,0.309,0.746,6,0.548,0.169,B,0.0594,-10.506,minor,0.0334,4,0.684,105.13,1,Funky 80's,1
+71,Delegation,False,Darlin' (I Think About You),The Best of Delegation,44,0.0491,0.724,4,0.672,0.0103,C,0.0576,-12.94,minor,0.0297,4,0.975,114.968,1,Funky 80's,1
+72,A Taste Of Honey,False,"Boogie Oogie Oogie - 7"" Single Edit",Platinum 70,0,0.116,0.808,3,0.523,2.51e-05,D,0.207,-10.933,minor,0.0522,4,0.934,123.576,1,Funky 80's,1
+73,CHIC,False,I Want Your Love - Edit,Les Plus Grands Success De Chic - Chic's Greatest Hits,32,0.118,0.736,3,0.498,0.00212,A,0.0963,-17.093,minor,0.0393,4,0.897,113.934,1,Funky 80's,1
+74,Oliver Cheatham,False,Get Down Saturday Night,"Smash Soul & R&B Hits, Vol 2",0,0.0239,0.723,7,0.698,0.00693,B,0.0405,-8.587,minor,0.0518,4,0.863,117.148,1,Funky 80's,1
+75,Prince,False,Controversy,Controversy,49,0.00996,0.852,7,0.321,0.239,C#,0.0684,-17.139,minor,0.0527,4,0.629,119.378,1,Funky 80's,1
+76,Change,False,Change Of Heart,Change Of Heart,0,0.0138,0.767,7,0.687,0.00367,C#,0.0423,-12.493,major,0.0531,4,0.955,107.45,1,Funky 80's,1
+77,Leon Haywood,False,Don't Push It Don't Force It,80s Soul (International Version),39,0.429,0.834,3,0.673,0.0297,G#,0.098,-11.045,minor,0.0518,4,0.952,113.732,1,Funky 80's,1
+78,Frankie Smith,False,Double Dutch Bus,Soul From The Big Screen,0,0.00275,0.918,5,0.378,0.00608,G#,0.0306,-14.333,major,0.145,4,0.538,119.504,1,Funky 80's,1
+79,Carl Carlton,False,"She's a Bad Mama Jama (She's Built, She's Stacked)",Soul On Fire: The Number Ones,0,0.0642,0.904,3,0.342,1.42e-06,A,0.0721,-13.506,minor,0.105,4,0.549,113.744,1,Funky 80's,1
+80,"Evelyn ""Champagne"" King",False,Shame,Legends,42,0.00289,0.679,6,0.85,0.115,B,0.0633,-6.131,minor,0.0371,4,0.822,134.49,1,Funky 80's,1
+81,Sade,False,Never as Good as the First Time,Diamond Life / Promise / Stronger Than Pride,0,0.137,0.787,5,0.47,0.14,F#,0.0482,-17.661,minor,0.0397,4,0.967,107.623,1,Funky 80's,1
+82,Latimore,False,Let's Straighten It Out,I'll Do Anything For You,0,0.283,0.705,5,0.451,0.000211,D,0.0908,-15.08,minor,0.0501,4,0.895,159.399,1,Funky 80's,1
+83,Al Jarreau,False,Mornin',100 Tubes Soul Vol.2,0,0.19,0.58,4,0.464,3e-05,D,0.264,-13.252,major,0.0339,4,0.563,89.775,1,Funky 80's,1
+84,Womack & Womack,False,"Teardrops - 7"" Edit",The Pink Album 2007,0,0.0914,0.855,3,0.889,0.0421,B,0.263,-5.585,major,0.041,4,0.966,133.237,1,Funky 80's,1
+85,Kool & The Gang,False,Straight Ahead,The Ultimate Celebration,0,0.0165,0.731,3,0.545,0.0262,F#,0.314,-13.41,major,0.0488,4,0.876,120.105,1,Funky 80's,1
+86,Sister Sledge,False,He's the Greatest Dancer - 2006 Remaster,Definitive Groove: Sister Sledge,42,0.00145,0.652,6,0.881,0.00291,F,0.177,-9.182,minor,0.0455,4,0.905,113.317,1,Funky 80's,1
+87,George Duke,False,Reach Out,The Essential George Duke,36,0.0397,0.819,4,0.64,0.000149,D,0.304,-9.124,minor,0.0371,4,0.917,112.637,1,Funky 80's,1
+88,Cheryl Lynn,False,Got to Be Real - Single Version,The Best Of Cheryl Lynn: Got To Be Real,47,0.0585,0.802,3,0.599,0.00602,F,0.0804,-11.259,major,0.0537,4,0.886,114.651,1,Funky 80's,1
+89,Chaz Jankel,False,Glad To Know You,Best Of,0,0.00344,0.766,6,0.787,0.865,F,0.0832,-7.955,minor,0.0478,4,0.962,116.815,1,Funky 80's,1
+90,Imagination,False,Body Talk,Body Talk,0,0.0893,0.755,6,0.511,0.000501,F,0.0447,-15.799,minor,0.0522,4,0.802,83.993,1,Funky 80's,1
+91,Marvin Gaye,False,Sexual Healing,Songbook,49,0.117,0.799,3,0.602,0.000267,C,0.0658,-9.714,minor,0.061,4,0.717,94.333,1,Funky 80's,1
+92,Mtume,False,Juicy Fruit,Juicy Fruit,49,0.135,0.747,5,0.573,0.0114,E,0.0811,-6.474,major,0.368,4,0.722,192.763,1,Funky 80's,1
+93,Dennis Edwards,False,Don't Look Any Further,Motown 40 Forever,0,0.0419,0.758,4,0.715,0.00263,A,0.0703,-6.589,minor,0.0391,4,0.886,95.135,1,Funky 80's,1
+94,Patrice Rushen,False,Forget Me Nots,Straight From The Heart,0,0.139,0.912,4,0.534,0.102,F#,0.0387,-5.319,minor,0.0366,4,0.963,114.681,1,Funky 80's,1
+95,Diana Ross,False,I'm Coming Out,Diana,5,0.177,0.739,5,0.917,0.119,F,0.0834,-4.459,major,0.0504,4,0.749,110.163,1,Funky 80's,1
+96,Delegation,False,Heartache No. 9,Put A Little Love On Me - EP,32,0.097,0.734,4,0.843,0.145,E,0.0696,-8.415,minor,0.0416,4,0.885,115.8,1,Funky 80's,1
+97,B.B.,False,On the Beat,B. B. & Q. Band,0,0.162,0.785,5,0.788,0.000115,G#,0.139,-7.864,minor,0.0598,4,0.852,119.592,1,Funky 80's,1
+98,Michael Jackson,False,Don't Stop 'Til You Get Enough - 2003 Edit,The Essential Michael Jackson,0,0.0546,0.875,3,0.932,0.0127,E,0.299,-4.179,major,0.0691,4,0.936,119.037,1,Funky 80's,1
+99,Gary's Gang,False,Knock Me Out - Original Version,Dance Party,38,0.0611,0.793,7,0.602,0.0158,B,0.0494,-6.981,minor,0.0685,4,0.885,121.769,1,Funky 80's,1
+0,Bullet For My Valentine,False,Your Betrayal,Fever,67,8.07e-05,0.569,4,0.883,7.74e-05,D,0.0883,-4.41,minor,0.0748,4,0.373,134.001,2,best metal songs,1
+1,Black Sabbath,False,War Pigs,Paranoid (2009 Remastered Version),66,0.116,0.464,7,0.612,0.00559,A,0.171,-12.019,major,0.0591,4,0.496,91.499,2,best metal songs,1
+2,Korn,True,Got the Life,Follow The Leader,68,1.88e-05,0.501,3,0.905,0.765,B,0.383,-5.721,minor,0.0518,4,0.584,123.277,2,best metal songs,1
+3,Twisted Sister,False,I Wanna Rock,Stay Hungry,71,0.00512,0.504,2,0.911,0.0123,D,0.355,-2.97,major,0.0738,4,0.671,106.244,2,best metal songs,1
+4,Marilyn Manson,False,Personal Jesus,Personal Jesus,57,0.000246,0.573,4,0.942,0.00514,D,0.524,-5.259,major,0.124,4,0.278,130.147,2,best metal songs,1
+5,Halestorm,False,I Miss the Misery,The Strange Case of...,59,0.009,0.469,3,0.969,1.11e-05,C,0.346,-2.219,major,0.0589,4,0.476,164.042,2,best metal songs,1
+6,Arch Enemy,False,The Eagle Flies Alone - edit,Will To Power,52,0.000894,0.492,4,0.982,0.205,F,0.118,-4.237,major,0.0856,4,0.148,136.004,2,best metal songs,1
+7,Papa Roach,True,Between Angels And Insects,Infest,0,0.000186,0.494,3,0.953,0.000163,D,0.359,-3.272,minor,0.0616,4,0.365,93.6,2,best metal songs,1
+8,Def Leppard,False,Pour Some Sugar On Me,Hysteria,64,0.00211,0.267,4,0.953,0.0,C#,0.283,-4.899,minor,0.096,4,0.568,84.989,2,best metal songs,1
+9,Avenged Sevenfold,False,Heaven Theme,Hail to the King: Deathbat (Original Video Game Soundtrack),20,0.0248,0.459,4,0.66,0.763,G,0.0955,-7.043,minor,0.0322,4,0.293,114.996,2,best metal songs,1
+10,Skillet,False,Not Gonna Die,Rise (Deluxe Edition),64,0.0106,0.445,3,0.953,0.0,F,0.281,-2.463,minor,0.0704,4,0.475,172.063,2,best metal songs,1
+11,Disturbed,False,The Light,Immortalized,49,0.00456,0.512,4,0.968,1.24e-06,F#,0.115,-3.874,major,0.0658,4,0.646,160.102,2,best metal songs,1
+12,Avenged Sevenfold,True,Buried Alive,Nightmare,63,0.00116,0.607,6,0.804,0.0,A,0.159,-5.209,minor,0.0296,4,0.469,139.983,2,best metal songs,1
+13,System Of A Down,False,Question!,Mezmerize,63,0.00083,0.207,3,0.973,0.0158,E,0.318,-3.21,minor,0.185,4,0.364,180.683,2,best metal songs,1
+14,Breaking Benjamin,False,I Will Not Bow,Dear Agony,69,0.000165,0.533,3,0.955,1.36e-05,G#,0.38,-3.708,major,0.0653,4,0.55,107.984,2,best metal songs,1
+15,Five Finger Death Punch,True,The Pride,American Capitalist,0,8.96e-06,0.492,3,0.987,0.0,E,0.231,-3.398,major,0.122,4,0.354,103.98,2,best metal songs,1
+16,Saliva,False,Click Click Boom,Every Six Seconds,69,0.0029,0.609,4,0.935,0.000359,F#,0.188,-2.941,major,0.0479,4,0.498,95.957,2,best metal songs,1
+17,Within Temptation,True,Paradise (What About Us?),Hydra,0,0.000583,0.461,5,0.928,0.0012,E,0.615,-3.542,minor,0.0697,4,0.428,135.03,2,best metal songs,1
+18,Five Finger Death Punch,False,Gone Away,A Decade Of Destruction,50,0.000436,0.505,4,0.76,4.18e-05,A#,0.139,-6.408,major,0.0414,4,0.244,106.058,2,best metal songs,1
+19,Original Backing Tracks,False,Still Loving You (In the Style of Scorpions) [instrumental Backing Track],Karaoke Hits: Rock Hard,25,0.0164,0.356,6,0.474,0.836,G,0.0904,-11.04,minor,0.0311,4,0.0507,109.866,2,best metal songs,1
+20,Linkin Park,True,Given Up,Minutes to Midnight,68,0.00117,0.655,3,0.885,0.000473,G,0.0448,-4.116,major,0.0438,4,0.938,100.088,2,best metal songs,1
+21,Five Finger Death Punch,True,Jekyll and Hyde,Got Your Six,63,0.000599,0.537,3,0.964,1.14e-05,A,0.0564,-4.157,major,0.113,4,0.712,155.017,2,best metal songs,1
+22,Suicide Silence,False,You Only Live Once,The Black Crown,57,0.00018,0.613,3,0.953,0.0614,F#,0.116,-4.936,major,0.153,4,0.213,119.976,2,best metal songs,1
+23,Slipknot,False,Sulfur,All Hope Is Gone,59,0.000234,0.278,4,0.985,0.000235,B,0.104,-1.934,major,0.129,4,0.342,104.803,2,best metal songs,1
+24,Whitesnake,False,Here I Go Again - 1987 Version; 2017 Remaster,Whitesnake (30th Anniversary Edition),48,0.151,0.384,4,0.846,7.73e-05,G,0.0913,-5.591,major,0.0365,4,0.272,90.172,2,best metal songs,1
+25,System Of A Down,False,Spiders,System Of A Down,65,0.0324,0.46,3,0.54,0.0168,F,0.326,-5.132,major,0.0381,4,0.0506,137.855,2,best metal songs,1
+26,In This Moment,True,Whore,Blood,63,0.0254,0.604,4,0.883,0.0,B,0.0813,-3.821,minor,0.047,4,0.544,90.001,2,best metal songs,1
+27,Korn,False,Coming Undone,See You On the Other Side,9,0.000658,0.687,3,0.677,0.000146,D,0.0564,-4.172,major,0.0508,4,0.546,75.052,2,best metal songs,1
+28,Limp Bizkit,False,Nookie,Significant Other,0,0.00218,0.573,4,0.929,0.0723,B,0.718,-5.996,major,0.082,4,0.284,97.57,2,best metal songs,1
+29,Limp Bizkit,True,My Generation,Chocolate Starfish And The Hot Dog Flavored Water,0,0.00271,0.461,3,0.979,3.07e-06,B,0.118,-2.381,major,0.2,4,0.346,103.904,2,best metal songs,1
+30,Avenged Sevenfold,False,Afterlife,Avenged Sevenfold,68,0.000429,0.487,5,0.949,2.91e-05,D,0.231,-4.217,minor,0.0798,4,0.406,110.02,2,best metal songs,1
+31,Evanescence,False,Everybody's Fool,Fallen,0,0.00162,0.439,3,0.841,2.08e-05,D,0.248,-5.064,minor,0.0411,4,0.261,95.092,2,best metal songs,1
+32,Disturbed,False,The Vengeful One,Immortalized (Deluxe Edition),64,0.000213,0.238,4,0.967,1.18e-06,E,0.26,-2.602,minor,0.136,4,0.58,170.128,2,best metal songs,1
+33,Bring Me The Horizon,False,Drown,That's The Spirit,68,0.000102,0.405,3,0.94,2.79e-05,C#,0.719,-3.103,minor,0.0844,4,0.24,143.126,2,best metal songs,1
+34,Slipknot,True,Killpop,.5: The Gray Chapter (Special Edition),61,0.000311,0.306,3,0.926,0.000644,C#,0.0776,-2.754,minor,0.0912,4,0.483,158.47,2,best metal songs,1
+35,Metallica,False,Whiskey In The Jar,Garage Inc.,0,5.6e-06,0.511,5,0.97,0.00136,A#,0.18,-3.72,major,0.0414,4,0.566,132.986,2,best metal songs,1
+36,Bring Me The Horizon,True,Can You Feel My Heart,Sempiternal (Expanded Edition),79,0.00201,0.15,3,0.859,0.194,E,0.387,-2.827,minor,0.0595,5,0.354,170.527,2,best metal songs,1
+37,Slipknot,True,Unsainted,Unsainted,0,0.000197,0.427,4,0.944,0.0159,G,0.0625,-2.885,major,0.0565,4,0.248,101.078,2,best metal songs,1
+38,System Of A Down,True,Sugar,System Of A Down,71,0.00167,0.451,2,0.889,0.00215,C#,0.258,-2.693,major,0.261,4,0.586,131.073,2,best metal songs,1
+39,Slipknot,False,Wait and Bleed,Slipknot (10th Anniversary Edition),69,0.00208,0.382,2,0.996,0.0,G,0.417,-4.119,major,0.104,4,0.327,93.345,2,best metal songs,1
+40,Linkin Park,True,Bleed It Out,Minutes to Midnight,73,0.114,0.529,2,0.967,0.0,C#,0.61,-3.647,minor,0.0508,4,0.596,140.127,2,best metal songs,1
+41,Korn,True,Falling Away from Me,Issues,70,0.00014,0.468,4,0.769,0.00124,E,0.271,-7.036,major,0.041,4,0.17,104.102,2,best metal songs,1
+42,Metallica,False,For Whom The Bell Tolls - Remastered,Ride The Lightning (Deluxe / Remastered),45,0.00563,0.518,5,0.858,0.00349,C,0.0598,-6.147,major,0.0672,4,0.249,117.897,2,best metal songs,1
+43,Slipknot,False,Dead Memories,All Hope Is Gone,62,0.000443,0.547,4,0.963,0.0251,E,0.353,-2.337,minor,0.0744,4,0.441,130.061,2,best metal songs,1
+44,Linkin Park,False,From the Inside,Meteora (Bonus Edition),64,0.042,0.466,2,0.965,0.0,C#,0.101,-2.597,minor,0.0904,3,0.453,95.028,2,best metal songs,1
+45,Five Finger Death Punch,True,I Apologize,Got Your Six (Deluxe),0,0.00068,0.505,4,0.929,0.0,A,0.167,-4.69,minor,0.0529,4,0.419,77.991,2,best metal songs,1
+46,DragonForce,False,Through The Fire And Flames,Killer Elite,0,0.00144,0.109,7,0.952,0.00922,C,0.345,-4.885,minor,0.123,4,0.137,199.952,2,best metal songs,1
+47,Five Finger Death Punch,True,House of The Rising Sun,"The Wrong Side Of Heaven And The Righteous Side Of Hell, Volume 2",57,0.00171,0.47,4,0.964,0.00112,E,0.107,-2.839,minor,0.09,4,0.264,76.969,2,best metal songs,1
+48,Nightwish,False,Bye Bye Beautiful,Bye Bye Beautiful (Maxi),0,0.000116,0.492,4,0.887,0.000777,A,0.126,-5.116,major,0.0441,4,0.423,148.04,2,best metal songs,1
+49,Twisted Sister,False,We're Not Gonna Take It,Stay Hungry,72,0.0127,0.502,3,0.924,0.0,E,0.162,-6.299,major,0.0503,4,0.922,149.186,2,best metal songs,1
+50,Pierce The Veil,True,King For A Day,Collide With The Sky,0,4.23e-05,0.425,3,0.971,0.000818,F#,0.281,-2.239,major,0.0935,4,0.407,112.248,2,best metal songs,1
+51,Evanescence,False,Call Me When You're Sober,The Open Door,0,0.00234,0.459,3,0.879,0.0,G,0.291,-4.098,major,0.0518,4,0.304,93.469,2,best metal songs,1
+52,Bring Me The Horizon,False,Throne,That's The Spirit,72,0.000455,0.426,3,0.888,0.0,C,0.306,-3.72,minor,0.0987,4,0.387,144.111,2,best metal songs,1
+53,Black Sabbath,False,Paranoid,Paranoid (2009 Remastered Version),77,7.85e-05,0.429,2,0.631,0.00411,E,0.175,-11.514,minor,0.0769,4,0.376,162.734,2,best metal songs,1
+54,Black Veil Brides,False,In The End,Wretched and Divine: The Story Of The Wild Ones,65,0.000183,0.442,3,0.939,0.00589,G#,0.0857,-4.18,major,0.0941,4,0.27,140.021,2,best metal songs,1
+55,Rob Zombie,False,Dragula,Hellbilly Deluxe,0,0.000104,0.591,3,0.966,0.000103,C,0.0922,-6.444,minor,0.0529,4,0.581,125.056,2,best metal songs,1
+56,Disturbed,True,Down with the Sickness,The Sickness,74,0.000996,0.695,4,0.876,6.89e-06,D#,0.106,-4.262,minor,0.0553,4,0.941,89.954,2,best metal songs,1
+57,Rammstein,False,Feuer frei!,Mutter,66,9.12e-05,0.491,3,0.966,0.346,D#,0.153,-3.974,major,0.0463,4,0.223,95.141,2,best metal songs,1
+58,Drowning Pool,False,Bodies,Sinner,0,0.00366,0.654,3,0.928,0.002,E,0.139,-3.406,minor,0.0717,4,0.52,130.951,2,best metal songs,1
+59,Evanescence,False,Lithium,The Open Door,0,0.215,0.49,3,0.63,0.0,A#,0.122,-3.775,minor,0.0352,4,0.205,117.949,2,best metal songs,1
+60,Limp Bizkit,True,My Way,Chocolate Starfish And The Hot Dog Flavored Water,0,0.0183,0.581,4,0.857,1.09e-06,F#,0.682,-4.0,major,0.0462,4,0.6,97.006,2,best metal songs,1
+61,System Of A Down,False,Hypnotize,Hypnotize,66,0.0303,0.274,3,0.92,0.000412,F#,0.115,-4.096,major,0.0489,4,0.0397,154.016,2,best metal songs,1
+62,Rage Against The Machine,True,Killing In The Name,Rage Against The Machine - XX (20th Anniversary Special Edition),77,0.0266,0.466,5,0.833,0.0,G,0.0327,-4.215,major,0.304,4,0.661,88.785,2,best metal songs,1
+63,Avenged Sevenfold,True,Nightmare,Nightmare,70,0.000318,0.554,6,0.949,9.98e-05,D,0.2,-4.928,major,0.0787,4,0.233,129.984,2,best metal songs,1
+64,Godsmack,False,I Stand Alone,Faceless,0,4.56e-05,0.214,4,0.926,0.0,C,0.124,-4.491,major,0.0759,4,0.369,171.846,2,best metal songs,1
+65,Breaking Benjamin,False,The Diary Of Jane - Single Version,Phobia,0,6.97e-05,0.392,3,0.965,0.0427,A#,0.106,-4.441,minor,0.063,4,0.298,167.094,2,best metal songs,1
+66,Bullet For My Valentine,True,Tears Don't Fall,The Poison (Deluxe Version),54,0.000729,0.212,5,0.924,2.23e-06,G,0.0831,-3.349,minor,0.135,4,0.244,162.128,2,best metal songs,1
+67,Avenged Sevenfold,False,Hail to the King,Hail to the King,74,0.000297,0.58,5,0.916,0.0259,D#,0.126,-4.358,minor,0.0387,4,0.683,118.004,2,best metal songs,1
+68,Evanescence,False,Going Under,Fallen,0,0.0107,0.378,3,0.847,3.67e-05,B,0.205,-4.858,minor,0.0514,4,0.49,175.104,2,best metal songs,1
+69,Linkin Park,False,Papercut,Hybrid Theory (Bonus Edition),73,0.00022,0.524,3,0.939,0.0,A,0.623,-3.994,major,0.113,4,0.661,150.184,2,best metal songs,1
+70,Limp Bizkit,True,Rollin' (Air Raid Vehicle),Chocolate Starfish And The Hot Dog Flavored Water,0,0.00516,0.604,3,0.931,0.0,A,0.271,-3.326,major,0.175,4,0.682,96.249,2,best metal songs,1
+71,Pantera,True,Walk,Vulgar Display of Power,72,0.000155,0.43,5,0.704,0.00221,C#,0.0933,-8.008,minor,0.0804,4,0.703,118.242,2,best metal songs,1
+72,Marilyn Manson,False,Sweet Dreams (Are Made Of This),Smells Like Children,0,0.00502,0.39,4,0.642,0.565,G#,0.296,-5.266,major,0.0326,4,0.132,92.397,2,best metal songs,1
+73,Slipknot,False,Before I Forget,Vol. 3: The Subliminal Verses,74,0.0177,0.291,4,0.974,5.44e-06,F#,0.886,-2.997,minor,0.171,4,0.348,134.724,2,best metal songs,1
+74,Marilyn Manson,True,The Beautiful People,Antichrist Superstar,0,0.000779,0.621,3,0.834,0.456,A#,0.0611,-10.068,minor,0.0557,4,0.937,143.973,2,best metal songs,1
+75,Korn,True,Freak On a Leash,Follow The Leader,74,2.23e-05,0.353,4,0.898,0.105,D,0.39,-5.877,major,0.052,4,0.525,103.293,2,best metal songs,1
+76,Linkin Park,False,Somewhere I Belong,Meteora (Bonus Edition),70,0.00038,0.451,3,0.951,2.39e-06,C#,0.261,-3.754,major,0.0645,4,0.442,162.065,2,best metal songs,1
+77,Alien Ant Farm,False,Smooth Criminal,Anthology,0,0.00287,0.653,3,0.966,0.0026,A,0.143,-4.236,minor,0.0598,4,0.874,126.921,2,best metal songs,1
+78,Alice Cooper,False,Poison,Trash,71,0.0327,0.28,4,0.908,8.85e-06,D,0.18,-5.509,minor,0.109,4,0.26,118.698,2,best metal songs,1
+79,Metallica,False,One,...And Justice For All,0,0.00111,0.437,7,0.695,0.0857,G,0.124,-9.447,major,0.0617,3,0.413,102.178,2,best metal songs,1
+80,Five Finger Death Punch,True,Wash It All Away,Got Your Six (Deluxe),0,2.08e-05,0.485,3,0.987,0.0,E,0.267,-3.1,major,0.0738,4,0.272,123.576,2,best metal songs,1
+81,Slipknot,False,Duality,Vol. 3: The Subliminal Verses,77,0.000237,0.354,4,0.982,0.000294,E,0.204,-3.026,minor,0.168,4,0.194,143.772,2,best metal songs,1
+82,Linkin Park,False,Faint,Meteora (Bonus Edition),64,0.111,0.554,2,0.978,0.0,E,0.0731,-3.554,major,0.131,4,0.594,135.095,2,best metal songs,1
+83,Linkin Park,False,Crawling,Hybrid Theory (Bonus Edition),73,0.0466,0.58,3,0.702,3.2e-06,E,0.536,-5.565,major,0.0337,4,0.299,105.076,2,best metal songs,1
+84,Slipknot,False,The Devil in I,.5: The Gray Chapter (Special Edition),71,0.00591,0.398,5,0.939,0.000881,A,0.357,-2.865,minor,0.0648,4,0.235,92.027,2,best metal songs,1
+85,System Of A Down,False,Aerials,Toxicity,0,0.00107,0.404,3,0.923,0.0163,C,0.0637,-4.235,minor,0.0547,4,0.248,81.058,2,best metal songs,1
+86,Five Finger Death Punch,True,Wrong Side of Heaven,"The Wrong Side Of Heaven And The Righteous Side Of Hell, Volume 1",64,0.00721,0.481,4,0.932,0.0,E,0.337,-4.592,minor,0.083,4,0.543,149.992,2,best metal songs,1
+87,System Of A Down,True,B.Y.O.B.,Mezmerize,75,0.00662,0.538,4,0.981,0.0,C#,0.219,-2.688,minor,0.14,4,0.711,101.414,2,best metal songs,1
+88,Mr. Gun,False,Sky Of The Morning,Sky Of The Morning,46,0.0512,0.693,2,0.411,0.843,A,0.118,-12.117,major,0.0426,4,0.439,148.01,2,best metal songs,1
+89,Metallica,False,The Unforgiven,Metallica,72,0.0108,0.54,6,0.584,0.00296,G,0.253,-9.579,major,0.0254,4,0.244,139.261,2,best metal songs,1
+90,Rammstein,False,Du hast,Sehnsucht,0,0.00369,0.64,3,0.922,0.055,A,0.332,-6.283,minor,0.0385,4,0.716,125.105,2,best metal songs,1
+91,Sid Shyne,True,Halo Effect,ADRENALINE,38,0.000335,0.637,2,0.619,0.0,A#,0.379,-9.272,minor,0.0762,4,0.356,82.438,2,best metal songs,1
+92,Slipknot,False,Psychosocial,All Hope Is Gone,64,0.00252,0.576,4,0.989,0.0032,D,0.0243,-1.909,major,0.112,4,0.352,135.093,2,best metal songs,1
+93,Metallica,False,Enter Sandman,Metallica,0,0.00213,0.577,5,0.828,0.0114,F#,0.0581,-8.691,minor,0.0298,4,0.604,123.257,2,best metal songs,1
+94,Kev Dollaz,True,No Competition,No Competition,43,0.149,0.836,2,0.67,0.0,A,0.104,-6.723,minor,0.28,4,0.486,139.981,2,best metal songs,1
+95,System Of A Down,False,Toxicity,Toxicity,0,0.000254,0.407,3,0.876,0.00265,G#,0.215,-4.145,major,0.0529,3,0.521,116.335,2,best metal songs,1
+96,Europe,False,The Final Countdown,The Final Countdown (Expanded Edition),75,0.0628,0.529,5,0.843,0.000827,F#,0.0608,-6.908,minor,0.0616,4,0.188,117.662,2,best metal songs,1
+97,System Of A Down,False,Chop Suey!,Toxicity,0,0.000353,0.42,3,0.929,0.000747,G,0.122,-3.899,minor,0.121,4,0.3,127.204,2,best metal songs,1
+98,Linkin Park,False,In the End,Hybrid Theory (Bonus Edition),83,0.00958,0.556,3,0.864,0.0,D#,0.209,-5.87,minor,0.0584,4,0.4,105.143,2,best metal songs,1
+99,Linkin Park,False,Numb,Meteora,81,0.0046,0.496,3,0.863,0.0,A,0.639,-4.153,major,0.0381,4,0.243,110.018,2,best metal songs,1
+0,Deep Purple,False,Smoke On The Water - Remastered 2012,Machine Head (Remastered),72,0.13,0.598,5,0.676,0.225,C,0.112,-9.211,major,0.0279,4,0.805,114.169,3,best rock,1
+1,Ted Nugent,False,Stranglehold,Great Gonzos! The Best Of Ted Nugent,51,0.0152,0.491,8,0.738,0.168,D,0.2,-7.04,major,0.0335,4,0.51,148.003,3,best rock,1
+2,Lynyrd Skynyrd,False,Free Bird,(Pronounced 'Leh-'Nérd 'Skin-'Nérd) [Expanded Edition],0,0.0119,0.279,9,0.852,0.076,G,0.0624,-7.838,major,0.0511,4,0.438,117.418,3,best rock,1
+3,Goldfinger,False,99 Red Balloons,Stomping Ground,63,0.00103,0.285,3,0.843,0.00037,E,0.327,-7.318,major,0.129,4,0.282,97.051,3,best rock,1
+4,ZZ Top,False,La Grange - 2005 Remaster,Tres Hombres (Expanded 2006 Remaster),75,0.00249,0.545,3,0.64,0.0304,E,0.196,-9.937,minor,0.224,4,0.606,80.544,3,best rock,1
+5,Johnny Cash,False,The Man Comes Around,American IV: The Man Comes Around,0,0.553,0.624,4,0.594,0.0808,C,0.952,-7.927,major,0.138,4,0.753,96.874,3,best rock,1
+6,Stereophonics,False,Handbags And Gladrags,Decade In The Sun - Best Of Stereophonics (Deluxe),0,0.0287,0.344,4,0.687,0.00068,D#,0.178,-5.28,major,0.0311,4,0.193,134.503,3,best rock,1
+7,Wolfmother,False,Gypsy Caravan,Gypsy Caravan,0,0.000141,0.273,3,0.948,0.000706,A#,0.318,-3.109,major,0.096,4,0.483,171.806,3,best rock,1
+8,Psychostick,False,Obey The Beard,IV Revenge of the Vengeance,0,0.0019,0.603,3,0.872,0.0231,B,0.0554,-7.553,minor,0.0584,4,0.358,116.65,3,best rock,1
+9,Volbeat,False,Lola Montez,Outlaw Gentlemen & Shady Ladies,57,0.000139,0.513,4,0.875,3.28e-05,D,0.0715,-4.819,major,0.0336,4,0.677,151.986,3,best rock,1
+10,Halestorm,False,Love Bites (So Do I),"Hello, It's Mz. Hyde",40,0.00116,0.536,3,0.966,0.00531,D,0.173,-2.037,minor,0.137,4,0.379,125.008,3,best rock,1
+11,Steriogram,False,Walkie Talkie Man,Schmack!,51,0.000254,0.548,2,0.935,0.0,A,0.422,-2.112,major,0.0775,4,0.593,141.118,3,best rock,1
+12,Weezer,False,Back To The Shack,Everything Will Be Alright In The End,47,0.00686,0.441,3,0.69,7.43e-05,C#,0.0375,-5.214,major,0.044,4,0.642,171.907,3,best rock,1
+13,Queens of the Stone Age,False,I Sat By The Ocean,...Like Clockwork,0,0.00136,0.516,3,0.781,0.000735,G#,0.11,-4.004,minor,0.0364,4,0.897,116.793,3,best rock,1
+14,Queens of the Stone Age,False,Go With The Flow,Songs For The Deaf,65,0.00944,0.246,3,0.991,0.0753,A,0.867,-3.903,major,0.087,4,0.415,159.39,3,best rock,1
+15,Wolfmother,False,Joker And The Thief,Wolfmother,0,0.0452,0.264,4,0.78,0.0222,C,0.376,-2.741,major,0.0517,4,0.456,155.376,3,best rock,1
+16,Wolfmother,False,City Lights,City Lights,0,0.000137,0.443,3,0.962,0.041,G,0.366,-2.924,major,0.103,4,0.606,163.965,3,best rock,1
+17,Jimmy Eat World,False,The Middle,Bleed American (Deluxe Edition),1,0.0424,0.629,2,0.897,0.0,D,0.263,-3.401,major,0.0483,4,0.93,161.944,3,best rock,1
+18,Jet,False,Are You Gonna Be My Girl,Get Born,74,0.00148,0.613,3,0.953,0.000582,D,0.152,-3.435,major,0.0855,4,0.537,105.046,3,best rock,1
+19,Pearl Jam,False,Animal - Remastered,Vs.,53,7.74e-05,0.494,2,0.955,2.77e-06,G,0.051,-4.984,major,0.0626,4,0.487,106.087,3,best rock,1
+20,Motörhead,False,Ace of Spades,Ace of Spades,0,0.00248,0.321,2,0.99,0.00631,F#,0.0924,-4.461,major,0.204,4,0.209,140.574,3,best rock,1
+21,Creedence Clearwater Revival,False,Have You Ever Seen The Rain,Pendulum (40th Anniversary Edition),79,0.0664,0.741,2,0.697,2.28e-05,C,0.133,-7.028,major,0.0277,4,0.774,116.109,3,best rock,1
+22,Rage Against The Machine,True,Killing In The Name,Rage Against The Machine,0,0.0185,0.457,5,0.779,2.04e-06,G,0.0247,-6.323,major,0.257,4,0.734,86.573,3,best rock,1
+23,The Scene,False,Locked Open,Anthem Alive,1,0.000894,0.277,4,0.916,0.0177,C,0.0753,-4.849,major,0.0644,4,0.704,160.628,3,best rock,1
+24,Hushpuppies,False,You're Gonna Say Yeah,The Trap,50,0.00392,0.401,3,0.93,0.0,D,0.0676,-2.645,major,0.12,4,0.603,166.306,3,best rock,1
+25,AFI,False,The Days Of The Phoenix,The Art Of Drowning,0,0.00112,0.398,3,0.985,0.000582,B,0.179,-4.472,minor,0.0585,4,0.539,110.687,3,best rock,1
+26,Rancid,False,Salvation,Let's Go,47,0.0039,0.47,2,0.895,5.45e-05,A,0.296,-8.083,major,0.0476,4,0.877,141.951,3,best rock,1
+27,blink-182,False,All The Small Things,Enema Of The State,0,0.0122,0.439,2,0.891,0.0,C,0.547,-4.764,major,0.057,4,0.695,148.599,3,best rock,1
+28,Stone Sour,False,Through Glass,Come What(ever) May [Special Edition],49,0.0417,0.545,4,0.753,0.0,D#,0.389,-4.618,minor,0.036,4,0.434,105.754,3,best rock,1
+29,Electric Six,False,Naked Pictures (Of Your Mother),Fire,41,0.00599,0.566,2,0.916,0.0,A,0.303,-4.317,major,0.0319,4,0.963,127.149,3,best rock,1
+30,Black Stone Cherry,False,Blind Man,Folklore and Superstition (Special Edition),33,0.000369,0.499,3,0.975,0.0,C#,0.0823,-3.722,minor,0.0804,4,0.33,117.102,3,best rock,1
+31,Puddle Of Mudd,True,She Hates Me,Come Clean (Repackaged International Version),0,0.00643,0.585,3,0.757,0.0,E,0.741,-5.424,major,0.0302,4,0.619,109.781,3,best rock,1
+32,Rancid,False,Time Bomb,...And Out Come The Wolves,63,0.138,0.646,2,0.962,0.0,A,0.471,-4.862,major,0.0536,4,0.961,164.79,3,best rock,1
+33,Billy Talent,False,Devil on My Shoulder,Billy Talent III,55,0.00193,0.588,3,0.892,0.000991,D,0.32,-4.322,major,0.0337,4,0.565,95.905,3,best rock,1
+34,Bad Religion,True,Fuck You,True North,50,0.00146,0.563,2,0.952,2.16e-06,E,0.348,-3.64,major,0.0962,4,0.744,124.455,3,best rock,1
+35,Bad Religion,False,21st Century (Digital Boy),Against The Grain (Reissue),0,0.00046,0.474,2,0.971,0.0,F,0.284,-4.134,major,0.0595,4,0.743,132.21,3,best rock,1
+36,Disturbed,False,Land of Confusion,Ten Thousand Fists,63,4.44e-05,0.553,4,0.991,0.0729,G#,0.179,-3.703,major,0.0925,4,0.324,114.919,3,best rock,1
+37,Pennywise,False,Bro Hymn,Pennywise,0,0.0118,0.408,3,0.82,6.58e-06,C,0.689,-5.116,major,0.0423,4,0.382,98.288,3,best rock,1
+38,Pennywise,True,Fuck Authority,Land Of The Free?,60,0.000887,0.45,3,0.937,0.00457,F,0.379,-2.819,minor,0.0504,4,0.791,101.922,3,best rock,1
+39,The Vines,False,Get Free,Highly Evolved,64,0.000163,0.502,2,0.978,1.27e-06,G,0.287,-3.278,major,0.0649,4,0.603,138.811,3,best rock,1
+40,NOFX,False,Don't Call Me White,Punk In Drublic,53,2.2e-05,0.329,2,0.919,9.7e-05,A,0.351,-8.215,major,0.0754,4,0.319,93.078,3,best rock,1
+41,NOFX,True,Linoleum,The Greatest Songs Ever Written (By Us),0,1.68e-05,0.149,2,0.948,0.000263,E,0.316,-4.624,major,0.135,4,0.416,196.687,3,best rock,1
+42,Lagwagon,False,May 16,Let's Talk About Feelings (Reissue),0,0.000409,0.337,2,0.985,0.00027,D,0.238,-4.675,major,0.0787,4,0.371,103.95,3,best rock,1
+43,Godsmack,False,I Stand Alone,"Good Times, Bad Times - Ten Years of Godsmack",0,4.51e-05,0.211,4,0.921,0.0,C,0.1,-4.468,major,0.0729,4,0.351,171.9,3,best rock,1
+44,Velvet Revolver,False,She Builds Quick Machines,Libertad,44,0.000193,0.334,4,0.883,0.242,C,0.313,-4.486,major,0.0403,4,0.673,148.814,3,best rock,1
+45,Disturbed,True,Down with the Sickness,The Sickness (10th Anniversary Edition),64,0.000319,0.649,4,0.896,1.19e-05,A#,0.102,-2.704,minor,0.056,4,0.924,90.009,3,best rock,1
+46,Serj Tankian,False,Lie Lie Lie,Elect The Dead (Standard Version),0,0.044,0.545,3,0.892,0.00807,F,0.131,-3.97,minor,0.0336,4,0.383,120.096,3,best rock,1
+47,Me First and the Gimme Gimmes,False,Straight Up,Are We Not Men? We Are Diva!,49,0.000665,0.511,2,0.899,0.00012,B,0.0573,-5.723,minor,0.0686,4,0.562,101.928,3,best rock,1
+48,Serj Tankian,True,Empty Walls,Elect The Dead (Standard Version),0,0.00161,0.464,3,0.963,0.0,C,0.196,-3.568,minor,0.0484,4,0.528,160.071,3,best rock,1
+49,System Of A Down,False,Hypnotize,Hypnotize,66,0.0303,0.274,3,0.92,0.000412,F#,0.115,-4.096,major,0.0489,4,0.0397,154.016,3,best rock,1
+50,Tenacious D,True,Master Exploder,The Pick Of Destiny,53,0.00962,0.311,2,0.934,0.00863,B,0.127,-3.942,minor,0.0737,4,0.574,74.47,3,best rock,1
+51,System Of A Down,False,Toxicity,Toxicity,0,0.000254,0.407,3,0.876,0.00265,G#,0.215,-4.145,major,0.0529,3,0.521,116.335,3,best rock,1
+52,System Of A Down,False,Lonely Day,Hypnotize,71,0.362,0.47,2,0.796,1.1e-06,G#,0.133,-3.277,minor,0.0336,3,0.215,113.108,3,best rock,1
+53,System Of A Down,True,B.Y.O.B.,Mezmerize,75,0.00662,0.538,4,0.981,0.0,C#,0.219,-2.688,minor,0.14,4,0.711,101.414,3,best rock,1
+54,System Of A Down,False,Chop Suey!,Toxicity,0,0.000353,0.42,3,0.929,0.000747,G,0.122,-3.899,minor,0.121,4,0.3,127.204,3,best rock,1
+55,Slipknot,False,Duality,Vol. 3: The Subliminal Verses,77,0.000237,0.354,4,0.982,0.000294,E,0.204,-3.026,minor,0.168,4,0.194,143.772,3,best rock,1
+56,Weezer,False,My Name Is Jonas,Weezer,61,0.00021,0.295,3,0.94,0.00106,B,0.276,-5.247,major,0.0449,3,0.58,186.186,3,best rock,1
+57,Korn,True,A.D.I.D.A.S.,Life Is Peachy,62,0.00406,0.334,2,0.898,0.0202,B,0.162,-6.821,minor,0.196,4,0.226,110.364,3,best rock,1
+58,Nirvana,False,Rape Me,In Utero - 20th Anniversary - Deluxe Edition,68,0.0141,0.42,2,0.746,0.0,G#,0.0661,-10.628,major,0.0467,4,0.229,111.886,3,best rock,1
+59,Korn,True,Got the Life,Follow The Leader,0,1.26e-05,0.482,3,0.878,0.647,B,0.409,-6.154,minor,0.0549,4,0.538,123.543,3,best rock,1
+60,Korn,True,Freak On a Leash,Follow The Leader,0,3.22e-05,0.339,4,0.891,0.115,D,0.388,-6.527,major,0.0522,4,0.542,102.925,3,best rock,1
+61,Linkin Park,False,Papercut,Hybrid Theory (Bonus Edition),73,0.00022,0.524,3,0.939,0.0,A,0.623,-3.994,major,0.113,4,0.661,150.184,3,best rock,1
+62,Linkin Park,False,One Step Closer,Hybrid Theory (Bonus Edition),75,0.0014,0.492,2,0.969,1.32e-06,A,0.0787,-4.419,major,0.0491,4,0.538,95.136,3,best rock,1
+63,Linkin Park,True,Bleed It Out,Minutes to Midnight,73,0.114,0.529,2,0.967,0.0,C#,0.61,-3.647,minor,0.0508,4,0.596,140.127,3,best rock,1
+64,JAY-Z,True,Numb / Encore,Collision Course (Deluxe Version),67,0.0601,0.685,3,0.803,0.0,D,0.546,-4.251,major,0.156,4,0.799,107.005,3,best rock,1
+65,Linkin Park,False,In the End,Hybrid Theory (Bonus Edition),83,0.00958,0.556,3,0.864,0.0,D#,0.209,-5.87,minor,0.0584,4,0.4,105.143,3,best rock,1
+66,Guns N' Roses,False,Live And Let Die,Use Your Illusion I,69,0.0109,0.262,3,0.777,0.113,B,0.12,-8.671,major,0.0632,4,0.264,152.5,3,best rock,1
+67,Audioslave,False,Doesn't Remind Me,Out of Exile,63,0.169,0.457,4,0.768,0.0,A,0.103,-3.592,major,0.0378,4,0.232,99.739,3,best rock,1
+68,Limp Bizkit,True,My Way,Greatest Hitz,0,0.0181,0.564,4,0.881,2.26e-06,F#,0.682,-4.05,major,0.0545,4,0.59,96.932,3,best rock,1
+69,Limp Bizkit,True,Rollin' (Air Raid Vehicle),Greatest Hitz,0,0.00452,0.595,3,0.933,0.0,F#,0.222,-3.156,major,0.169,4,0.711,96.371,3,best rock,1
+70,Limp Bizkit,False,Take A Look Around,Greatest Hitz,0,0.0124,0.494,5,0.887,0.265,B,0.112,-4.894,major,0.049,4,0.554,101.844,3,best rock,1
+71,One Bad Son,False,Psycho Killer - Radio Edit,Psycho Killer (Radio Edit),42,9.75e-05,0.571,3,0.947,0.000571,C#,0.0919,-3.855,major,0.0549,4,0.766,121.944,3,best rock,1
+72,Limp Bizkit,False,Behind Blue Eyes,Greatest Hitz,0,0.455,0.584,4,0.526,0.0,G,0.141,-6.028,major,0.0267,4,0.0788,120.345,3,best rock,1
+73,Limp Bizkit,False,Break Stuff,Greatest Hitz,0,0.00384,0.427,2,0.917,0.000102,G#,0.0544,-5.427,major,0.161,4,0.574,109.853,3,best rock,1
+74,P.O.D.,False,Boom - 2006 Remaster,Greatest Hits (The Atlantic Years),46,0.00156,0.563,3,0.924,1.15e-06,D,0.0468,-5.567,major,0.0734,4,0.539,90.928,3,best rock,1
+75,P.O.D.,False,Alive - 2006 Remaster,Greatest Hits (The Atlantic Years),54,1.23e-05,0.409,3,0.952,0.000156,D,0.31,-3.761,minor,0.0756,4,0.55,80.899,3,best rock,1
+76,P.O.D.,False,Youth of the Nation,Satellite (U.S. Version),69,0.00834,0.563,4,0.86,0.0106,G#,0.39,-7.533,major,0.0621,4,0.517,97.867,3,best rock,1
+77,Bloodhound Gang,True,I Hope You Die,Hooray For Boobies,55,0.00124,0.544,3,0.888,0.0505,C#,0.244,-6.005,major,0.0386,4,0.973,159.995,3,best rock,1
+78,Rage Against The Machine,False,Wake Up,Rage Against The Machine - XX (20th Anniversary Special Edition),64,0.00563,0.411,6,0.893,0.00967,G,0.149,-3.646,major,0.139,4,0.513,170.407,3,best rock,1
+79,Papa Roach,False,Scars,To Be Loved: The Best Of Papa Roach (Explicit Version),0,0.0856,0.428,3,0.92,0.0,B,0.177,-3.852,major,0.054,4,0.453,89.895,3,best rock,1
+80,The Offspring,False,(Can't Get My) Head Around You,Splinter,58,0.00807,0.539,2,0.814,1.36e-05,G,0.0916,-4.643,major,0.0771,4,0.646,143.28,3,best rock,1
+81,Papa Roach,True,Last Resort,To Be Loved: The Best Of Papa Roach (Explicit Version),0,0.000624,0.56,3,0.892,0.000164,E,0.177,-3.365,minor,0.0644,4,0.67,90.615,3,best rock,1
+82,Audioslave,False,Show Me How to Live,Audioslave,68,0.000336,0.433,4,0.854,0.000177,A,0.162,-3.868,major,0.0483,4,0.368,89.4,3,best rock,1
+83,Rage Against The Machine,True,Killing In The Name,Rage Against The Machine - XX (20th Anniversary Special Edition),77,0.0266,0.466,5,0.833,0.0,G,0.0327,-4.215,major,0.304,4,0.661,88.785,3,best rock,1
+84,Bad Religion,False,Punk Rock Song,The Gray Race,55,0.000215,0.318,2,0.984,0.000244,C#,0.386,-4.673,minor,0.0806,4,0.716,177.229,3,best rock,1
+85,Nirvana,False,Heart-Shaped Box,In Utero - 20th Anniversary - Deluxe Edition,77,0.199,0.256,4,0.641,0.0329,C#,0.0853,-10.283,major,0.0552,4,0.382,203.006,3,best rock,1
+86,Seether,True,Fake It,Finding Beauty In Negative Spaces (Bonus Track Version),73,0.00141,0.611,3,0.95,1.59e-06,G#,0.0543,-3.509,major,0.0518,4,0.607,132.078,3,best rock,1
+87,The Black Keys,False,Howlin' For You,Brothers (Deluxe Edition),0,0.0299,0.708,3,0.737,0.0804,B,0.101,-6.665,minor,0.0943,4,0.476,132.612,3,best rock,1
+88,Queens of the Stone Age,False,No One Knows,Songs For The Deaf,70,0.0368,0.509,4,0.584,9.96e-05,C,0.384,-4.907,major,0.057,4,0.685,170.411,3,best rock,1
+89,Blur,False,Song 2 - 2012 Remaster,Blur (Special Edition),76,0.00178,0.674,2,0.789,0.00708,G#,0.0753,-6.903,major,0.0676,4,0.918,129.802,3,best rock,1
+90,Chickenfoot,False,Oh Yeah,Chickenfoot,49,5.58e-05,0.459,4,0.8,0.000795,D,0.148,-4.151,major,0.0285,4,0.332,95.229,3,best rock,1
+91,Jimmy Eat World,False,Bleed American,Bleed American,63,0.00842,0.438,3,0.938,1.08e-06,F#,0.806,-5.611,minor,0.094,4,0.584,160.212,3,best rock,1
+92,H-Blockx,False,Countdown To Insanity,Open Letter To A Friend,54,0.00528,0.673,3,0.93,0.0,A#,0.338,-2.619,minor,0.0415,4,0.791,103.025,3,best rock,1
+93,Soundgarden,False,Rusty Cage - Remastered,Badmotorfinger (25th Anniversary Remaster),61,1.65e-05,0.307,4,0.917,0.00044,A,0.0566,-7.599,major,0.0977,4,0.266,101.879,3,best rock,1
+94,Bloodhound Gang,True,Along Comes Mary,Hooray For Boobies,57,0.00107,0.635,3,0.758,0.575,C,0.239,-7.173,minor,0.095,4,0.733,155.043,3,best rock,1
+95,Tenacious D,True,Tribute,Tenacious D,65,0.181,0.365,4,0.767,0.000856,A,0.0942,-6.185,minor,0.0681,4,0.422,94.174,3,best rock,1
+96,Muse,False,Knights of Cydonia,Black Holes and Revelations,67,0.000273,0.366,6,0.963,0.0122,B,0.115,-5.301,minor,0.142,4,0.211,137.114,3,best rock,1
+97,Puddle Of Mudd,False,Gimme Shelter,Re (Disc) Overed,45,0.00482,0.502,5,0.898,0.0219,C#,0.146,-4.086,minor,0.0431,4,0.456,120.015,3,best rock,1
+98,Green Day,True,American Idiot,American Idiot,77,2.64e-05,0.38,2,0.988,7.86e-05,C#,0.368,-2.042,major,0.0639,4,0.769,186.113,3,best rock,1
+99,Weezer,False,Say It Ain't So,Weezer,0,0.00737,0.634,4,0.551,1.82e-05,D#,0.07,-7.136,major,0.0352,4,0.453,151.779,3,best rock,1

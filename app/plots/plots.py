@@ -5,13 +5,28 @@ import math
 from plotly.subplots import make_subplots
 import utils.constants as C
 class Plots:
+    """Different plots definitions
+    """
     def __init__(self) -> None:
         self.parallel_lines_queries = []
         self.parallel_lines_attributes = ["id"]
 
         self.sunburst_path = ['mode', 'explicit', 'key']
 
-        self.parallel_plot = {}
+        self.parallel_plot = {} # This variable is needed as, by updating checkboxes for parallel plot in search we activate different 
+        #callback and sometimes df may be out of date, if they run in parallel
+
+    def get_range(self, attr):
+        if  attr == "loudness":
+            return [-20,0]
+        elif attr == "tempo":
+            return [50,200]
+        elif attr == "popularity":
+            return [0,100]
+        elif attr == "duration":
+            return [1,7]
+        else:
+            return [0,1]
 
     def change_query(self,query):
         if query in self.parallel_lines_queries:
@@ -53,7 +68,8 @@ class Plots:
                             line_close=True, range_r=[0,1], color_discrete_sequence=px.colors.qualitative.Dark2)
                 fig.update_traces(opacity=0.5)
 
-        fig.update_layout(margin=dict(l=0, r=0, t=25, b=25)) 
+        fig.update_layout(margin=dict(l=0, r=0, t=25, b=25),
+                        font=C.PLOT_FONT) 
 
         return fig
 
@@ -81,10 +97,10 @@ class Plots:
         
         return fig
 
-    def topNTracks(self, data: pd.DataFrame, attribute='danceability', color='energy', top_n = 5):
+    def topNTracks(self, data: pd.DataFrame, attribute='danceability', color='energy', n = 5):
         plotData = data.sort_values(by=[attribute], ascending=False)
-        fig = px.bar(plotData.head(top_n), x='name', y=attribute, color=color, range_color=[0,1],color_continuous_scale=C.COLOR_SCALE_CONTINUOUS)
-        fig.update_layout(title_text=f'Top {top_n} tracks based on {attribute}', title_x=0.5, title_font = {'size' : 24})
+        fig = px.bar(plotData.head(n), x='name', y=attribute, color=color, range_color=self.get_range(color),color_continuous_scale=C.COLOR_SCALE_CONTINUOUS)
+        fig.update_layout(title_text=f'Top {n} tracks based on {attribute}', title_x=0.5, title_font = {'size' : 24})
 
         return fig
 
@@ -97,14 +113,21 @@ class Plots:
     def parallel_coordinates_plot(self, df: pd.DataFrame):
         if df.empty: return self.parallel_plot
         if not self.parallel_lines_queries:
+            print("lel")
             return {}
         
         df = df[df['id'].isin(self.parallel_lines_queries)].reset_index()
 
-        fig = px.parallel_coordinates(df[self.parallel_lines_attributes], color='id', color_continuous_scale=C.COLOR_SCALE_CONTINUOUS)
+        fig = px.parallel_coordinates(df[self.parallel_lines_attributes],
+                                    labels = {"id", "id of the query"},
+                                    color='id', 
+                                    color_continuous_scale=C.COLOR_SCALE_CONTINUOUS)
         
         self.parallel_plot = fig
-                                
+        fig.update(layout_coloraxis_showscale=False)
+        fig.update_layout(
+                font= C.PLOT_FONT
+            )                        
         return fig
 
     def sunburst(self, df, num_of_cols = 3):
@@ -130,13 +153,21 @@ class Plots:
                 curr_row += 1
         
         fig.update_layout(
-        grid= dict(columns=num_of_cols, rows=num_of_rows),
-        margin = dict(t=20, l=0, r=0, b=10),
-        sunburstcolorway = C.COLOR_SCALE_DISCRETE_TWO,
+            grid= dict(columns=num_of_cols, rows=num_of_rows),
+            margin = dict(t=20, l=0, r=0, b=10),
+            sunburstcolorway = C.COLOR_SCALE_DISCRETE_TWO,
+            font= C.PLOT_FONT
+            
         )
 
         return fig
 
     def scatter(self, df, x = "danceability", y="liveness", color= "query", rug_type= "box"):
-        #print(df.columns)
-        return px.scatter(df, x=x, y=y, color=color, marginal_y=rug_type, marginal_x= rug_type, hover_name="name", color_discrete_sequence=C.COLOR_SCALE_DISCRETE_TWO)
+        fig =  px.scatter(df, x=x, y=y, color=color, 
+                            marginal_y=rug_type, marginal_x= rug_type, hover_name="name", 
+                            color_discrete_sequence=C.COLOR_SCALE_DISCRETE,
+                            title= f"{x} vs {y} with respect to {color}")
+        fig.update_layout(
+            font= C.PLOT_FONT
+        )
+        return fig

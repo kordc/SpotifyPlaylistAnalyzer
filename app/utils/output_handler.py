@@ -6,6 +6,9 @@ import dash_bootstrap_components as dbc
 from utils import valueBox
 
 class OutputController:
+    """
+    This class helps to update all the stuff at once, also it hold some needed states for some plots.
+    """
     def __init__(self, plots_generator):
         self.state_control = {
             C.RADAR: {
@@ -29,7 +32,7 @@ class OutputController:
     def update_state(self, element, key, value):
         self.state_control[element][key] = value
 
-    def get_outputs(self, table=True, plots=True, undo=True, footer=True, value_parallel = False):
+    def get_outputs(self, table=True, plots=True, undo=True, footer=True, value_parallel = False, loading=None):
         outputs = []
         if value_parallel:
             outputs.append(Output(C.PARALLEL_COORDS_QUERIES, "value"))
@@ -46,11 +49,13 @@ class OutputController:
             outputs.append(Output(C.PARALLEL_COORDS_QUERIES, "options"))
         if footer:
             outputs.append(Output(C.FOOTER, "children"))
+        if loading:
+            outputs.append(Output(loading, "children"))
         
 
         return outputs
 
-    def get_updated(self, rows: dict, request_manager=None, footers=None, table=True, search=None, checklist_values=None):
+    def get_updated(self, rows: dict, request_manager=None, footers=None, table=True, search=None, checklist_values=None, loading=True):
         results = []
         rows_df = pd.DataFrame(rows)
         
@@ -64,8 +69,8 @@ class OutputController:
             results.append(checklist_values)
 
         if rows:
-            radar_plot = self.plots_generator.radarPlot(rows_df, behaviour = self.state_control["radar"]["behaviour"])
-            top_n_plot = self.plots_generator.topNTracks(rows_df)
+            radar_plot = self.plots_generator.radarPlot(rows_df, behaviour = self.state_control[C.RADAR]["behaviour"])
+            top_n_plot = self.plots_generator.topNTracks(rows_df, **self.state_control[C.TOP_N_PLOT])
             parallel_coords_plot = self.plots_generator.parallel_coordinates_plot(rows_df)
             sunburst = self.plots_generator.sunburst(rows_df)
             scatter = self.plots_generator.scatter(rows_df, **self.state_control[C.SCATTER])
@@ -104,7 +109,8 @@ class OutputController:
                 ]
             )
 
-        
-
+        if loading:
+            #This is just a dummy output for loader to spin
+            results.append("")
        
-        return tuple(results)
+        return results
