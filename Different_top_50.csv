@@ -1,0 +1,148 @@
+,artist,explicit,name,album,popularity,acousticness,danceability,duration,energy,instrumentalness,key,liveness,loudness,mode,speechiness,time_signature,valence,tempo,id,query,count
+0,Lauren Spencer-Smith,True,Flowers,Flowers,82,0.869,0.684,2,0.449,0.0,D#,0.0881,-9.738,major,0.611,4,0.341,66.165,1,Top 50 Australia,1
+1,Jack Harlow,True,Churchill Downs (feat. Drake),Come Home The Kids Miss You,82,0.615,0.71,5,0.522,0.0,B,0.11,-9.102,major,0.36,4,0.37,96.448,1,Top 50 Australia,1
+2,The Goo Goo Dolls,False,Iris,Dizzy up the Girl,82,0.00125,0.315,4,0.715,7.97e-06,B,0.0942,-8.072,minor,0.0362,3,0.497,155.925,1,Top 50 Australia,1
+3,The Killers,False,Mr. Brightside,Hot Fuss,82,0.00121,0.352,3,0.911,0.0,C#,0.0995,-5.23,major,0.0747,4,0.236,148.033,1,Top 50 Australia,1
+4,Kendrick Lamar,True,Auntie Diaries,Mr. Morale & The Big Steppers,79,0.745,0.52,4,0.375,0.0122,C,0.429,-13.409,major,0.358,5,0.589,127.544,1,Top 50 Australia,1
+5,Doja Cat,True,Woman,Planet Her,91,0.0888,0.824,2,0.764,0.00294,F,0.117,-4.175,minor,0.0854,4,0.881,107.998,1,Top 50 Australia,1
+6,J. Cole,True,No Role Modelz,2014 Forest Hills Drive,86,0.324,0.69,4,0.521,0.0,A#,0.0534,-8.492,minor,0.339,4,0.494,100.028,1,Top 50 Australia,1
+7,Kendrick Lamar,True,Crown,Mr. Morale & The Big Steppers,80,0.801,0.355,4,0.245,9.11e-05,C#,0.112,-13.475,minor,0.0358,4,0.162,173.329,1,Top 50 Australia,1
+8,Kendrick Lamar,True,Mr. Morale,Mr. Morale & The Big Steppers,81,0.283,0.727,3,0.53,2.76e-05,A,0.392,-8.616,major,0.312,3,0.258,174.025,1,Top 50 Australia,1
+9,Tate McRae,False,she's all i wanna be,she's all i wanna be,86,0.0134,0.614,3,0.644,7.07e-06,D,0.117,-5.372,minor,0.0426,4,0.651,160.036,1,Top 50 Australia,1
+10,Post Malone,True,Cooped Up (with Roddy Ricch),Cooped Up,87,0.038,0.669,3,0.773,0.0,C,0.113,-5.619,major,0.153,4,0.377,93.923,1,Top 50 Australia,1
+11,Kendrick Lamar,True,Rich - Interlude,Mr. Morale & The Big Steppers,80,0.864,0.481,1,0.406,0.000315,G,0.0869,-11.52,major,0.0775,4,0.741,91.589,1,Top 50 Australia,1
+12,Adele,False,Easy On Me,30,83,0.578,0.604,3,0.366,0.0,F,0.133,-7.519,major,0.0282,4,0.13,141.981,1,Top 50 Australia,1
+13,Benson Boone,False,In The Stars,In The Stars,86,0.338,0.362,3,0.54,0.0,A#,0.139,-6.031,major,0.0528,3,0.3,78.007,1,Top 50 Australia,1
+14,Dave,True,Starlight,Starlight,84,0.341,0.954,3,0.367,5.48e-06,E,0.0979,-9.551,minor,0.288,4,0.372,124.026,1,Top 50 Australia,1
+15,GAYLE,True,abcdefu,abcdefu,91,0.299,0.695,2,0.54,0.0,E,0.367,-5.692,major,0.0493,4,0.415,121.932,1,Top 50 Australia,1
+16,Imagine Dragons,False,Enemy (with JID) - from the series Arcane League of Legends,Mercury - Act 1,83,0.237,0.728,2,0.783,0.0,B,0.434,-4.424,minor,0.266,4,0.555,77.011,1,Top 50 Australia,1
+17,Latto,True,Big Energy,777,73,0.0453,0.937,2,0.793,0.0,B,0.341,-4.431,minor,0.115,4,0.794,106.022,1,Top 50 Australia,1
+18,Olivia Rodrigo,True,good 4 u,SOUR,90,0.335,0.563,2,0.664,0.0,A,0.0849,-5.044,major,0.154,4,0.688,166.928,1,Top 50 Australia,1
+19,Lil Nas X,True,THATS WHAT I WANT,MONTERO,90,0.00614,0.737,2,0.846,0.0,C#,0.0486,-4.51,minor,0.22,4,0.546,87.981,1,Top 50 Australia,1
+20,Elley Duhé,False,MIDDLE OF THE NIGHT,MIDDLE OF THE NIGHT,92,0.0228,0.41,3,0.611,0.0,E,0.116,-8.271,minor,0.0467,3,0.0899,185.727,1,Top 50 Australia,1
+21,SUPER-Hi,False,Following the Sun,Following the Sun,70,0.398,0.734,3,0.828,0.0225,F#,0.136,-4.433,minor,0.033,4,0.717,127.023,1,Top 50 Australia,1
+22,WILLOW,False,Wait a Minute!,ARDIPITHECUS,88,0.0371,0.764,3,0.705,1.94e-05,D#,0.0943,-5.279,minor,0.0278,4,0.672,101.003,1,Top 50 Australia,1
+23,Leah Kate,True,10 Things I Hate About You,10 Things I Hate About You,84,0.00991,0.544,2,0.786,0.0,G#,0.169,-2.97,major,0.0501,4,0.446,153.967,1,Top 50 Australia,1
+24,Camila Cabello,False,Bam Bam (feat. Ed Sheeran),Familia,83,0.182,0.756,3,0.697,0.0,G#,0.333,-6.377,major,0.0401,4,0.956,94.996,1,Top 50 Australia,1
+25,Kendrick Lamar,True,Savior,Mr. Morale & The Big Steppers,83,0.495,0.605,3,0.692,0.0,G#,0.303,-7.45,major,0.446,5,0.685,124.84,1,Top 50 Australia,1
+26,Lil Nas X,True,INDUSTRY BABY (feat. Jack Harlow),MONTERO,84,0.0221,0.741,3,0.691,0.0,A#,0.0476,-7.395,minor,0.0672,4,0.892,150.087,1,Top 50 Australia,1
+27,Jack Harlow,True,Dua Lipa,Come Home The Kids Miss You,85,0.00161,0.833,2,0.652,0.0985,B,0.106,-6.942,major,0.0762,4,0.405,158.022,1,Top 50 Australia,1
+28,Kendrick Lamar,True,Silent Hill,Mr. Morale & The Big Steppers,85,0.438,0.907,3,0.577,3.19e-05,C#,0.137,-6.737,minor,0.0767,4,0.801,140.07,1,Top 50 Australia,1
+29,Ed Sheeran,False,Bad Habits,=,90,0.0451,0.807,3,0.893,2.79e-05,B,0.366,-3.745,minor,0.0347,4,0.537,126.011,1,Top 50 Australia,1
+30,Kendrick Lamar,True,Purple Hearts,Mr. Morale & The Big Steppers,83,0.167,0.567,5,0.824,2.65e-06,D#,0.149,-6.973,minor,0.296,4,0.737,138.202,1,Top 50 Australia,1
+31,Ed Sheeran,False,Shivers,=,89,0.281,0.788,3,0.859,0.0,D,0.0424,-2.724,major,0.0856,4,0.822,141.02,1,Top 50 Australia,1
+32,Justin Bieber,False,Ghost,Justice,89,0.185,0.601,2,0.741,2.91e-05,D,0.415,-5.569,major,0.0478,4,0.441,153.96,1,Top 50 Australia,1
+33,Kendrick Lamar,True,We Cry Together,Mr. Morale & The Big Steppers,83,0.292,0.648,5,0.68,0.0,B,0.0808,-7.276,major,0.345,3,0.504,106.89,1,Top 50 Australia,1
+34,Kendrick Lamar,True,Count Me Out,Mr. Morale & The Big Steppers,84,0.671,0.776,4,0.431,0.0,E,0.153,-7.544,minor,0.091,4,0.495,133.999,1,Top 50 Australia,1
+35,Future,True,WAIT FOR U (feat. Drake & Tems),I NEVER LIKED YOU,88,0.314,0.463,3,0.642,0.0,C#,0.0686,-4.474,major,0.34,4,0.339,83.389,1,Top 50 Australia,1
+36,Kendrick Lamar,True,Worldwide Steppers,Mr. Morale & The Big Steppers,83,0.753,0.514,3,0.472,0.00012,G#,0.0746,-11.106,minor,0.368,3,0.557,77.215,1,Top 50 Australia,1
+37,Lost Frequencies,False,Where Are You Now,Where Are You Now,90,0.515,0.671,2,0.636,0.000411,F#,0.172,-8.117,minor,0.103,4,0.262,120.966,1,Top 50 Australia,1
+38,Elton John,False,Cold Heart - PNAU Remix,The Lockdown Sessions,84,0.0354,0.795,3,0.8,7.25e-05,C#,0.0915,-6.32,major,0.0309,4,0.934,116.032,1,Top 50 Australia,1
+39,Kendrick Lamar,True,Rich Spirit,Mr. Morale & The Big Steppers,85,0.428,0.852,3,0.421,2.28e-06,A#,0.106,-9.153,minor,0.208,4,0.457,95.977,1,Top 50 Australia,1
+40,The Kid LAROI,True,Thousand Miles,Thousand Miles,87,0.0858,0.376,2,0.657,0.0,G,0.0884,-4.658,major,0.0768,4,0.203,80.565,1,Top 50 Australia,1
+41,The Kid LAROI,True,STAY (with Justin Bieber),F*CK LOVE 3: OVER YOU,87,0.0383,0.591,2,0.764,0.0,C#,0.103,-5.484,major,0.0483,4,0.478,169.928,1,Top 50 Australia,1
+42,Kendrick Lamar,True,Father Time (feat. Sampha),Mr. Morale & The Big Steppers,85,0.181,0.514,3,0.779,0.0,A#,0.099,-4.365,minor,0.344,4,0.517,152.869,1,Top 50 Australia,1
+43,Kendrick Lamar,True,United In Grief,Mr. Morale & The Big Steppers,86,0.244,0.529,4,0.845,0.0,G#,0.143,-8.142,major,0.404,3,0.331,85.63,1,Top 50 Australia,1
+44,Glass Animals,False,Heat Waves,Dreamland (+ Bonus Levels),89,0.44,0.761,3,0.525,6.7e-06,B,0.0921,-6.9,major,0.0944,4,0.531,80.87,1,Top 50 Australia,1
+45,Kendrick Lamar,True,Die Hard,Mr. Morale & The Big Steppers,88,0.319,0.775,3,0.736,0.00116,C#,0.127,-8.072,minor,0.247,4,0.362,100.988,1,Top 50 Australia,1
+46,Lizzo,True,About Damn Time,About Damn Time,93,0.0995,0.836,3,0.743,0.0,A#,0.335,-6.305,minor,0.0656,4,0.722,108.966,1,Top 50 Australia,1
+47,Kendrick Lamar,True,N95,Mr. Morale & The Big Steppers,90,0.377,0.79,3,0.67,2.32e-06,C#,0.119,-5.527,major,0.105,4,0.408,139.956,1,Top 50 Australia,1
+48,Jack Harlow,True,First Class,Come Home The Kids Miss You,84,0.111,0.902,2,0.582,3.18e-06,F,0.111,-5.902,minor,0.109,4,0.332,107.005,1,Top 50 Australia,1
+49,Harry Styles,False,As It Was,As It Was,100,0.342,0.52,2,0.731,0.00101,F#,0.311,-5.338,minor,0.0557,4,0.662,173.93,1,Top 50 Australia,1
+0,Hashemi,False,Disarray,Disarray,33,0.0854,0.696,3,0.573,0.0252,D,0.103,-7.043,minor,0.0349,4,0.318,102.986,2,Top 50 Poland,1
+1,Whitepink,False,This Is My Time,This Is My Time,31,0.0163,0.805,2,0.567,0.438,C#,0.253,-11.251,major,0.171,4,0.437,90.001,2,Top 50 Poland,1
+2,2115,True,WIĘCEJ DYMU,WIĘCEJ DYMU,69,0.0537,0.816,2,0.679,0.0,F#,0.0498,-6.513,minor,0.303,4,0.68,165.906,2,Top 50 Poland,1
+3,bunker,False,hello darlin',hello darlin',35,0.0201,0.603,3,0.517,0.0,A,0.172,-9.691,major,0.03,4,0.305,93.982,2,Top 50 Poland,1
+4,Tromba,True,ŚMIECI WYWÓZ,ŚMIECI WYWÓZ,68,0.534,0.702,2,0.655,0.0,C#,0.122,-6.722,minor,0.345,4,0.63,140.982,2,Top 50 Poland,1
+5,Leen,False,Still Make Your Tea,Still Make Your Tea,32,0.506,0.341,3,0.39,6.41e-05,A#,0.271,-10.807,major,0.0567,4,0.164,179.167,2,Top 50 Poland,1
+6,MAZIH,True,SLIDE ON IT,SLIDE ON IT,26,0.0819,0.753,3,0.445,0.0,A#,0.0908,-9.398,minor,0.048,4,0.61,141.096,2,Top 50 Poland,1
+7,SB Maffija,True,Lawenda,Hotel Maffija 2,63,0.656,0.638,3,0.543,0.0,A,0.118,-8.076,major,0.0515,4,0.587,74.956,2,Top 50 Poland,1
+8,Greg Scott,False,Let Me Love You,Let Me Love You,31,0.184,0.715,3,0.731,0.000509,G,0.344,-7.681,major,0.0564,4,0.128,102.997,2,Top 50 Poland,1
+9,sanah,False,Szary świat,UCZTA,66,0.133,0.698,3,0.545,0.0,C#,0.0835,-9.484,major,0.036,4,0.27,120.961,2,Top 50 Poland,1
+10,Dutch Melrose,True,Complifuckincated,Complifuckincated,35,0.0317,0.772,3,0.475,0.0113,G,0.151,-7.696,major,0.0506,4,0.297,137.99,2,Top 50 Poland,1
+11,Brittany Pfantz,False,Chaos,Chaos,34,0.253,0.668,3,0.456,0.000172,F,0.112,-8.704,major,0.0586,4,0.303,92.96,2,Top 50 Poland,1
+12,Kinny Zimmer,True,Zegarek ze Szwajcarii,LETNISKO,60,0.103,0.919,3,0.305,0.0,F,0.145,-10.412,minor,0.227,4,0.294,114.028,2,Top 50 Poland,1
+13,Charma,False,Drown,Drown,29,0.268,0.592,3,0.526,0.000492,C,0.0775,-10.172,minor,0.0333,4,0.55,130.083,2,Top 50 Poland,1
+14,Harry Styles,False,As It Was,Harry's House,90,0.342,0.52,2,0.731,0.00101,F#,0.311,-5.338,minor,0.0557,4,0.662,173.93,2,Top 50 Poland,1
+15,Fuhr,False,Cowboy,COWBOY / COULD HAVE BEEN,33,0.164,0.661,3,0.699,0.0,B,0.092,-8.348,minor,0.03,4,0.648,89.986,2,Top 50 Poland,1
+16,Smrtdeath,True,sober,sober,41,0.013,0.536,3,0.939,0.0,G,0.137,-4.58,major,0.186,4,0.6,170.025,2,Top 50 Poland,1
+17,Kizo,True,Jetlag,Jetlag,55,0.356,0.769,2,0.839,0.0,F#,0.132,-7.333,minor,0.149,4,0.452,125.06,2,Top 50 Poland,1
+18,KTJ & CARLY,False,Pink Ferrari,Pink Ferrari,32,0.16,0.376,2,0.432,0.0,G,0.1,-7.321,major,0.0405,4,0.233,171.95,2,Top 50 Poland,1
+19,Tribbs,False,Zatańczysz ze mną,Zatańczysz ze mną,64,0.0084,0.744,3,0.928,0.0,B,0.14,-4.071,minor,0.238,4,0.302,127.964,2,Top 50 Poland,1
+20,MANDA,False,Eso Es,Eso Es,36,0.69,0.644,2,0.537,0.000476,C,0.295,-8.117,major,0.221,4,0.191,174.082,2,Top 50 Poland,1
+21,Hashemi,False,Drugs,Drugs,26,0.137,0.744,3,0.382,6.68e-05,D,0.0918,-9.344,minor,0.0268,4,0.52,103.991,2,Top 50 Poland,1
+22,sanah,False,ostatnia nadzieja,UCZTA,68,0.126,0.688,3,0.721,0.000247,E,0.583,-7.931,minor,0.0326,4,0.493,104.973,2,Top 50 Poland,1
+23,Kimberly Polanco,False,Fairytale,Fairytale,33,0.133,0.642,3,0.61,0.0,C,0.0873,-10.903,major,0.0494,4,0.616,129.996,2,Top 50 Poland,1
+24,Miszel,True,dres,NO FACE,58,0.352,0.664,2,0.617,0.0,G#,0.235,-8.804,major,0.115,4,0.637,146.098,2,Top 50 Poland,1
+25,David Manny,True,Panamera,Panamera,30,0.123,0.894,2,0.562,1.93e-06,A#,0.0716,-9.855,minor,0.0628,4,0.475,120.073,2,Top 50 Poland,1
+26,Caroline Taylor,False,All the Way (i got married at 26),All the Way (i got married at 26),32,0.379,0.74,3,0.533,0.00509,C,0.118,-9.96,major,0.0446,4,0.348,139.915,2,Top 50 Poland,1
+27,Alberto,True,La Manga,La Manga,70,0.402,0.844,3,0.586,0.0,A,0.0792,-10.061,major,0.0725,4,0.676,115.001,2,Top 50 Poland,1
+28,Fuhr,False,Take Five,Take Five,35,0.325,0.643,3,0.616,0.0,C,0.157,-8.37,minor,0.0274,4,0.58,135.986,2,Top 50 Poland,1
+29,Sentino,True,Midas,Midas,70,0.0408,0.697,3,0.802,0.111,F,0.372,-6.274,minor,0.129,4,0.456,150.047,2,Top 50 Poland,1
+30,Eric Dash,False,for always. forever,Ship of Mine,35,0.298,0.315,3,0.817,8.59e-05,C,0.216,-5.069,major,0.081,4,0.208,96.012,2,Top 50 Poland,1
+31,Kel Sey,False,Not Complicated,Not Complicated,36,0.0339,0.649,2,0.681,6.83e-06,C,0.295,-7.384,major,0.036,4,0.554,110.006,2,Top 50 Poland,1
+32,Malik Montana,True,Self Made,Self Made,59,0.00269,0.58,1,0.64,3.4e-06,C#,0.125,-6.77,major,0.237,4,0.571,160.201,2,Top 50 Poland,1
+33,Durow,False,Saturn,Saturn,38,0.579,0.692,3,0.613,0.073,C,0.256,-10.076,major,0.09,4,0.722,172.486,2,Top 50 Poland,1
+34,Białas,False,Zosia,Zosia,71,0.479,0.826,2,0.629,0.0,D,0.195,-8.881,major,0.17,4,0.864,139.993,2,Top 50 Poland,1
+35,Yacobucci,True,Fake Love,Fake Love,28,0.15,0.686,3,0.636,0.0,G,0.142,-9.548,major,0.234,4,0.473,155.943,2,Top 50 Poland,1
+36,Shroud City,False,Letters,Letters,28,0.499,0.766,2,0.524,4.86e-05,E,0.111,-8.193,major,0.122,4,0.312,89.973,2,Top 50 Poland,1
+37,Kate Bush,False,Running Up That Hill (A Deal With God),Hounds Of Love,82,0.72,0.629,4,0.547,0.00314,A#,0.0604,-13.123,minor,0.055,4,0.197,108.375,2,Top 50 Poland,1
+38,D-Terence,False,Go On,Go On,31,0.12,0.819,3,0.802,0.0,F,0.111,-5.956,major,0.0903,4,0.629,101.983,2,Top 50 Poland,1
+39,Oki,True,Jeżyk!,Jeżyk!,74,0.0356,0.73,3,0.64,0.0,A,0.32,-6.703,major,0.138,4,0.52,136.023,2,Top 50 Poland,1
+40,Andrea,False,Kissing Strangers,Kissing Strangers,34,0.227,0.853,2,0.402,0.0,C,0.221,-7.65,minor,0.0656,4,0.713,99.945,2,Top 50 Poland,1
+41,Durow,True,Icarus,Icarus,35,0.345,0.649,3,0.771,0.0,C,0.088,-5.41,major,0.049,4,0.659,159.941,2,Top 50 Poland,1
+42,Mr. Polska,False,Złote Tarasy,Złote Tarasy,76,0.52,0.878,2,0.604,0.0,G,0.286,-7.411,minor,0.334,4,0.928,127.034,2,Top 50 Poland,1
+43,David Manny,True,Official,Official,27,0.355,0.8,2,0.529,0.000837,C,0.127,-10.686,minor,0.196,4,0.809,140.108,2,Top 50 Poland,1
+44,Oki,True,Jakie To Uczucie?,Jakie To Uczucie?,70,0.079,0.822,2,0.653,0.0,C,0.122,-6.113,major,0.172,4,0.758,109.034,2,Top 50 Poland,1
+45,Schmitty,True,Best Friends,Best Friends,22,0.627,0.744,2,0.534,2.66e-06,G#,0.137,-9.574,minor,0.0645,4,0.57,119.94,2,Top 50 Poland,1
+46,Xersize,True,Decennium,Decennium,31,0.763,0.707,3,0.685,0.0,D#,0.116,-8.61,minor,0.336,4,0.541,106.025,2,Top 50 Poland,1
+47,Smolasty,True,Pijemy Za Lepszy Czas,Pijemy Za Lepszy Czas,64,0.152,0.709,2,0.633,1.34e-06,F#,0.224,-7.865,major,0.0845,4,0.45,143.134,2,Top 50 Poland,1
+48,2115,True,BEDOESIARA,BEDOESIARA,68,0.228,0.919,2,0.575,0.0,C#,0.114,-8.751,major,0.242,4,0.717,104.999,2,Top 50 Poland,1
+49,Mata,True,PATOPROHIBICJA (28.01.2022),PATOPROHIBICJA (28.01.2022),70,0.0744,0.735,3,0.672,0.0,A#,0.0942,-5.03,minor,0.0639,4,0.324,95.035,2,Top 50 Poland,1
+0,Imagine Dragons,False,Enemy (with JID) - from the series Arcane League of Legends,Mercury - Act 1,83,0.237,0.728,2,0.783,0.0,B,0.434,-4.424,minor,0.266,4,0.555,77.011,3,Top 50 USA,1
+1,Kendrick Lamar,False,Silent Hill,Mr. Morale & The Big Steppers,49,0.434,0.902,3,0.56,0.000218,C#,0.139,-6.685,minor,0.0788,4,0.807,140.049,3,Top 50 USA,1
+2,Jack Harlow,False,Dua Lipa,Come Home The Kids Miss You,52,0.00144,0.83,2,0.65,0.0648,B,0.103,-7.006,major,0.0672,4,0.47,157.978,3,Top 50 USA,1
+3,Stephen Sanchez,False,Until I Found You,Until I Found You,87,0.727,0.539,2,0.508,0.0,A#,0.174,-6.05,major,0.0288,3,0.227,101.358,3,Top 50 USA,1
+4,Justin Bieber,False,Ghost,Justice,89,0.185,0.601,2,0.741,2.91e-05,D,0.415,-5.569,major,0.0478,4,0.441,153.96,3,Top 50 USA,1
+5,Zach Bryan,False,Something in the Orange,Something in the Orange,81,0.555,0.369,3,0.192,8.35e-06,E,0.0954,-12.151,minor,0.04,3,0.148,175.212,3,Top 50 USA,1
+6,Bad Bunny,False,Un Ratito,Un Verano Sin Ti,91,0.305,0.787,2,0.546,4.55e-05,C,0.122,-7.094,minor,0.0532,4,0.222,93.05,3,Top 50 USA,1
+7,Kendrick Lamar,False,Rich Spirit,Mr. Morale & The Big Steppers,51,0.45,0.855,3,0.437,1.52e-05,A#,0.103,-9.082,minor,0.195,4,0.397,96.035,3,Top 50 USA,1
+8,Bad Bunny,False,Tarot,Un Verano Sin Ti,92,0.0225,0.795,3,0.684,0.0,B,0.658,-3.971,minor,0.0419,4,0.419,114.011,3,Top 50 USA,1
+9,Olivia Rodrigo,False,good 4 u,SOUR,64,0.297,0.562,2,0.643,0.0,A,0.0848,-5.025,major,0.141,4,0.672,166.814,3,Top 50 USA,1
+10,Lil Nas X,False,INDUSTRY BABY (feat. Jack Harlow),INDUSTRY BABY (feat. Jack Harlow),60,0.0221,0.736,3,0.699,0.0,A#,0.0486,-7.404,minor,0.0579,4,0.911,149.991,3,Top 50 USA,1
+11,Harry Styles,False,Boyfriends,Harry's House,87,0.935,0.417,3,0.202,0.0,C,0.108,-10.976,major,0.0357,4,0.323,118.029,3,Top 50 USA,1
+12,The Kid LAROI,False,STAY (with Justin Bieber),STAY (with Justin Bieber),63,0.037,0.587,2,0.795,0.0,C#,0.103,-5.557,major,0.0522,4,0.476,169.951,3,Top 50 USA,1
+13,Doja Cat,False,Woman,Planet Her,58,0.109,0.825,2,0.761,0.00339,F,0.119,-4.188,minor,0.0895,4,0.881,107.983,3,Top 50 USA,1
+14,Morgan Wallen,False,Wasted On You,Dangerous: The Double Album,81,0.373,0.505,2,0.657,0.00107,B,0.126,-5.24,minor,0.0318,3,0.252,196.0,3,Top 50 USA,1
+15,J. Cole,False,No Role Modelz,2014 Forest Hills Drive,4,0.264,0.664,4,0.524,0.0,A#,0.0555,-8.338,minor,0.339,4,0.476,99.948,3,Top 50 USA,1
+16,KAROL G,False,PROVENZA,PROVENZA,93,0.656,0.87,3,0.516,0.00823,C#,0.11,-8.006,major,0.0541,4,0.53,111.005,3,Top 50 USA,1
+17,Morgan Wallen,False,You Proof,You Proof,82,0.252,0.731,2,0.85,0.0,A,0.605,-4.913,major,0.0336,4,0.644,119.706,3,Top 50 USA,1
+18,Kendrick Lamar,False,Die Hard,Mr. Morale & The Big Steppers,59,0.317,0.777,3,0.737,0.00112,C#,0.126,-8.06,minor,0.248,4,0.361,100.976,3,Top 50 USA,1
+19,Bad Bunny,False,Efecto,Un Verano Sin Ti,91,0.141,0.801,3,0.475,1.73e-05,G,0.0639,-8.797,minor,0.0516,4,0.234,98.047,3,Top 50 USA,1
+20,Harry Styles,False,Love Of My Life,Harry's House,88,0.669,0.555,3,0.536,0.0,G,0.0623,-8.233,major,0.0452,4,0.203,118.057,3,Top 50 USA,1
+21,Post Malone,False,Cooped Up (with Roddy Ricch),Cooped Up,69,0.0399,0.644,3,0.775,0.0,C,0.113,-5.679,major,0.242,4,0.372,93.707,3,Top 50 USA,1
+22,Harry Styles,False,Daydreaming,Harry's House,88,0.311,0.707,3,0.811,0.0152,E,0.131,-5.298,minor,0.0304,4,0.899,113.971,3,Top 50 USA,1
+23,Future,False,PUFFIN ON ZOOTIEZ,I NEVER LIKED YOU,48,0.0527,0.891,2,0.645,0.0,G#,0.153,-5.573,major,0.314,4,0.265,124.997,3,Top 50 USA,1
+24,Harry Styles,False,Cinema,Harry's House,88,0.354,0.829,4,0.644,0.0511,A,0.0944,-7.696,minor,0.0427,4,0.896,105.993,3,Top 50 USA,1
+25,Harry Styles,False,Keep Driving,Harry's House,87,0.321,0.721,2,0.479,0.00156,A,0.182,-9.669,major,0.226,3,0.902,164.948,3,Top 50 USA,1
+26,Bad Bunny,False,Party,Un Verano Sin Ti,93,0.0151,0.829,3,0.799,0.000543,A,0.242,-5.389,major,0.0897,4,0.471,97.013,3,Top 50 USA,1
+27,Bad Bunny,False,Después de la Playa,Un Verano Sin Ti,92,0.356,0.564,3,0.903,0.0,F,0.175,-3.221,major,0.307,4,0.607,78.293,3,Top 50 USA,1
+28,Harry Styles,False,Satellite,Harry's House,88,0.143,0.576,3,0.457,3.05e-05,C,0.0917,-6.473,major,0.0304,4,0.301,138.984,3,Top 50 USA,1
+29,Glass Animals,False,Heat Waves,Dreamland (+ Bonus Levels),89,0.44,0.761,3,0.525,6.7e-06,B,0.0921,-6.9,major,0.0944,4,0.531,80.87,3,Top 50 USA,1
+30,Harry Styles,False,Grapejuice,Harry's House,89,0.357,0.645,3,0.721,0.143,F,0.204,-4.394,major,0.0336,4,0.88,182.928,3,Top 50 USA,1
+31,Harry Styles,False,Little Freak,Harry's House,89,0.719,0.559,3,0.535,0.000143,D#,0.0954,-7.723,major,0.039,4,0.402,141.96,3,Top 50 USA,1
+32,Kendrick Lamar,False,N95,Mr. Morale & The Big Steppers,58,0.418,0.812,3,0.669,4.16e-06,C#,0.122,-5.569,major,0.15,4,0.42,140.01,3,Top 50 USA,1
+33,Kanye West,False,True Love,True Love,82,0.0182,0.712,2,0.861,6.09e-06,F,0.511,-5.487,minor,0.25,4,0.388,84.042,3,Top 50 USA,1
+34,Future,False,WAIT FOR U (feat. Drake & Tems),I NEVER LIKED YOU,57,0.334,0.463,3,0.667,0.0,C#,0.0695,-4.448,major,0.38,4,0.351,84.673,3,Top 50 USA,1
+35,Bad Bunny,False,Ojitos Lindos,Un Verano Sin Ti,96,0.08,0.647,4,0.686,1.34e-06,D#,0.528,-5.745,minor,0.0413,4,0.268,79.928,3,Top 50 USA,1
+36,Harry Styles,False,Daylight,Harry's House,89,0.484,0.686,2,0.445,0.00144,C,0.175,-7.189,major,0.0398,3,0.626,145.5,3,Top 50 USA,1
+37,Apollo 13,False,Gold Leaf,Gold Leaf,33,3.09e-05,0.635,3,0.8,0.00362,F,0.0806,-8.114,minor,0.028,4,0.886,108.057,3,Top 50 USA,1
+38,Harry Styles,False,Music For a Sushi Restaurant,Harry's House,90,0.258,0.72,3,0.715,0.0568,B,0.107,-4.652,major,0.04,4,0.357,107.041,3,Top 50 USA,1
+39,Harry Styles,False,Matilda,Harry's House,90,0.896,0.507,4,0.294,1.97e-05,D,0.0966,-10.0,major,0.04,4,0.386,114.199,3,Top 50 USA,1
+40,Bad Bunny,False,Tití Me Preguntó,Un Verano Sin Ti,94,0.0993,0.65,4,0.715,0.000291,F,0.126,-5.198,minor,0.253,4,0.187,106.672,3,Top 50 USA,1
+41,Lizzo,False,About Damn Time,About Damn Time,61,0.101,0.835,3,0.747,0.0,A#,0.355,-6.328,minor,0.0622,4,0.713,108.975,3,Top 50 USA,1
+42,Apollo 13,False,Mr. Invisible,Mr. Invisible,33,0.0217,0.584,3,0.627,9.19e-05,A,0.0752,-11.256,major,0.0331,4,0.558,76.511,3,Top 50 USA,1
+43,Jack Harlow,False,First Class,Come Home The Kids Miss You,54,0.109,0.9,2,0.585,1.94e-06,G#,0.113,-5.868,major,0.11,4,0.331,107.014,3,Top 50 USA,1
+44,Harry Styles,False,Late Night Talking,Harry's House,93,0.298,0.714,2,0.728,0.0,A#,0.106,-4.595,major,0.0468,4,0.901,114.996,3,Top 50 USA,1
+45,Harry Styles,False,As It Was,Harry's House,90,0.342,0.52,2,0.731,0.00101,F#,0.311,-5.338,minor,0.0557,4,0.662,173.93,3,Top 50 USA,1
+46,Kate Bush,False,Running Up That Hill (A Deal With God),Hounds Of Love,82,0.72,0.629,4,0.547,0.00314,A#,0.0604,-13.123,minor,0.055,4,0.197,108.375,3,Top 50 USA,1

@@ -2,7 +2,7 @@
 credentials.yaml
 
 #Don't want data here
-*.csv
+#*.csv
 
 
 # Byte-compiled / optimized / DLL files

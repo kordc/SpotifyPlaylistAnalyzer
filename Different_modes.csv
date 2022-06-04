@@ -1,0 +1,201 @@
+,artist,explicit,name,album,popularity,acousticness,danceability,duration,energy,instrumentalness,key,liveness,loudness,mode,speechiness,time_signature,valence,tempo,id,query,count
+0,Joni Mitchell,False,Big Yellow Taxi,Ladies of the Canyon,24,0.579,0.611,2,0.47,0.0,E,0.581,-9.135,major,0.0356,4,0.97,85.527,10,Happy mix,1
+1,The Rascals,False,A Beautiful Morning - Single Version,Time Peace: The Rascals' Greatest Hits,52,0.399,0.503,2,0.484,0.0,F,0.345,-12.833,minor,0.0311,4,0.8,122.203,10,Happy mix,1
+2,The Foundations,False,Build Me Up Buttercup - Mono,The Foundations,73,0.315,0.659,2,0.513,0.0,C,0.283,-7.186,major,0.0293,4,0.855,133.609,10,Happy mix,1
+3,Jeff Lynne,False,Every Little Thing,Armchair Theatre,36,0.267,0.576,3,0.56,3.7e-05,C,0.264,-7.296,major,0.0362,4,0.724,115.326,10,Happy mix,1
+4,George Harrison,False,Got My Mind Set On You - Remastered 2004,Cloud Nine,71,0.465,0.767,3,0.854,2.03e-06,E,0.485,-6.947,major,0.0426,4,0.963,149.206,10,Happy mix,1
+5,Stevie Wonder,False,Uptight (Everything's Alright),Up-Tight,55,0.186,0.593,2,0.642,0.0,F,0.129,-9.894,minor,0.0304,4,0.919,133.281,10,Happy mix,1
+6,Dolly Parton,False,Two Doors Down,Here You Come Again,51,0.645,0.694,3,0.698,0.0243,F#,0.0484,-9.41,minor,0.086,4,0.867,98.338,10,Happy mix,1
+7,Kenny Loggins,False,Footloose,"Yesterday, Today, Tomorrow - The Greatest Hits Of Kenny Loggins",68,0.0819,0.546,3,0.895,1.42e-05,A,0.0768,-7.189,major,0.0579,4,0.494,174.089,10,Happy mix,1
+8,Curtis Mayfield,False,Move on Up,Move on Up,68,0.417,0.538,2,0.969,0.00154,B,0.119,-5.626,minor,0.0906,4,0.928,138.652,10,Happy mix,1
+9,Raspberries,False,Go All The Way,Raspberries,62,0.548,0.305,3,0.849,0.000134,A,0.0995,-4.892,major,0.0999,4,0.555,134.287,10,Happy mix,1
+10,Sam & Dave,False,"Hold On, I'm Comin'","Hold On, I'm Comin'",66,0.196,0.803,2,0.338,0.038,F#,0.097,-14.029,major,0.0349,4,0.912,106.841,10,Happy mix,1
+11,Sam & Dave,False,Soul Man,Soul Men,65,0.263,0.79,2,0.41,0.00314,C,0.174,-13.241,major,0.0343,4,0.815,112.345,10,Happy mix,1
+12,REO Speedwagon,False,Keep Pushin',R.E.O.,45,0.0325,0.581,4,0.906,5.93e-05,C#,0.133,-5.573,minor,0.0418,4,0.813,147.594,10,Happy mix,1
+13,Fleetwood Mac,False,Monday Morning,Fleetwood Mac,56,0.00177,0.607,2,0.567,0.000151,C,0.212,-15.728,major,0.0302,4,0.858,106.495,10,Happy mix,1
+14,Bobby McFerrin,False,Don't Worry Be Happy,Simple Pleasures,67,0.88,0.675,4,0.166,7.14e-05,B,0.0461,-22.602,major,0.171,4,0.747,68.837,10,Happy mix,1
+15,Dexys Midnight Runners,False,Come On Eileen,Too Rye Ay,75,0.664,0.45,4,0.656,3.02e-06,D,0.259,-7.049,major,0.0472,4,0.782,106.61,10,Happy mix,1
+16,The Knack,False,My Sharona,Get The Knack,73,0.0589,0.586,4,0.7,0.00125,C,0.0318,-9.558,major,0.0363,4,0.897,147.245,10,Happy mix,1
+17,Steppenwolf,False,Magic Carpet Ride,The Second,68,0.142,0.64,4,0.651,0.28,E,0.0341,-14.981,minor,0.0517,4,0.801,111.676,10,Happy mix,1
+18,Boston,False,More Than a Feeling,Boston,77,0.00088,0.377,4,0.681,0.0023,G,0.0504,-8.039,major,0.0298,4,0.285,108.789,10,Happy mix,1
+19,Looking Glass,False,Brandy (You're a Fine Girl),Looking Glass,73,0.396,0.716,3,0.625,1.97e-05,C#,0.134,-11.369,minor,0.0601,4,0.826,125.276,10,Happy mix,1
+20,Dolly Parton,False,9 to 5,9 To 5 And Odd Jobs,75,0.416,0.554,2,0.783,1.54e-06,F#,0.631,-5.852,major,0.0457,4,0.813,105.39,10,Happy mix,1
+21,a-ha,False,Take on Me,Hunting High and Low,83,0.018,0.573,3,0.902,0.00125,F#,0.0928,-7.638,minor,0.054,4,0.876,84.412,10,Happy mix,1
+22,Little River Band,False,Help Is On Its Way - 2010 Digital Remaster,Diamantina Cocktail (2010 Remaster),59,0.105,0.628,4,0.555,0.0,F#,0.0707,-8.718,major,0.0287,4,0.607,106.104,10,Happy mix,1
+23,Electric Light Orchestra,False,Don't Bring Me Down,Discovery,71,0.144,0.638,4,0.867,0.000733,D,0.0846,-6.469,major,0.0331,4,0.805,115.692,10,Happy mix,1
+24,Huey Lewis & The News,False,The Power Of Love,Greatest Hits: Huey Lewis And The News,73,0.0964,0.768,3,0.829,2.92e-05,F,0.097,-5.109,major,0.0313,4,0.962,118.773,10,Happy mix,1
+25,Katrina & The Waves,False,Walking On Sunshine,Katrina & The Waves,77,0.0116,0.596,3,0.869,0.173,A#,0.0678,-11.97,major,0.037,4,0.944,109.902,10,Happy mix,1
+26,Bob Marley & The Wailers,False,Three Little Birds,Exodus (Deluxe Edition),77,0.0111,0.814,3,0.482,1.57e-06,A,0.0476,-10.493,major,0.0588,4,0.615,148.404,10,Happy mix,1
+27,James Brown & The Famous Flames,False,I Got You (I Feel Good),20 All-Time Greatest Hits!,0,0.308,0.599,2,0.49,3.26e-06,G,0.164,-8.39,major,0.109,5,0.738,143.321,10,Happy mix,1
+28,CHIC,False,Le Freak - 2018 Remaster,The Chic Organization 1977-1979 (2018 Remaster),54,0.0258,0.91,5,0.641,6.42e-05,G,0.0642,-11.316,major,0.0589,4,0.903,118.533,10,Happy mix,1
+29,Queen,False,You're My Best Friend - Remastered 2011,A Night At The Opera (Deluxe Remastered Version),61,0.158,0.518,2,0.761,0.00765,C,0.0715,-7.025,major,0.0452,4,0.576,118.738,10,Happy mix,1
+30,Wild Cherry,False,Play That Funky Music,Wild Cherry,70,0.0435,0.814,5,0.672,0.0,A,0.061,-12.068,major,0.0619,4,0.933,109.394,10,Happy mix,1
+31,Carl Douglas,False,Kung Fu Fighting,The Soul of the Kung Fu Fighter,66,0.0422,0.598,3,0.673,6.9e-05,D,0.289,-10.431,major,0.0693,4,0.59,102.034,10,Happy mix,1
+32,"Earth, Wind & Fire",False,September,September,66,0.165,0.694,3,0.831,0.000892,A,0.25,-7.288,major,0.0301,4,0.98,125.901,10,Happy mix,1
+33,Badfinger,False,No Matter What - Remastered 2010,No Dice (Remastered 2010 / Deluxe Edition),64,0.177,0.529,3,0.743,0.0,A,0.0759,-5.523,major,0.0481,4,0.78,116.817,10,Happy mix,1
+34,Michael Jackson,False,Rock with You - Single Version,Off the Wall,73,0.179,0.808,3,0.535,9.91e-05,C#,0.158,-12.521,major,0.0353,4,0.848,114.031,10,Happy mix,1
+35,Cheap Trick,False,I Want You to Want Me,In Color,68,0.78,0.806,3,0.462,0.0134,D,0.15,-12.778,major,0.0298,4,0.736,92.726,10,Happy mix,1
+36,Stevie Wonder,False,I Wish,Songs In The Key Of Life,64,0.0816,0.821,4,0.721,7.37e-06,A#,0.0664,-10.401,minor,0.0515,4,0.885,105.866,10,Happy mix,1
+37,ABBA,False,Mamma Mia,Abba,1,0.287,0.75,3,0.754,0.000207,D,0.444,-6.999,major,0.0327,4,0.83,137.533,10,Happy mix,1
+38,Wet Willie,False,Keep On Smilin',Keep On Smilin',50,0.0933,0.617,3,0.396,0.000379,G,0.0531,-15.925,major,0.043,4,0.869,102.848,10,Happy mix,1
+39,The Rolling Stones,False,Start Me Up - Remastered 2009,Tattoo You (2009 Re-Mastered),75,0.0436,0.631,3,0.932,0.137,F,0.0918,-4.142,major,0.0354,4,0.971,122.429,10,Happy mix,1
+40,The Doobie Brothers,False,China Grove,The Captain and Me,64,0.319,0.623,3,0.91,0.000448,A,0.081,-8.448,major,0.0384,4,0.745,145.624,10,Happy mix,1
+41,The Cars,False,Just What I Needed,The Cars,69,0.0152,0.619,3,0.579,6.4e-05,E,0.0858,-9.307,major,0.0473,4,0.69,127.224,10,Happy mix,1
+42,Chicago,False,25 or 6 to 4 - 2002 Remaster,Chicago II,63,0.309,0.604,4,0.905,0.0632,E,0.0837,-7.059,minor,0.0578,4,0.723,147.448,10,Happy mix,1
+43,Boston,False,Peace of Mind,Boston,67,0.00101,0.419,5,0.677,9.99e-05,E,0.211,-6.183,major,0.0343,4,0.684,127.678,10,Happy mix,1
+44,The Beatles,False,Twist And Shout - Remastered 2009,Please Please Me (Remastered),73,0.641,0.482,2,0.849,7.74e-06,D,0.0414,-9.198,major,0.0452,4,0.937,124.631,10,Happy mix,1
+45,The Spinners,False,Working My Way Back to You,The Very Best of the Spinners,58,0.289,0.818,4,0.768,4.73e-06,A,0.107,-6.975,minor,0.0482,4,0.922,121.562,10,Happy mix,1
+46,The Doobie Brothers,False,What a Fool Believes,Minute by Minute,68,0.284,0.758,3,0.378,0.0,G#,0.049,-15.308,minor,0.0449,4,0.985,120.736,10,Happy mix,1
+47,Redbone,False,Come and Get Your Love - Single Version,Come and Get Your Love,75,0.172,0.731,3,0.804,0.00028,B,0.0685,-7.621,minor,0.0473,4,0.957,107.383,10,Happy mix,1
+48,Sweet,False,Fox On The Run,Desolation Boulevard,58,0.173,0.511,3,0.644,6.17e-05,E,0.0928,-12.191,major,0.0352,4,0.828,128.067,10,Happy mix,1
+49,Daryl Hall & John Oates,False,You Make My Dreams (Come True),Voices,76,0.234,0.751,3,0.501,0.112,F,0.0467,-12.151,major,0.0551,4,0.902,167.057,10,Happy mix,1
+50,ABBA,False,Waterloo,18 Hits (International Version),0,0.423,0.441,2,0.908,2.88e-06,D,0.325,-6.481,major,0.0425,4,0.808,147.597,10,Happy mix,1
+51,The Jackson 5,False,ABC,ABC,0,0.519,0.572,2,0.786,0.00093,G#,0.11,-8.469,major,0.0642,4,0.952,188.115,10,Happy mix,1
+52,Blue Swede,False,Hooked On A Feeling,Hooked On A Feeling - 40th Anniversary Collection,63,0.261,0.547,2,0.82,0.0,G#,0.3,-6.728,major,0.0805,4,0.933,118.208,10,Happy mix,1
+53,Billy Joel,False,Uptown Girl,The Essential Billy Joel,62,0.0736,0.696,3,0.943,0.0,E,0.653,-2.962,major,0.043,4,0.832,129.002,10,Happy mix,1
+54,Elton John,False,Crocodile Rock,Lost & Found: Elton John,0,0.0314,0.62,3,0.668,1.3e-05,E,0.054,-11.594,minor,0.0358,4,0.97,149.718,10,Happy mix,1
+55,The Go-Go's,False,We Got The Beat - Single Mix,Return To The Valley Of The Go-Go's,45,0.0496,0.596,2,0.949,0.0231,C#,0.0417,-8.889,minor,0.0356,4,0.646,151.526,10,Happy mix,1
+56,Tommy Tutone,False,867-5309 / Jenny,Tommy Tutone - 2,62,0.0264,0.584,3,0.708,0.00364,F,0.112,-10.039,major,0.0593,4,0.564,137.657,10,Happy mix,1
+57,Donna Summer,False,Hot Stuff,Bad Girls,0,0.00559,0.823,5,0.743,0.0306,C,0.0707,-13.98,major,0.0316,4,0.966,120.471,10,Happy mix,1
+58,Madonna,False,Like a Prayer,Celebration (double disc version),71,0.264,0.624,5,0.842,2.11e-05,F,0.181,-5.285,major,0.0376,4,0.257,111.037,10,Happy mix,1
+59,Four Tops,False,"I Can't Help Myself (Sugar Pie, Honey Bunch)",Motown 1960s Volume 1,0,0.197,0.692,2,0.633,0.0,C,0.0929,-7.733,major,0.0291,4,0.965,126.812,10,Happy mix,1
+60,The Lovin' Spoonful,False,Do You Believe in Magic?,Do you Believe In Magic,68,0.213,0.553,2,0.738,0.0,C,0.339,-7.963,major,0.0457,4,0.759,138.602,10,Happy mix,1
+61,The Beatles,False,Here Comes The Sun - Remastered 2009,Abbey Road (Remastered),81,0.0339,0.557,3,0.54,0.00248,A,0.179,-10.484,major,0.0347,4,0.394,129.171,10,Happy mix,1
+62,The Beach Boys,False,Wouldn't It Be Nice,Greatest Hits,59,0.724,0.385,2,0.657,0.0,F,0.105,-6.975,major,0.0342,4,0.672,124.895,10,Happy mix,1
+63,Fleetwood Mac,False,Don't Stop - 2004 Remaster,Rumours (Super Deluxe),59,0.0373,0.672,3,0.72,9.38e-06,A,0.0371,-7.781,major,0.035,4,0.828,118.731,10,Happy mix,1
+64,Creedence Clearwater Revival,False,Lookin' Out My Back Door,Cosmo's Factory (Expanded Edition),67,0.188,0.745,2,0.656,0.00337,A#,0.0941,-6.393,major,0.0405,4,0.858,105.318,10,Happy mix,1
+65,Marvin Gaye,False,I Heard It Through The Grapevine,Every Great Motown Hit Of Marvin Gaye,52,0.199,0.724,3,0.346,0.0,D#,0.111,-11.256,minor,0.0366,4,0.637,117.188,10,Happy mix,1
+66,Traveling Wilburys,False,End Of The Line,"The Traveling Wilburys, Vol. 1",72,0.163,0.578,3,0.836,1.36e-06,D,0.0583,-6.607,major,0.0512,4,0.932,167.026,10,Happy mix,1
+67,ABBA,False,Dancing Queen,Arrival,1,0.382,0.539,3,0.884,0.00166,A,0.76,-6.53,major,0.0403,4,0.752,100.812,10,Happy mix,1
+68,Marvin Gaye,False,Ain't No Mountain High Enough - Mono,Anthology: The Best Of Marvin Gaye,51,0.29,0.62,2,0.813,0.000109,B,0.143,-6.115,minor,0.0307,4,0.832,129.38,10,Happy mix,1
+69,John Fogerty,False,Centerfield,Centerfield - 25th Anniversary,62,0.127,0.777,3,0.948,5.36e-06,G,0.0708,-3.648,major,0.0479,4,0.973,142.359,10,Happy mix,1
+70,The Beatles,False,I Want To Hold Your Hand - Remastered 2015,1 (Remastered),69,0.386,0.49,2,0.715,0.0,G,0.311,-5.549,major,0.0476,4,0.866,130.726,10,Happy mix,1
+71,KC & The Sunshine Band,False,That's the Way (I Like It) - 2004 Remaster,KC & the Sunshine Band,60,0.191,0.68,3,0.877,0.000656,F,0.349,-10.241,minor,0.0353,4,0.922,108.674,10,Happy mix,1
+72,Billy Joel,False,Only the Good Die Young,The Stranger,55,0.159,0.579,3,0.872,0.0,C,0.0935,-6.126,major,0.159,4,0.761,76.214,10,Happy mix,1
+73,Creedence Clearwater Revival,False,Down On The Corner,Willy And The Poor Boys (Expanded Edition),71,0.583,0.858,2,0.544,0.00109,C,0.0707,-9.289,major,0.0751,4,0.874,108.217,10,Happy mix,1
+74,Dire Straits,False,Walk of Life,Brothers in Arms,62,0.435,0.461,4,0.936,9.13e-05,E,0.124,-6.866,major,0.109,4,0.804,172.404,10,Happy mix,1
+75,Johnny Nash,False,I Can See Clearly Now - Edit,I Can See Clearly Now,68,0.633,0.681,2,0.373,0.00113,D,0.0751,-13.2,major,0.0568,4,0.623,123.423,10,Happy mix,1
+76,The Beach Boys,False,Good Vibrations - Remastered 2001,Good Vibrations 40th Anniversary,61,0.387,0.403,3,0.495,8.03e-06,A#,0.147,-6.888,minor,0.0312,4,0.38,132.912,10,Happy mix,1
+77,The Beach Boys,False,I Get Around (Mono),All Summer Long (Mono & Stereo),65,0.36,0.39,2,0.625,0.0,A,0.0663,-7.813,minor,0.0537,4,0.514,144.338,10,Happy mix,1
+78,The Romantics,False,What I Like About You,What I Like About You (And Other Romantic Hits),63,0.319,0.542,2,0.915,5.34e-05,A,0.171,-9.637,major,0.0549,4,0.92,159.81,10,Happy mix,1
+79,Bob Seger,False,Old Time Rock & Roll,Stranger In Town,73,0.206,0.714,3,0.937,0.0,F#,0.0731,-2.947,major,0.0399,4,0.964,124.13,10,Happy mix,1
+80,The Monkees,False,I'm a Believer - 2006 Remaster,More of The Monkees (Deluxe Edition),72,0.707,0.526,2,0.775,2.05e-05,C,0.217,-6.05,major,0.0352,4,0.962,80.106,10,Happy mix,1
+81,Three Dog Night,False,Joy To The World,Naturally,69,0.464,0.649,3,0.679,0.00121,D,0.339,-12.515,major,0.0316,4,0.971,126.867,10,Happy mix,1
+82,Bay City Rollers,False,I Only Wanna Be with You,Dedication,52,0.35,0.594,3,0.908,2.83e-05,D,0.547,-9.865,major,0.0534,4,0.951,131.83,10,Happy mix,1
+83,The Young Rascals,False,Good Lovin' - Single Version,The Rascals: Essentials,16,0.0432,0.263,2,0.714,9.02e-06,D,0.326,-10.935,major,0.0474,4,0.908,196.171,10,Happy mix,1
+84,The Doobie Brothers,False,Long Train Runnin',The Captain and Me,70,0.0916,0.575,3,0.912,0.00211,G,0.0562,-7.275,minor,0.0393,4,0.843,117.399,10,Happy mix,1
+85,David Bowie,False,Young Americans - 2016 Remaster,Young Americans (2016 Remaster),61,0.171,0.614,5,0.763,0.0,E,0.119,-8.949,minor,0.133,4,0.885,84.236,10,Happy mix,1
+86,Whitney Houston,False,I Wanna Dance with Somebody (Who Loves Me),Whitney,0,0.207,0.709,4,0.824,0.000307,C#,0.0888,-8.824,major,0.0453,4,0.867,118.814,10,Happy mix,1
+87,Carole King,False,I Feel the Earth Move,Tapestry,62,0.648,0.711,2,0.576,0.00226,G,0.0528,-8.784,minor,0.0305,4,0.644,120.117,10,Happy mix,1
+88,Wham!,False,Wake Me up Before You Go-Go,THE FINAL,0,0.192,0.612,3,0.738,0.0,C,0.0779,-6.648,major,0.0479,4,0.883,81.327,10,Happy mix,1
+89,Electric Light Orchestra,False,Turn to Stone,Out of the Blue,62,0.0686,0.548,3,0.72,0.000232,C#,0.107,-9.777,minor,0.0409,4,0.458,140.966,10,Happy mix,1
+90,Journey,False,Don't Stop Believin',The Essential Journey,71,0.25,0.491,4,0.802,0.0,E,0.387,-7.106,major,0.0392,4,0.472,119.25,10,Happy mix,1
+91,Manfred Mann's Earth Band,False,Blinded By The Light (Single edit),The Roaring Silence,0,0.524,0.594,3,0.561,0.00222,F,0.0724,-11.666,major,0.0603,4,0.617,140.286,10,Happy mix,1
+92,Stealers Wheel,False,Stuck In The Middle With You,Stealers Wheel,75,0.0936,0.82,3,0.575,0.000135,G,0.109,-9.144,major,0.0408,4,0.964,123.765,10,Happy mix,1
+93,Tears For Fears,False,Everybody Wants To Rule The World,Shout: The Very Best Of Tears For Fears,0,0.38,0.687,4,0.886,0.00646,G,0.0702,-8.219,major,0.0485,4,0.467,112.073,10,Happy mix,1
+94,Glen Campbell,False,Southern Nights,Southern Nights,69,0.0989,0.697,3,0.813,0.0232,B,0.583,-8.89,minor,0.0315,4,0.85,95.301,10,Happy mix,1
+95,The O'Jays,False,Love Train,Back Stabbers,69,0.186,0.743,2,0.572,1.44e-05,C,0.163,-9.627,major,0.0493,4,0.675,122.658,10,Happy mix,1
+96,Electric Light Orchestra,False,Mr. Blue Sky,Out of the Blue,79,0.652,0.388,5,0.338,3.73e-06,A#,0.248,-10.054,major,0.0329,4,0.478,177.765,10,Happy mix,1
+97,Van Morrison,False,Brown Eyed Girl,Blowin' Your Mind!,78,0.185,0.491,3,0.583,0.0,G,0.406,-10.964,major,0.0376,4,0.908,150.566,10,Happy mix,1
+98,Rupert Holmes,False,Escape (The Pina Colada Song),Partners In Crime,74,0.467,0.836,4,0.509,4.1e-06,C,0.0436,-13.668,major,0.0548,4,0.949,138.714,10,Happy mix,1
+99,Queen,False,Don't Stop Me Now,Greatest Hits,0,0.057,0.557,3,0.761,0.00109,F,0.567,-9.58,major,0.167,4,0.666,156.442,10,Happy mix,1
+0,Jorja Smith,False,Don't Watch Me Cry,Lost & Found,40,0.895,0.526,3,0.161,0.0,C#,0.115,-9.813,major,0.0423,4,0.349,129.928,11,best sad songs,1
+1,Clinton Kane,False,I GUESS I'M IN LOVE,I GUESS I'M IN LOVE,79,0.877,0.422,3,0.34,1.77e-05,C,0.149,-6.577,major,0.0351,4,0.223,77.213,11,best sad songs,1
+2,Julia Michaels,False,What A Time (feat. Niall Horan),Inner Monologue Part 1,82,0.662,0.516,2,0.467,0.0,C,0.0853,-6.184,major,0.0302,4,0.386,132.861,11,best sad songs,1
+3,The Neighbourhood,False,Daddy Issues,Wiped Out!,85,0.0678,0.588,4,0.521,0.149,A#,0.123,-9.461,major,0.0329,4,0.337,85.012,11,best sad songs,1
+4,Faouzia,False,Minefields,Minefields,70,0.183,0.476,3,0.686,0.0,C#,0.0997,-5.019,minor,0.11,4,0.243,152.617,11,best sad songs,1
+5,Dua Lipa,False,Homesick,Dua Lipa (Deluxe),65,0.948,0.426,3,0.224,0.0,F#,0.112,-8.683,major,0.0391,5,0.399,85.728,11,best sad songs,1
+6,Niall Horan,False,This Town,Songs For The Heart Broken,24,0.699,0.678,3,0.407,0.0,A,0.122,-7.778,major,0.0302,4,0.196,111.814,11,best sad songs,1
+7,Jamie Grey,False,Arms Around You,Arms Around You,48,0.841,0.53,3,0.271,0.0,B,0.103,-9.847,major,0.0491,4,0.392,101.796,11,best sad songs,1
+8,Matt Maeson,False,Cringe,Bank On The Funeral,63,0.0652,0.729,3,0.474,0.0,F,0.0758,-7.724,major,0.0553,4,0.443,126.047,11,best sad songs,1
+9,Kina,False,Wish I Was Better,Wish I Was Better,63,0.747,0.732,2,0.304,6.13e-05,C,0.143,-13.086,minor,0.111,4,0.185,139.965,11,best sad songs,1
+10,OneRepublic,False,Apologize,Throwback Everyday,22,0.341,0.596,3,0.74,2.05e-05,G#,0.102,-6.127,major,0.0338,4,0.493,118.031,11,best sad songs,1
+11,Jack Curley,False,Wait For Me,Wait For Me,0,0.448,0.73,3,0.688,0.0,A#,0.0954,-7.56,minor,0.0307,4,0.694,135.986,11,best sad songs,1
+12,JC Stewart,False,I Need You To Hate Me,I Need You To Hate Me,61,0.0298,0.637,2,0.589,0.0,A,0.11,-5.618,minor,0.0352,4,0.376,148.925,11,best sad songs,1
+13,Grace Carter,False,Blame,Blame,60,0.781,0.34,4,0.398,6.08e-05,F#,0.193,-8.156,minor,0.0711,3,0.197,171.391,11,best sad songs,1
+14,AURORA,False,Runaway,All My Demons Greeting Me As A Friend (Deluxe),57,0.629,0.422,4,0.302,7.83e-05,B,0.104,-9.214,major,0.0372,4,0.123,114.089,11,best sad songs,1
+15,Novo Amor,False,Repeat Until Death,Birthplace,69,0.982,0.233,3,0.15,0.36,C#,0.154,-11.736,major,0.0336,3,0.0875,143.887,11,best sad songs,1
+16,Lauv,False,Comfortable,I met you when I was 18. (the playlist),61,0.763,0.433,2,0.554,0.0,A,0.0903,-5.629,minor,0.165,3,0.546,140.235,11,best sad songs,1
+17,Grand Corps Malade,False,Mesdames,Mesdames,57,0.82,0.444,3,0.542,0.0021,D,0.111,-10.866,major,0.0786,4,0.374,144.925,11,best sad songs,1
+18,Ruel,False,Painkiller,Free Time,70,0.0875,0.683,3,0.42,0.0,F,0.225,-6.51,major,0.0542,4,0.469,128.621,11,best sad songs,1
+19,SLANDER,False,Love Is Gone - Acoustic,Love Is Gone (Acoustic),78,0.882,0.541,2,0.153,1.66e-06,F#,0.16,-10.654,major,0.0303,4,0.359,139.644,11,best sad songs,1
+20,Zara Larsson,False,Uncover,Uncover,62,0.4,0.556,3,0.529,0.0,D,0.268,-4.464,major,0.025,4,0.308,89.887,11,best sad songs,1
+21,Olivia Rodrigo,True,drivers license,drivers license,30,0.721,0.585,4,0.436,1.31e-05,A#,0.105,-8.761,major,0.0601,4,0.132,143.874,11,best sad songs,1
+22,Adele,False,Turning Tables,21,66,0.95,0.353,4,0.446,1.35e-05,C,0.132,-6.044,minor,0.0285,4,0.211,155.476,11,best sad songs,1
+23,SZA,True,Good Days,Good Days,81,0.499,0.436,4,0.655,8.1e-06,C#,0.688,-8.37,minor,0.0583,4,0.412,121.002,11,best sad songs,1
+24,Ben Pellow,False,Roslyn,Stories,61,0.946,0.267,5,0.0563,0.00567,C#,0.109,-14.171,major,0.0375,5,0.0709,134.347,11,best sad songs,1
+25,Tora,False,Deviate,Can't Buy the Mood,20,0.826,0.617,3,0.476,2.1e-05,D#,0.11,-7.928,minor,0.0335,4,0.273,101.973,11,best sad songs,1
+26,James Bay,False,Us,Electric Light,73,0.177,0.559,3,0.473,1.5e-06,C,0.108,-4.147,major,0.0364,4,0.341,69.973,11,best sad songs,1
+27,Noah Kahan,True,False Confidence,Busyhead,66,0.163,0.414,3,0.663,0.0,F#,0.138,-7.77,major,0.0456,4,0.33,108.98,11,best sad songs,1
+28,Lana Del Rey,False,Cinnamon Girl,Norman Fucking Rockwell!,72,0.814,0.294,5,0.337,0.414,F#,0.14,-10.614,minor,0.036,5,0.135,91.781,11,best sad songs,1
+29,SYML,False,Where's My Love,SYML,34,0.854,0.608,3,0.358,0.0186,C,0.113,-10.018,minor,0.0253,4,0.365,103.94,11,best sad songs,1
+30,ZAYN,True,PILLOWTALK,Mind Of Mine (Deluxe Edition),76,0.117,0.584,3,0.7,0.0,B,0.0939,-4.275,major,0.0456,4,0.438,124.944,11,best sad songs,1
+31,James Arthur,False,Naked,Naked,68,0.104,0.529,3,0.607,0.0,F#,0.0631,-6.781,major,0.0574,4,0.238,101.966,11,best sad songs,1
+32,Sia,False,Snowman,Everyday Is Christmas (Deluxe Edition),74,0.483,0.716,2,0.512,0.0,C#,0.0928,-6.257,major,0.0331,3,0.326,104.957,11,best sad songs,1
+33,Kurt Hugo Schneider,False,Just A Dream,Just A Dream,61,0.193,0.439,4,0.751,4.61e-05,A,0.0577,-7.632,major,0.0527,4,0.221,164.103,11,best sad songs,1
+34,Madison Beer,False,Selfish,Selfish,64,0.627,0.375,3,0.461,0.0,A,0.386,-6.202,major,0.0279,4,0.233,75.217,11,best sad songs,1
+35,Cigarettes After Sex,False,Apocalypse,Cigarettes After Sex,78,0.0205,0.37,4,0.467,0.572,F,0.109,-9.013,major,0.0273,4,0.182,94.485,11,best sad songs,1
+36,Coyote Theory,False,This Side of Paradise,Color,0,0.386,0.278,4,0.662,1.14e-05,A,0.134,-6.075,major,0.0295,3,0.274,181.683,11,best sad songs,1
+37,Ella Eyre,False,We Don't Have To Take Our Clothes Off - Remastered 2015,Feline (Deluxe),66,0.952,0.56,3,0.17,6.75e-06,C,0.107,-9.317,minor,0.0381,4,0.303,94.956,11,best sad songs,1
+38,Oh Wonder,False,Landslide,Oh Wonder,60,0.748,0.624,3,0.423,8.18e-05,C#,0.103,-8.757,major,0.0628,4,0.325,81.299,11,best sad songs,1
+39,Alessia Cara,False,Scars To Your Beautiful,Know-It-All (Deluxe),74,0.0285,0.319,3,0.739,0.0,C,0.111,-5.74,major,0.272,4,0.449,194.169,11,best sad songs,1
+40,Adele,False,Someone Like You,21,3,0.893,0.554,4,0.321,0.0,A,0.0996,-8.251,major,0.028,4,0.288,135.047,11,best sad songs,1
+41,Emeli Sandé,False,"Read All About It, Pt. III",Our Version Of Events (Special Edition),65,0.822,0.63,4,0.44,3.87e-06,D,0.0926,-7.186,major,0.0249,4,0.343,98.082,11,best sad songs,1
+42,Billie Eilish,False,Bored,Bored,83,0.896,0.614,3,0.318,0.00239,G,0.0795,-12.695,major,0.0478,4,0.112,119.959,11,best sad songs,1
+43,Zara Larsson,True,I Can't Fall in Love Without You,So Good,64,0.784,0.485,3,0.332,0.000122,E,0.146,-9.244,major,0.0338,4,0.273,130.813,11,best sad songs,1
+44,flora cash,False,You're Somebody Else,"Baby, It's Okay",65,0.847,0.706,3,0.46,0.00793,C#,0.106,-9.061,major,0.0296,4,0.226,102.98,11,best sad songs,1
+45,Lewis Capaldi,False,Hold Me While You Wait,Divinely Uninspired To A Hellish Extent,75,0.443,0.688,3,0.53,0.0,B,0.0995,-5.507,major,0.0333,4,0.162,106.958,11,best sad songs,1
+46,Zoe Wees,False,Control,Control,75,0.643,0.599,3,0.465,1.57e-06,E,0.149,-4.95,major,0.0314,4,0.0678,113.82,11,best sad songs,1
+47,James Arthur,False,Impossible,James Arthur (Deluxe),75,0.135,0.376,3,0.695,0.0,C,0.11,-4.782,minor,0.0933,4,0.302,169.533,11,best sad songs,1
+48,Labrinth,False,Jealous,Jealous,3,0.874,0.439,4,0.153,0.0,C#,0.107,-8.95,major,0.0479,3,0.104,116.76,11,best sad songs,1
+49,Birdy,False,People Help the People,Birdy (Deluxe Version),53,0.778,0.407,4,0.308,1.46e-05,A#,0.092,-9.001,minor,0.0296,3,0.153,73.254,11,best sad songs,1
+50,Birdy,False,Skinny Love,Birdy (Deluxe Version),58,0.952,0.379,3,0.29,0.00106,E,0.118,-8.485,major,0.051,4,0.169,166.467,11,best sad songs,1
+51,Dermot Kennedy,False,Outnumbered,Outnumbered,65,0.247,0.614,4,0.684,0.0,C,0.0976,-5.79,major,0.157,4,0.258,156.85,11,best sad songs,1
+52,Taylor Swift,True,the 1,folklore,72,0.757,0.777,3,0.357,7.28e-06,C,0.108,-6.942,major,0.0522,4,0.172,139.883,11,best sad songs,1
+53,James Arthur,False,Train Wreck,Back from the Edge,78,0.701,0.311,3,0.485,0.0,F#,0.0726,-5.726,minor,0.0365,4,0.225,77.355,11,best sad songs,1
+54,Selena Gomez,False,Lose You To Love Me,Rare,79,0.556,0.488,3,0.343,0.0,E,0.21,-8.985,major,0.0436,4,0.0978,102.819,11,best sad songs,1
+55,Harry Styles,False,Falling,Fine Line,85,0.839,0.567,4,0.267,1.46e-06,E,0.089,-6.502,major,0.0299,4,0.0592,110.011,11,best sad songs,1
+56,Noah Cyrus,False,July,THE END OF EVERYTHING,78,0.868,0.708,2,0.186,0.0,A,0.0779,-8.953,minor,0.042,4,0.322,72.541,11,best sad songs,1
+57,Chord Overstreet,False,Hold On,Hold On,80,0.469,0.618,3,0.443,0.0,D,0.0829,-9.681,major,0.0526,4,0.167,119.949,11,best sad songs,1
+58,Olivia Rodrigo,False,All I Want,High School Musical: The Musical: The Series (Original Soundtrack),74,0.0902,0.376,2,0.43,0.0,C,0.0912,-6.585,minor,0.0328,3,0.129,77.599,11,best sad songs,1
+59,Harry Styles,False,Sign of the Times,Harry Styles,83,0.0275,0.516,5,0.595,0.0,F,0.109,-4.63,major,0.0313,4,0.222,119.972,11,best sad songs,1
+60,Nina Simone,False,Feeling Good,I Put A Spell On You,71,0.864,0.399,2,0.326,0.0,G,0.191,-9.239,minor,0.0386,4,0.546,79.206,11,best sad songs,1
+61,Vianney,False,Je m'en vais,Vianney,59,0.715,0.635,3,0.469,5.02e-06,G,0.133,-8.851,minor,0.0428,4,0.281,146.995,11,best sad songs,1
+62,The Cinematic Orchestra,False,To Build A Home,Ma Fleur,73,0.885,0.264,6,0.122,0.349,A,0.094,-15.399,major,0.0349,4,0.0735,148.658,11,best sad songs,1
+63,Alexander 23,False,IDK You Yet,IDK You Yet,1,0.884,0.629,3,0.306,0.0776,C#,0.124,-11.735,major,0.0424,1,0.191,76.994,11,best sad songs,1
+64,BANNERS,False,Someone To You,Empires On Fire,72,0.00568,0.468,3,0.936,0.0,D,0.24,-3.683,major,0.0455,4,0.663,75.05,11,best sad songs,1
+65,Tom Rosenthal,False,It's Ok,The Pleasant Trees,68,0.871,0.561,3,0.111,0.205,G#,0.103,-15.11,minor,0.0324,4,0.0607,148.191,11,best sad songs,1
+66,Lewis Capaldi,False,Bruises,Breakfast Bangers,12,0.944,0.746,3,0.322,0.0,C#,0.197,-7.922,minor,0.0798,4,0.321,110.774,11,best sad songs,1
+67,Lomepal,True,Trop beau,Jeannine,67,0.295,0.748,4,0.66,5.56e-06,E,0.0883,-6.034,minor,0.0404,4,0.324,123.902,11,best sad songs,1
+68,Tate McRae,False,you broke me first,you broke me first,83,0.785,0.667,2,0.373,0.0,E,0.0906,-9.389,major,0.05,4,0.0823,124.148,11,best sad songs,1
+69,MKTO,False,Classic,MKTO,81,0.0384,0.72,2,0.791,0.0,C#,0.157,-4.689,major,0.124,4,0.756,102.071,11,best sad songs,1
+70,JP Saxe,False,If the World Was Ending (feat. Julia Michaels),If the World Was Ending (feat. Julia Michaels),78,0.866,0.464,3,0.473,0.0,C#,0.109,-10.086,major,0.129,4,0.604,75.801,11,best sad songs,1
+71,Jaymes Young,False,Happiest Year,Happiest Year,38,0.885,0.501,3,0.167,0.0,C#,0.111,-14.061,major,0.0484,3,0.356,112.275,11,best sad songs,1
+72,Billie Eilish,False,my boy,dont smile at me,72,0.472,0.692,2,0.394,0.000191,B,0.117,-8.745,minor,0.207,4,0.324,89.936,11,best sad songs,1
+73,Lomepal,True,Yeux disent,FLIP,61,0.553,0.736,3,0.586,2.21e-05,F,0.163,-8.152,minor,0.197,4,0.395,113.655,11,best sad songs,1
+74,Lomepal,True,Bécane,FLIP (Deluxe),48,0.582,0.574,4,0.644,1.74e-05,A,0.0915,-7.825,minor,0.161,4,0.377,130.524,11,best sad songs,1
+75,Miley Cyrus,False,When I Look At You,The Time Of Our Lives (International Version),71,0.142,0.459,4,0.545,0.0,F#,0.105,-4.874,major,0.0282,3,0.194,137.941,11,best sad songs,1
+76,Billie Eilish,False,idontwannabeyouanymore,dont smile at me,78,0.737,0.483,3,0.412,0.0,G,0.116,-8.461,major,0.0402,3,0.247,170.163,11,best sad songs,1
+77,Ruth B.,False,Lost Boy,Safe Haven,67,0.963,0.586,4,0.128,0.0,G,0.0858,-9.297,major,0.0496,4,0.371,123.498,11,best sad songs,1
+78,Lewis Capaldi,False,Before You Go,Divinely Uninspired To A Hellish Extent (Extended Edition),81,0.604,0.459,3,0.575,0.0,D#,0.0885,-4.858,major,0.0573,4,0.183,111.881,11,best sad songs,1
+79,John Legend,False,All of Me,Love In The Future (Expanded Edition),83,0.922,0.422,4,0.264,0.0,G#,0.132,-7.064,major,0.0322,4,0.331,119.93,11,best sad songs,1
+80,Sam Smith,False,Too Good At Goodbyes,The Thrill Of It All (Special Edition),79,0.64,0.681,3,0.372,0.0,F,0.169,-8.237,major,0.0432,4,0.476,91.873,11,best sad songs,1
+81,A Great Big World,False,Say Something,Is There Anybody Out There? - Track by Track Commentary,68,0.857,0.407,3,0.147,2.89e-06,D,0.0913,-8.822,major,0.0355,3,0.0765,141.284,11,best sad songs,1
+82,James Arthur,False,Say You Won't Let Go,Back from the Edge,83,0.695,0.358,3,0.557,0.0,A#,0.0902,-7.398,major,0.059,4,0.494,85.043,11,best sad songs,1
+83,Dean Lewis,True,Be Alright,A Place We Knew,73,0.705,0.551,3,0.537,0.0,B,0.0802,-7.595,major,0.034,4,0.493,126.421,11,best sad songs,1
+84,Lewis Capaldi,False,Someone You Loved,Divinely Uninspired To A Hellish Extent,84,0.751,0.501,3,0.405,0.0,C#,0.105,-5.679,major,0.0319,4,0.446,109.891,11,best sad songs,1
+85,Hozier,False,Take Me To Church,Hozier,81,0.634,0.566,4,0.664,0.0,E,0.116,-5.303,minor,0.0464,4,0.437,128.945,11,best sad songs,1
+86,Nekfeu,True,Elle pleut,Les étoiles vagabondes : expansion,64,0.724,0.62,4,0.375,2.86e-06,G#,0.125,-11.064,major,0.455,4,0.226,92.641,11,best sad songs,1
+87,Fauve,False,LETTRE A ZOE,Vieux Frères - Partie 1,44,0.0368,0.785,3,0.653,0.0,C#,0.167,-7.477,major,0.0581,4,0.497,110.037,11,best sad songs,1
+88,Ed Sheeran,False,Perfect,÷ (Deluxe),84,0.163,0.599,4,0.448,0.0,G#,0.106,-6.312,major,0.0232,3,0.168,95.05,11,best sad songs,1
+89,Lady Gaga,False,Shallow,A Star Is Born Soundtrack,82,0.371,0.572,3,0.385,0.0,G,0.231,-6.362,major,0.0308,4,0.323,95.799,11,best sad songs,1
+90,London Grammar,False,Hell To The Liars,Truth Is a Beautiful Thing,33,0.707,0.353,6,0.58,0.0114,D,0.0867,-7.871,minor,0.0349,4,0.0878,146.018,11,best sad songs,1
+91,Billie Eilish,False,ocean eyes,dont smile at me,78,0.816,0.511,3,0.363,0.0317,E,0.084,-7.65,minor,0.041,4,0.169,144.892,11,best sad songs,1
+92,Duncan Laurence,False,Arcade,Arcade,80,0.818,0.45,3,0.329,0.00109,A,0.135,-12.603,minor,0.0441,3,0.266,71.884,11,best sad songs,1
+93,Billie Eilish,False,i love you,"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",78,0.952,0.421,4,0.131,0.00453,C,0.109,-18.435,major,0.0382,4,0.12,137.446,11,best sad songs,1
+94,Kina,False,Get You The Moon (feat. Snøw),Get You The Moon (feat. Snøw),78,0.72,0.498,2,0.235,0.0,C#,0.144,-16.541,minor,0.188,4,0.0895,118.917,11,best sad songs,1
+95,James Bay,False,Let It Go,Chaos And The Calm,71,0.82,0.536,4,0.311,1.65e-05,C#,0.107,-10.396,major,0.0288,4,0.246,147.486,11,best sad songs,1
+96,Calum Scott,False,Dancing On My Own,Only Human (Deluxe),79,0.837,0.681,4,0.174,3.35e-05,C#,0.0983,-8.745,major,0.0315,4,0.231,112.672,11,best sad songs,1
+97,Sam Smith,False,"Fire On Fire - From ""Watership Down""","Fire On Fire (From ""Watership Down"")",67,0.476,0.584,4,0.407,0.0,C#,0.18,-7.356,minor,0.046,4,0.341,115.124,11,best sad songs,1
+98,Billie Eilish,False,bury a friend,"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",74,0.74,0.905,3,0.389,0.162,G#,0.106,-14.505,major,0.332,4,0.196,120.046,11,best sad songs,1
+99,Lady A,False,Need You Now,Need You Now,73,0.0298,0.581,3,0.717,0.000186,E,0.243,-4.433,major,0.0318,4,0.316,107.884,11,best sad songs,1
