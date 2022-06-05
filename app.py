@@ -34,6 +34,8 @@ server = app.server
 
 table = get_table(columns=COLUMNS)
 
+app.title = "Spotify Analyzer"
+
 app.layout = get_layout(table=table, footers_definitions=FOOTERS)
 
 
