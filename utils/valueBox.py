@@ -24,7 +24,7 @@ def get_value_box(title : str, icon=None, value = "", figure = None):
                             value,
                             className="card-text", 
                             style={'font-weight': 'bold', 'font-size': '250%'}
-                   )], width=9) if figure is None else dcc.Graph(title, figure=figure),
+                   )], width= 10 if "exclamation" in icon else 8) if figure is None else dcc.Graph(title, figure=figure),
                 dbc.Col(html.I(className=icon))
                 ])
             ]),
