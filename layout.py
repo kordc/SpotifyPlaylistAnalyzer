@@ -51,11 +51,11 @@ search_card = dbc.Card(
                 dbc.Col([
                     dcc.Dropdown(options=[
                         {'label': 'Different top 50',
-                         'value': 'app/assets/Different_top_50.csv'},
+                         'value': 'assets/Different_top_50.csv'},
                         {'label': 'Different genres',
-                         'value': 'app/assets/Different_genres.csv'},
+                         'value': 'assets/Different_genres.csv'},
                         {'label': 'Different modes',
-                         'value': 'app/assets/Different_modes.csv'},
+                         'value': 'assets/Different_modes.csv'},
                     ],
                         id=C.PRE_DROP,
                         placeholder="Select one of the predefined datasets"),
