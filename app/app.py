@@ -2,7 +2,6 @@ import pandas as pd
 import plotly.express as px
 
 from dash_extensions.enrich import Output, DashProxy, Input, MultiplexerTransform, State
-import yaml
 import tekore as tk
 from spotifyData import getdata_faster
 from plots import plots
@@ -13,10 +12,11 @@ from table import get_table
 from layout import get_layout
 from utils.output_handler import OutputController
 
-credentials_path = "credentials.yaml"
-with open(credentials_path) as file:
-    cred = yaml.load(file, Loader=yaml.FullLoader)
+import os
 
+cred={}
+cred['client_id'] = os.getenv("SPOTIPY_CLIENT_ID")
+cred['client_secret'] = os.getenv("SPOTIPY_CLIENT_SECRET")
 
 app_token = tk.request_client_token(cred['client_id'], cred['client_secret'])
 spotify = tk.Spotify(app_token)
@@ -29,6 +29,8 @@ request_manager = request_manager.RequestManager()
 output_handler = OutputController(plots_generator)
 
 app = DashProxy(prevent_initial_callbacks=True, transforms=[MultiplexerTransform()], external_stylesheets=EXTERNAL_STYLESHEETS)
+
+server = app.server
 
 table = get_table(columns=COLUMNS)
 
