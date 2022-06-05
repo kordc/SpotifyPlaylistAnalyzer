@@ -6,6 +6,13 @@ Spotify Analyzer is an app which allows you analyzing tracks, albums and (public
 
 In order to use the app just type a track/album/playlist name in the input field at the top od our site and click *search*. Then all cards, which lie below the search bar, will have useful vizualizations about sall selected tracks. All vizualizations are interactive, so while hovering a mouse above one fragment more info should appear.
 
+## How to run it
+
+You can just visit the site https://spotify-analyzer-dviz.herokuapp.com/ to use the app.
+
+
+To run it locally you have to clone the repository and run the app.py file after installing all packages from requirements.txt.
+
 ## Details
 
 ### Searching
