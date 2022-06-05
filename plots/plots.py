@@ -66,8 +66,7 @@ class Plots:
                             line_close=True, range_r=[0,1], color_discrete_sequence=px.colors.qualitative.Dark2)
                 fig.update_traces(opacity=0.5)
 
-        fig.update_layout(margin=dict(l=0, r=0, t=25, b=25),
-                        font=C.PLOT_FONT) 
+        fig.update_layout(margin=dict(l=0, r=0, t=25, b=25)) 
 
         return fig
 
