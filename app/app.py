@@ -30,6 +30,8 @@ output_handler = OutputController(plots_generator)
 
 app = DashProxy(prevent_initial_callbacks=True, transforms=[MultiplexerTransform()], external_stylesheets=EXTERNAL_STYLESHEETS)
 
+server = app.server
+
 table = get_table(columns=COLUMNS)
 
 app.layout = get_layout(table=table, footers_definitions=FOOTERS)
