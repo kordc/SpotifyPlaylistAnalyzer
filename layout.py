@@ -14,7 +14,7 @@ navbar = dbc.Navbar(
                 dbc.Row(
                     [
                         dbc.Col(
-                            html.Img(src="assets/logo_no_bg.png", height="60ex")),
+                            html.Img(src="https://i.ibb.co/db0jXmq/logo-no-bg.png", height="60ex")),
                     ],
                     align="left",
                     className="g-0",
