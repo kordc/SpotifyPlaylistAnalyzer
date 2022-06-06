@@ -10,9 +10,6 @@ In order to use the app just type a track/album/playlist name in the input field
 
 You can just visit the site https://spotify-analyzer-dviz.herokuapp.com/ to use the app.
 
-
-To run it locally you have to clone the repository and run the app.py file after installing all packages from requirements.txt.
-
 ## Details
 
 ### Searching
